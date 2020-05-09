@@ -1,0 +1,23 @@
+# application.yml 是用户级的资源配置项
+# bootstrap.yml 是系统级的资源配置项， 权重更高
+
+# spring cloud 会创建一个Bootstrap Context 作为spring应用的 Application Context 的父上下文。
+# 初始化的时候，Bootstrap Context 负责从外部加载配置属性并解析配置。这两个上下文共享一个从外部获取的 Environment.
+# Bootstrap 属性有高优先级，默认情况下，它们不会被本地配置覆盖。
+
+spring:
+  cloud:
+    config:
+      name: librarian-web-ui               # 需要从git 上读取的资源名称，注意没有yml后缀
+      profile: dev                         # 本次访问的配置项, 对应激活配置中心相应环境的配置。
+      label: master
+      uri: http://service-config-center-server:9999      # 本微服务启动后先去找到 9999 微服务，通过SpringCloudConfigServer
+      username: nulijiushimeili
+      password: git
+
+
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    service-url:
+#      defaultZone: http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/,http://micro-service-eureka-10003:10003/eureka/

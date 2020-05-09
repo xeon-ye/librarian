@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-data-service/elasticsearch-data-service.iml" filepath="$PROJECT_DIR$/elasticsearch-data-service/elasticsearch-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarian.iml" filepath="$PROJECT_DIR$/librarian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarian-common/librarian-common.iml" filepath="$PROJECT_DIR$/librarian-common/librarian-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" filepath="$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" filepath="$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" filepath="$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" filepath="$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-config-center-server-10000/service-config-center-server-10000.iml" filepath="$PROJECT_DIR$/service-config-center-server-10000/service-config-center-server-10000.iml" />
+    </modules>
+  </component>
+</project>

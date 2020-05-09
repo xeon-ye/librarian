@@ -1,0 +1,15 @@
+
+server:
+  port: 10001
+
+eureka:
+  instance:
+    hostname: micro-service-eureka-10001                    # eureka 服务端的实例名称
+  client:
+    register-with-eureka: false            # false 表示不向注册中心注册自己
+    fetch-registry: false                  # false 表示自己就是注册中心，自己的职责是维护服务实例，并不需要去检索服务。
+    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/   # 设置与 Eureka Server 交互的地址，提供查询服务和注册服务（localhost:10000,在此文件中配置），客户端都依赖这个地址
+      defaultZone: http://micro-service-eureka-10002:10002/eureka/,http://micro-service-eureka-10003:10003/eureka/  # eureka 集群环境的高可用
+#  server:
+#    enable-self-preservation: false       # 关闭Eureka的自我保护机制，不推荐

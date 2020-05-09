@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.nulijiushimeili</groupId>
+    <artifactId>librarian</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modules>
+        <module>librarian-web-ui</module>
+        <module>librarian-common</module>
+        <module>librarian-public-beans</module>
+        <module>librarian-connectors</module>
+        <module>service-config-center-server-10000</module>
+        <module>micro-service-eureka-10001</module>
+        <module>elasticsearch-data-service</module>
+    </modules>
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
+        <log4j.version>1.2.17</log4j.version>
+        <common.lang3.version>3.0</common.lang3.version>
+        <commons-io.version>1.3.2</commons-io.version>
+        <commons-net.version>3.3</commons-net.version>
+        <commons-fileupload.version>1.3.2</commons-fileupload.version>
+        <commons-codec.version>1.9</commons-codec.version>
+        <fastjson.version>1.2.44</fastjson.version>
+        <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
+        <spring-boot-devtools.version>1.2.0.RELEASE</spring-boot-devtools.version>
+        <mysql.version>5.1.45</mysql.version>
+        <durid.version>1.1.10</durid.version>
+        <mybatis-boot.version>1.3.0</mybatis-boot.version>
+        <junit.version>4.12</junit.version>
+        <spring-hot-load.version>1.2.0.RELEASE</spring-hot-load.version>
+        <lombok.version>1.18.12</lombok.version>
+        <spring-cloud-eureka.version>2.0.2.RELEASE</spring-cloud-eureka.version>
+        <spring-cloud-common.version>1.4.0.RELEASE</spring-cloud-common.version>
+        <spring-cloud-config-server.version>2.1.1.RELEASE</spring-cloud-config-server.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--            spring-cloud 依赖-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!-- gson-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+
+
+            <!--apache common 工具类，使用更多的数学方法等-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.4</version>
+            </dependency>
+
+
+            <!--   日志配置-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
+            <!-- 日期处理 -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.10.1</version>
+            </dependency>
+
+
+            <!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <optional>true</optional>
+            </dependency>
+
+            <!--简化程序开发，写更少的代码做更多的事 lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+
+
+        </dependencies>
+
+    </dependencyManagement>
+
+
+    <build>
+        <finalName>librarian</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <!--// 读取$包裹的配置信息 eg: $serviceName$-->
+                        <delimit>$</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
