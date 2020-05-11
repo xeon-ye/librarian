@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.nulijiushimeili</groupId>
-        <artifactId>librarian</artifactId>
+        <artifactId>librarian-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <!--这里必须引入父项目的配置文件，否则无法导入maven依赖-->
         <relativePath>../pom.xml</relativePath>
@@ -27,18 +27,29 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis-boot.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+
+
+        <!--// springboot webSocket dependency-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
+
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
+            <version>5.1.45</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -46,33 +57,58 @@
             <version>${durid.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+
+
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>29.0-jre</version>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-public-beans</artifactId>
+            <version>${librarian-public-beans.version}</version>
+            <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-common</artifactId>
+            <version>${librarian-common.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-connectors</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+
+        <!--        // swagger 接口文档 -->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+        </dependency>
+
+
 
     </dependencies>
 
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
 
 </project>

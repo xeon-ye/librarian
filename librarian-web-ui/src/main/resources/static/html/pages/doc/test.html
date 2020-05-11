@@ -1,0 +1,337 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>html展示markdown文件，代码高亮</title>
+
+    <link rel="stylesheet" href="../../../css/okadmin.css">
+
+
+    <!--    // 代码高亮展示-->
+    <link rel="stylesheet" href="../../../css/highlight-styles/atom-one-light.css">
+    <link rel="stylesheet" href="../../../css/highlight/default.min.css">
+
+    <!--    // 代码高亮展示js-->
+    <script type="text/javascript" src="../../../lib/highlight/highlight.min.js"></script>
+    <script type="text/javascript" src="../../../lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+<link id="layuicss-layer" rel="stylesheet" href="http://localhost:8099/lib/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all"></head>
+<body class="vsc-initialized">
+
+
+<div id="markdownContent" class="layui-panel-window"><h1>spring cloud demo</h1>
+<p></p>
+<h3>summary</h3>
+<p></p>
+<h6>micro-service-api</h6>
+<p></p>
+<ul>
+<li>这是一个公共的api模块。
+</li></ul>
+
+
+<h6>micro-service-eureka-10001，micro-service-eureka-10002，micro-service-eureka-10003</h6>
+<p></p>
+<ul>
+<li>这三个模块是eureka高可用服务集群。
+</li><li>这是三个相同配置的eureka服务注册中心，只是服务名和端口号不一样，如果想要在浏览器中使用域名访问需要在hosts文件中配置相应的dns映射。
+</li></ul>
+
+
+<pre><code>  # spring cloud dns 
+  127.0.0.1 micro-service-provider-dept-8001
+  
+  127.0.0.1 micro-service-eureka-10001
+  127.0.0.1 micro-service-eureka-10002
+  127.0.0.1 micro-service-eureka-10003</code></pre>
+
+<p></p>
+<ul>
+<li>如果要使用本项目中的其他功能模块，请先启动eureka集群。好像是强制依赖此服务，错误的尝试是没有必要的，因此我并没有对此做过验证，坚持正确的道路总是畅通无阻的。
+</li></ul>
+
+
+<h6>micro-service-provider-dept-8001</h6>
+<p></p>
+<h6>micro-service-provider-dept-8002</h6>
+<p></p>
+<h6>micro-service-provider-dept-8003</h6>
+<p></p>
+<ul>
+<li>这是一个服务提供者集群, 在本demo中，直接查自己的数据库提供接口供外部消费者访问。
+</li><li>使用ribbon对客户端做做负载均衡后，可以轮询访问不同的服务提供者。
+</li></ul>
+
+
+<h6>micro-service-consumer-8880</h6>
+<p></p>
+<ul>
+<li>这是一个消费者， 在本demo中，通过自己的服务类（这里是使用的是controler调用）使用restTemplate引擎查询服务提供者提供的接口，获得数据。
+</li><li>还可以使用发现，找出其他的注册服务，获取其他服务的相关信息。（serviceName,ip,port,uri,...）
+</li></ul>
+
+
+<pre><code>package com.nu.controller;
+
+
+import com.nu.service.DeptService;
+import nu.module.Dept;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+public class DeptController {
+
+    // eureka 服务发现
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
+    // 通过服务发现可以找出注册的服务的相关信息，具体信息参考最下面的注释
+    @GetMapping(value = "/dept/discovery")
+    public Object discovery(){
+        List&lt;String&gt; list = discoveryClient.getServices();
+        System.out.println("*********" + list);
+
+        List&lt;ServiceInstance&gt; serviceInstanceList = discoveryClient.getInstances("MICRO-SERVICE-PROVIDER-DEPT-8001");
+        for (ServiceInstance si : serviceInstanceList) {
+            System.out.println(si.getServiceId() + "t" + si.getHost() + "t" + si.getPort() + "t" + si.getUri());
+        }
+        return this.discoveryClient;
+    }
+
+    // *********[micro-service-provider-dept-8001]
+    // MICRO-SERVICE-PROVIDER-DEPT-8001    192.168.163.1    8001    http://192.168.163.1:8001
+}
+</code></pre>
+
+<p></p>
+<ul>
+<li>使用Ribbon配置负载均衡
+</li></ul>
+
+
+<pre><code>        &lt;!--Ribbon 负载均衡的配置 start--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt;
+            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-ribbon&lt;/artifactId&gt;
+            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!--Ribbon 负载均衡的配置 end--&gt;</code></pre>
+
+<p></p>
+<pre><code>eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/,http://micro-service-eureka-10003:10003/eureka/
+</code></pre>
+
+<p></p>
+<pre><code>package com.nu.config;
+
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class ConfigBean {           // 等同于spring的 applicationContent.xml文件
+
+//    @Bean
+//    public UserService getUserService(){
+//        return new UserServiceImpl();
+//    }
+
+    @Bean
+    @LoadBalanced     // spring cloud ribbon 是基于Netflix Ribbon实现的一套客户端 负载均衡的工具。
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
+}
+</code></pre>
+
+<p></p>
+<ul>
+<li>- 主启动类要加@EnableEurekaClient
+</li><li>yml文件的配置，参考<a href="#ribbon_error">ERROR: ribbon配置高可用不起作用</a>
+</li></ul>
+
+
+<h3>ERROR</h3>
+<p></p>
+<ol>
+<li>无法加载maven依赖
+</li></ol>
+
+
+<pre><code>    &lt;parent&gt;
+        &lt;artifactId&gt;spring_cloud_demo&lt;/artifactId&gt;
+        &lt;groupId&gt;com.nu&lt;/groupId&gt;
+        &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+        &lt;!--这里必须引入父项目的配置文件，否则无法导入maven依赖，idea不会自动配置此项 --&gt;
+        &lt;relativePath&gt;../pom.xml&lt;/relativePath&gt;
+    &lt;/parent&gt;</code></pre>
+
+<p></p>
+<ol>
+<li>其他子模块无法引入公共api模块的类。
+</li></ol>
+
+
+<pre><code>&lt;!-- 首先确定子项目中引入了自定义api模块， 然后对api模块执行 mvn clean install 命令--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.nu&lt;/groupId&gt;
+            &lt;artifactId&gt;micro-service-api&lt;/artifactId&gt;
+            &lt;version&gt;${micro-service-api.version}&lt;/version&gt;
+        &lt;/dependency&gt;</code></pre>
+
+<p></p>
+<ol>
+<li>com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+<ul>
+<li>在eureka配置高可用的时候，启动出现异常，因为eureka配置简单，直接重新复制出了一个节点。解决。
+</li></ul>
+
+</li><li><span id="ribbon_error">ribbon配置高可用不起作用。</span> 我所犯的错误是实例名配置相同，导致每次重启所有服务，只有一个生产者是可用的。
+<ul>
+<li>spring.application.name 是微服务的名称，如果是相同的服务，服务名必须是相同的
+</li><li>eureka.instance.instance-id 是微服务对eureka暴露的实例名，必须是不同的
+</li></ul>
+
+</li></ol>
+
+
+<pre><code>server:
+  port: 8003
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml                   # mybatis 配置文件所在路径
+  type-aliases-package: com.nu.module                                    # 所有entity所在的包的路径
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml                                # mapper 映射文件
+
+
+spring:
+  application:
+    name: micro-service-provider-dept            # 本微服务的名字，在eureka服务页面可以看到这个服务名，相同的微服务具有相同的名字
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource                       # 当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver                        # mysql驱动包
+    url: jdbc:mysql://localhost:3306/clouddb03?serverTimezone=Asia/Shanghai&amp;characterEncoding=utf8     # 数据库名称
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5                                                      # 数据库连接池的最小维持连接数
+      initial-size: 5                                                  # 初始化连接数
+      max-total: 5                                                     # 最大连接数
+      max-wait-millis: 200                                             # 等待连接获取的最大超时时间
+
+
+eureka:
+  client:         # 将客户端注册进 eureka 服务列表内
+    service-url:
+      defaultZone: http://micro-service-eureka-10003:10003/eureka/,http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/
+  instance:
+    instance-id: micro-service-provider-dept-8003    # 对外暴露的服务的名称，相同服务对外暴露的名称是不一样的
+    prefer-ip-address: true                          # 访问路径可以显示IP地址
+
+
+
+# 配置了下面这一堆东西以后可以，在eureka界面中看到相关的服务信息，具体配置参考项目pom-build部分 和
+# 本模块pom添加监控组件spring-boot-starter-actuator的依赖
+info:
+  app.name: micro-service-provider-dept-8003
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$</code></pre>
+
+<p></p>
+<ul>
+<li>- 下面是正确配置后，eureka中显示的服务。
+</li></ul>
+
+
+<p><img src="img/1562373041036.png" title="1562373041036" alt="1562373041036"></p>
+</div>
+
+
+
+<script type="text/javascript" src="../../../lib/layui/layui.js"></script>
+<!--<script type="text/javascript" src="../../../lib/jquery-3.4.1.js"></script>-->
+<script type="text/javascript" src="../../../js/doc/markdown.js"></script>
+
+<script>
+
+    layui.use(["element", "layer", "okUtils", "okTab", "okLayer", "jQContextMenu"], function () {
+        var okUtils = layui.okUtils;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var okLayer = layui.okLayer;
+
+
+        // okUtils.ajax("/markdown/showMarkdownFile", "get",  {"filePath": "none"}).done(function (response) {
+        //     console.info("获取文档内容返回的结果： " + JSON.stringify(response));
+        //     okLayer.greenTickMsg(response.msg, function () {
+        //         $("#markdownContent").html(marked(response.t));
+        //         hljs.initHighlightingOnLoad();
+        //     })
+        // }).fail(function (error) {
+        //     okLayer.redCrossMsg(error, function () {
+        //         layer.msg("获取文档内容失败!");
+        //
+        //     })
+        // });
+
+
+
+        $.ajax({
+            url:'/markdown/showMarkdownFile',
+            method:'get',
+            data:{"filePath": "none"},
+            success:function (res) {
+                if(res.code === 0) {
+                    $("#markdownContent").html(res.message);
+                    hljs.initHighlightingOnLoad();
+                    console.info("Markdown 文档内容：" + JSON.stringify(res.message));
+
+                }else{
+                    layer.error("获取文档内容失败!");
+                }
+            },
+            error:function () {
+                layer.error("获取文档内容失败!");
+
+            }
+
+        });
+
+        // $("#markdownContent").html("<h1>spring cloud demo</h1>\n<p></p>\n<h3>summary</h3>\n<p></p>\n<h6>micro-service-api</h6>\n<p></p>\n<ul>\n<li>这是一个公共的api模块。\n</li></ul>\n\n\n<h6>micro-service-eureka-10001，micro-service-eureka-10002，micro-service-eureka-10003</h6>\n<p></p>\n<ul>\n<li>这三个模块是eureka高可用服务集群。\n</li><li>这是三个相同配置的eureka服务注册中心，只是服务名和端口号不一样，如果想要在浏览器中使用域名访问需要在hosts文件中配置相应的dns映射。\n</li></ul>\n\n\n<pre><code>  # spring cloud dns \n  127.0.0.1 micro-service-provider-dept-8001\n  \n  127.0.0.1 micro-service-eureka-10001\n  127.0.0.1 micro-service-eureka-10002\n  127.0.0.1 micro-service-eureka-10003</code></pre>\n\n<p></p>\n<ul>\n<li>如果要使用本项目中的其他功能模块，请先启动eureka集群。好像是强制依赖此服务，错误的尝试是没有必要的，因此我并没有对此做过验证，坚持正确的道路总是畅通无阻的。\n</li></ul>\n\n\n<h6>micro-service-provider-dept-8001</h6>\n<p></p>\n<h6>micro-service-provider-dept-8002</h6>\n<p></p>\n<h6>micro-service-provider-dept-8003</h6>\n<p></p>\n<ul>\n<li>这是一个服务提供者集群, 在本demo中，直接查自己的数据库提供接口供外部消费者访问。\n</li><li>使用ribbon对客户端做做负载均衡后，可以轮询访问不同的服务提供者。\n</li></ul>\n\n\n<h6>micro-service-consumer-8880</h6>\n<p></p>\n<ul>\n<li>这是一个消费者， 在本demo中，通过自己的服务类（这里是使用的是controler调用）使用restTemplate引擎查询服务提供者提供的接口，获得数据。\n</li><li>还可以使用发现，找出其他的注册服务，获取其他服务的相关信息。（serviceName,ip,port,uri,...）\n</li></ul>\n\n\n<pre><code>package com.nu.controller;\n\n\nimport com.nu.service.DeptService;\nimport nu.module.Dept;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.cloud.client.ServiceInstance;\nimport org.springframework.cloud.client.discovery.DiscoveryClient;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\n@RestController\npublic class DeptController {\n\n    // eureka 服务发现\n    @Autowired\n    private DiscoveryClient discoveryClient;\n\n    // 通过服务发现可以找出注册的服务的相关信息，具体信息参考最下面的注释\n    @GetMapping(value = \"/dept/discovery\")\n    public Object discovery(){\n        List&lt;String&gt; list = discoveryClient.getServices();\n        System.out.println(\"*********\" + list);\n\n        List&lt;ServiceInstance&gt; serviceInstanceList = discoveryClient.getInstances(\"MICRO-SERVICE-PROVIDER-DEPT-8001\");\n        for (ServiceInstance si : serviceInstanceList) {\n            System.out.println(si.getServiceId() + \"t\" + si.getHost() + \"t\" + si.getPort() + \"t\" + si.getUri());\n        }\n        return this.discoveryClient;\n    }\n\n    // *********[micro-service-provider-dept-8001]\n    // MICRO-SERVICE-PROVIDER-DEPT-8001    192.168.163.1    8001    http://192.168.163.1:8001\n}\n</code></pre>\n\n<p></p>\n<ul>\n<li>使用Ribbon配置负载均衡\n</li></ul>\n\n\n<pre><code>        &lt;!--Ribbon 负载均衡的配置 start--&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;\n            &lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt;\n            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;\n        &lt;/dependency&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;\n            &lt;artifactId&gt;spring-cloud-starter-ribbon&lt;/artifactId&gt;\n            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;\n        &lt;/dependency&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;\n            &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;\n            &lt;version&gt;${spring-cloud-common.version}&lt;/version&gt;\n        &lt;/dependency&gt;\n        &lt;!--Ribbon 负载均衡的配置 end--&gt;</code></pre>\n\n<p></p>\n<pre><code>eureka:\n  client:\n    register-with-eureka: false\n    service-url:\n      defaultZone: http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/,http://micro-service-eureka-10003:10003/eureka/\n</code></pre>\n\n<p></p>\n<pre><code>package com.nu.config;\n\nimport org.springframework.cloud.client.loadbalancer.LoadBalanced;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.client.RestTemplate;\n\n@Configuration\npublic class ConfigBean {           // 等同于spring的 applicationContent.xml文件\n\n//    @Bean\n//    public UserService getUserService(){\n//        return new UserServiceImpl();\n//    }\n\n    @Bean\n    @LoadBalanced     // spring cloud ribbon 是基于Netflix Ribbon实现的一套客户端 负载均衡的工具。\n    public RestTemplate getRestTemplate(){\n        return new RestTemplate();\n    }\n}\n</code></pre>\n\n<p></p>\n<ul>\n<li>- 主启动类要加@EnableEurekaClient\n</li><li>yml文件的配置，参考<a href=\"#ribbon_error\">ERROR: ribbon配置高可用不起作用</a>\n</li></ul>\n\n\n<h3>ERROR</h3>\n<p></p>\n<ol>\n<li>无法加载maven依赖\n</li></ol>\n\n\n<pre><code>    &lt;parent&gt;\n        &lt;artifactId&gt;spring_cloud_demo&lt;/artifactId&gt;\n        &lt;groupId&gt;com.nu&lt;/groupId&gt;\n        &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;\n        &lt;!--这里必须引入父项目的配置文件，否则无法导入maven依赖，idea不会自动配置此项 --&gt;\n        &lt;relativePath&gt;../pom.xml&lt;/relativePath&gt;\n    &lt;/parent&gt;</code></pre>\n\n<p></p>\n<ol>\n<li>其他子模块无法引入公共api模块的类。\n</li></ol>\n\n\n<pre><code>&lt;!-- 首先确定子项目中引入了自定义api模块， 然后对api模块执行 mvn clean install 命令--&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;com.nu&lt;/groupId&gt;\n            &lt;artifactId&gt;micro-service-api&lt;/artifactId&gt;\n            &lt;version&gt;${micro-service-api.version}&lt;/version&gt;\n        &lt;/dependency&gt;</code></pre>\n\n<p></p>\n<ol>\n<li>com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server\n<ul>\n<li>在eureka配置高可用的时候，启动出现异常，因为eureka配置简单，直接重新复制出了一个节点。解决。\n</li></ul>\n\n</li><li><span id=\"ribbon_error\">ribbon配置高可用不起作用。</span> 我所犯的错误是实例名配置相同，导致每次重启所有服务，只有一个生产者是可用的。\n<ul>\n<li>spring.application.name 是微服务的名称，如果是相同的服务，服务名必须是相同的\n</li><li>eureka.instance.instance-id 是微服务对eureka暴露的实例名，必须是不同的\n</li></ul>\n\n</li></ol>\n\n\n<pre><code>server:\n  port: 8003\n\nmybatis:\n  config-location: classpath:mybatis/mybatis.cfg.xml                   # mybatis 配置文件所在路径\n  type-aliases-package: com.nu.module                                    # 所有entity所在的包的路径\n  mapper-locations:\n    - classpath:mybatis/mapper/**/*.xml                                # mapper 映射文件\n\n\nspring:\n  application:\n    name: micro-service-provider-dept            # 本微服务的名字，在eureka服务页面可以看到这个服务名，相同的微服务具有相同的名字\n  datasource:\n    type: com.alibaba.druid.pool.DruidDataSource                       # 当前数据源操作类型\n    driver-class-name: com.mysql.cj.jdbc.Driver                        # mysql驱动包\n    url: jdbc:mysql://localhost:3306/clouddb03?serverTimezone=Asia/Shanghai&characterEncoding=utf8     # 数据库名称\n    username: root\n    password: 123456\n    dbcp2:\n      min-idle: 5                                                      # 数据库连接池的最小维持连接数\n      initial-size: 5                                                  # 初始化连接数\n      max-total: 5                                                     # 最大连接数\n      max-wait-millis: 200                                             # 等待连接获取的最大超时时间\n\n\neureka:\n  client:         # 将客户端注册进 eureka 服务列表内\n    service-url:\n      defaultZone: http://micro-service-eureka-10003:10003/eureka/,http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/\n  instance:\n    instance-id: micro-service-provider-dept-8003    # 对外暴露的服务的名称，相同服务对外暴露的名称是不一样的\n    prefer-ip-address: true                          # 访问路径可以显示IP地址\n\n\n\n# 配置了下面这一堆东西以后可以，在eureka界面中看到相关的服务信息，具体配置参考项目pom-build部分 和\n# 本模块pom添加监控组件spring-boot-starter-actuator的依赖\ninfo:\n  app.name: micro-service-provider-dept-8003\n  company.name: www.baidu.com\n  build.artifactId: $project.artifactId$\n  build.version: $project.version$</code></pre>\n\n<p></p>\n<ul>\n<li>- 下面是正确配置后，eureka中显示的服务。\n</li></ul>\n\n\n<p><img src=\"img/1562373041036.png\" title=\"1562373041036\" alt=\"1562373041036\" /></p>\n");
+        // hljs.initHighlightingOnLoad();
+
+
+
+    });
+
+
+
+
+
+</script>
+
+
+
+</body></html>

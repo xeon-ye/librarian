@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html展示markdown文件，代码高亮</title>
+
+
+    <!--    // 代码高亮展示-->
+    <link rel="stylesheet" href="../../../css/highlight-styles/atom-one-light.css">
+    <link rel="stylesheet" href="../../../css/highlight/default.min.css">
+
+<!--    解析Markdown-->
+<!--    <script type="text/javascript" src="../../../lib/marked/marked.min.js"></script>-->
+
+
+    <script type="text/javascript" src="../../../lib/vue/vue-2.6.10.js"></script>
+    <!--//  引入 vue.js 然后再引入 vue-router.js文件-->
+    <script type="text/javascript" src="../../../lib/vue/vue-router-3.0.1.js"></script>
+
+    <!--    // ajax-->
+    <script src="../../../lib/vue/axios-0.19.0.min.js"></script>
+
+    <!--    // 代码高亮展示js-->
+    <script type="text/javascript" src="../../../lib/highlight/highlight.min.js"></script>
+    <script type="text/javascript" src="../../../lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</head>
+<body>
+
+<div id="app">
+
+    <router-link to="/doc_list">文档列表</router-link>
+    <router-link to="/doc_show">文档查看</router-link>
+
+    <!--    容器-->
+    <router-view ></router-view>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+
+    // 2. 创建子组件
+    var doc_list = {
+        template: '<div v-html="md_text"></div>'
+    };
+
+
+    var doc_show = {
+        template : ' <div v-html="result"></div>'
+    };
+
+    // 创建一个路由对象
+    var router = new VueRouter({
+        routes:[  // 路由规则数据
+            {path: '/', redirect: doc_show },
+            {path: '/doc_list', component: doc_list },
+            {path: '/doc_show', component: doc_show },
+        ],
+        linkActiveClass: "myActive"
+    });
+
+    // 创建 Vue 实例， 得到 VueModel
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            md_text: '',
+            result: ''
+        },
+        // 初始化的时候执行
+        mounted: function(){
+            this.compile();
+        },
+        methods: {
+            compile() {
+
+                axios({
+                    url: '/markdown/showMarkdownFile',
+                    method: 'get',
+                    responseType: 'json', // 默认的
+                    data: {
+                        "filePath":"暂未开放"
+                    }
+                }).then(function (response) {
+                    console.log(response.data);
+                    this.md_text = response.data;
+                }).catch(function (error) {
+                    console.log(error);
+                });
+
+                this.result = marked(this.md_text);
+                hljs.initHighlightingOnLoad();
+            }
+        },
+
+    });
+</script>
+
+</body>
+</html>

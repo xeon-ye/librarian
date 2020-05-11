@@ -1,0 +1,457 @@
+{
+    "menuName": "#",
+    "systemName": "程序员助手",
+    "href": "#",
+    "fontFamily": "ok-icon",
+    "icon": "&#xe654;",
+    "spread": true,
+    "isCheck": true,
+    "children": [
+        {
+            "menuName": "控制台",
+            "href": "/pages/console",
+            "fontFamily": "ok-icon",
+            "icon": "&#xe654;",
+            "spread": true,
+            "isCheck": true
+        },
+        {
+            "menuName": "文档管理",
+            "href": "",
+            "fontFamily": "ok-icon",
+            "icon": "&#xe6b8;",
+            "children": [
+                {
+                    "menuName": "文档搜索",
+                    "href": "/doc_page/toMarkdownShow",
+                    "icon": "&#xe68e;"
+                },
+                {
+                    "menuName": "文档展示",
+                    "href": "/doc_page/showMarkdown",
+                    "icon": "&#xe68e;"
+                }
+            ]
+        },
+        {
+            "menuName": "控制台示例",
+            "href": "",
+            "fontFamily": "ok-icon",
+            "icon": "&#xe6b8;",
+            "children": [
+                {
+                    "menuName": "控制台一",
+                    "href": "/pages/console1",
+                    "icon": "&#xe68e;"
+                }
+            ]
+        },
+        {
+            "menuName": "会员管理",
+            "href": "",
+            "icon": "&#xe66f;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "用户列表",
+                    "href": "/member/user",
+                    "fontFamily": "layui-icon",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "角色列表",
+                    "href": "/member/role",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "权限列表",
+                    "href": "/member/permission",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "图表管理",
+            "href": "",
+            "icon": "&#xe62c;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "地图",
+                    "fontFamily": "ok-icon",
+                    "icon": "&#xe882;",
+                    "spread": false,
+                    "children": [
+                        {
+                            "menuName": "中国地图",
+                            "href": "/chart/chartChina",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "区域地图",
+                            "href": "/chart/chartArea",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        }
+                    ]
+                },
+                {
+                    "menuName": "数据图",
+                    "fontFamily": "ok-icon",
+                    "icon": "ok-icon-shuju1",
+                    "spread": false,
+                    "children": [
+                        {
+                            "menuName": "统计图",
+                            "href": "/chart/chart1",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "折线图",
+                            "href": "/chart/chart2",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "馅饼图",
+                            "href": "/chart/chart4",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "圆形图",
+                            "href": "/chart/chart5",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "指数图",
+                            "href": "/chart/chart6",
+                            "icon": "&#xe62e;",
+                            "spread": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "menuName": "常用页面",
+            "href": "",
+            "icon": "&#xe705;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "文章列表",
+                    "href": "/often/article",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "留言列表",
+                    "href": "/often/message",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "产品列表",
+                    "href": "/often/product",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "下载列表",
+                    "href": "/often/download",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "链接列表",
+                    "href": "/often/link",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "任务列表",
+                    "href": "/often/task",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "图片列表",
+                    "href": "/often/image",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "帖子列表",
+                    "href": "/often/bbs",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "系统管理",
+            "href": "",
+            "fontFamily": "ok-icon",
+            "icon": "&#xe68a;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "系统设置",
+                    "href": "/system/setup",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "日志列表",
+                    "href": "/system/log",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "屏蔽词",
+                    "href": "/system/shield",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "登录页面",
+                    "href": "/login",
+                    "icon": "&#xe609;",
+                    "spread": false,
+                    "target": "_blank"
+                },
+                {
+                    "menuName": "403页面",
+                    "href": "/system/403",
+                    "icon": "&#xe61c;",
+                    "spread": false
+                },
+                {
+                    "menuName": "404页面",
+                    "href": "/system/404",
+                    "icon": "&#xe61c;",
+                    "spread": false
+                },
+                {
+                    "menuName": "500页面",
+                    "href": "/system/500",
+                    "icon": "&#xe61c;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "文本编辑",
+            "href": "",
+            "icon": "&#xe636;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "Neditor",
+                    "href": "/txtedit/Neditor",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "wangEditor",
+                    "href": "/txtedit/wangEditor",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "CKEditor",
+                    "href": "/txtedit/CKEditor",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "layedit",
+                    "href": "/txtedit/layedit",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "数据表格",
+            "href": "",
+            "icon": "&#xe62d;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "Datatables",
+                    "href": "/datatable/datatables",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "bsgrid",
+                    "href": "/datatable/bsgrid",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "多级导航",
+            "fontFamily": "ok-icon",
+            "icon": "&#xe7a7;",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "购物网站",
+                    "href": "",
+                    "icon": "&#xe658;",
+                    "spread": false,
+                    "children": [
+                        {
+                            "menuName": "京东",
+                            "href": "https://www.jd.com",
+                            "icon": "&#xe600;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "苏宁",
+                            "href": "https://www.suning.com",
+                            "icon": "&#xe600;",
+                            "spread": false
+                        },
+                        {
+                            "menuName": "阿里",
+                            "href": "",
+                            "icon": "&#xe658;",
+                            "spread": false,
+                            "children": [
+                                {
+                                    "menuName": "淘宝",
+                                    "href": "https://www.taobao.com",
+                                    "icon": "&#xe600;",
+                                    "spread": false
+                                },
+                                {
+                                    "menuName": "天猫",
+                                    "href": "https://www.tmall.com",
+                                    "icon": "&#xe658;",
+                                    "spread": false,
+                                    "children": [
+                                        {
+                                            "menuName": "天猫超市",
+                                            "href": "https://chaoshi.tmall.com",
+                                            "icon": "&#xe600;",
+                                            "spread": false
+                                        },
+                                        {
+                                            "menuName": "天猫电器",
+                                            "href": "https://3c.tmall.com",
+                                            "icon": "&#xe600;",
+                                            "spread": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "menuName": "框架使用",
+            "fontFamily": "ok-icon",
+            "icon": "ok-icon-yooxi",
+            "spread": false,
+            "children": [
+                {
+                    "menuName": "字体图标",
+                    "href": "/help/ok_font",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "插件目录",
+                    "href": "/help/plug_directory",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "内部添加导航",
+                    "href": "/help/nav_operate",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "导航的图标",
+                    "href": "/help/nav_icon",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "导航的参数",
+                    "href": "/help/nav_parameter",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "okUtils",
+                    "href": "/help/okUtils",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                },
+                {
+                    "menuName": "okLayer",
+                    "href": "/help/okLayer",
+                    "icon": "&#xe62e;",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "menuName": "第三方库",
+            "icon": "&#xe674;",
+            "children": [
+                {
+                    "menuName": "jquery.qrcode.js",
+                    "href": "/tripartite/qrcode"
+                },
+                {
+                    "menuName": "jquery.countup.js",
+                    "href": "/tripartite/countup"
+                },
+                {
+                    "menuName": "okCookie",
+                    "href": "/tripartite/okCookie"
+                },
+                {
+                    "menuName": "okToastr",
+                    "href": "/tripartite/okToastr"
+                },
+                {
+                    "menuName": "okMd5",
+                    "href": "/tripartite/okMd5"
+                },
+                {
+                    "menuName": "okBarcode",
+                    "href": "/tripartite/okBarcode"
+                },
+                {
+                    "menuName": "okNprogress",
+                    "href": "/tripartite/okNprogress"
+                },
+                {
+                    "menuName": "okSweetAlert2",
+                    "href": "/tripartite/okSweetAlert2"
+                },
+                {
+                    "menuName": "okAnimate",
+                    "href": "/tripartite/okAnimate"
+                }
+            ]
+        }
+    ]
+}

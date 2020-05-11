@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nulijiushimeili</groupId>
-    <artifactId>librarian</artifactId>
+    <artifactId>librarian-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -26,6 +26,7 @@
         <module>service-config-center-server-10000</module>
         <module>micro-service-eureka-10001</module>
         <module>elasticsearch-data-service</module>
+        <module>librarian-open-api</module>
     </modules>
 
 
@@ -40,18 +41,24 @@
         <commons-net.version>3.3</commons-net.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
         <commons-codec.version>1.9</commons-codec.version>
+        <joda-time.version>2.10.5</joda-time.version>
         <fastjson.version>1.2.44</fastjson.version>
-        <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
+        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <spring-boot-devtools.version>1.2.0.RELEASE</spring-boot-devtools.version>
-        <mysql.version>5.1.45</mysql.version>
+        <mysql-jdbc.version>5.1.45</mysql-jdbc.version>
         <durid.version>1.1.10</durid.version>
-        <mybatis-boot.version>1.3.0</mybatis-boot.version>
+        <gson.version>2.8.6</gson.version>
+        <guava.version>29.0-jre</guava.version>
+        <mybatis-boot.version>1.3.2</mybatis-boot.version>
+        <lombok.version>1.18.12</lombok.version>
         <junit.version>4.12</junit.version>
         <spring-hot-load.version>1.2.0.RELEASE</spring-hot-load.version>
-        <lombok.version>1.18.12</lombok.version>
         <spring-cloud-eureka.version>2.0.2.RELEASE</spring-cloud-eureka.version>
         <spring-cloud-common.version>1.4.0.RELEASE</spring-cloud-common.version>
         <spring-cloud-config-server.version>2.1.1.RELEASE</spring-cloud-config-server.version>
+
+        <librarian-public-beans.version>1.0-SNAPSHOT</librarian-public-beans.version>
+        <librarian-common.version>1.0-SNAPSHOT</librarian-common.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +77,9 @@
                 <version>${spring-boot.version}</version>
             </dependency>
 
+
+
+
             <!-- gson-->
             <dependency>
                 <groupId>com.google.code.gson</groupId>
@@ -77,12 +87,18 @@
                 <version>${gson.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
 
             <!--apache common 工具类，使用更多的数学方法等-->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.4</version>
+                <version>${common.lang3.version}</version>
             </dependency>
 
 
@@ -102,7 +118,7 @@
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
-                <version>2.10.1</version>
+                <version>${joda-time.version}</version>
             </dependency>
 
 
@@ -121,6 +137,27 @@
             </dependency>
 
 
+            <!--        // swagger 接口文档 -->
+            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>1.9.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>1.9.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.9.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-bean-validators</artifactId>
+                <version>2.9.2</version>
+            </dependency>
 
         </dependencies>
 
