@@ -1,0 +1,80 @@
+[INFO ] 2020-05-15 00:07:43 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:07:43 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:07:43 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:07:43 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:07:43 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:07:43 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:07:43 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:07:43 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.116 seconds (JVM running for 4.782)
+[INFO ] 2020-05-15 00:08:15 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:08:15 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:08:15 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:08:15 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:08:15 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:08:15 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:08:15 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:08:15 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.275 seconds (JVM running for 5.051)
+[INFO ] 2020-05-15 00:09:28 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:09:28 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:09:28 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:09:28 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:09:28 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:09:28 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:09:28 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:09:28 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.164 seconds (JVM running for 4.85)
+[INFO ] 2020-05-15 00:11:14 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:11:14 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:11:14 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:11:14 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:11:14 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:11:14 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:11:14 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:11:14 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.212 seconds (JVM running for 4.996)
+[INFO ] 2020-05-15 00:13:55 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:13:55 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:13:55 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:13:55 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:13:55 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:13:55 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:13:55 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:13:55 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.129 seconds (JVM running for 4.806)
+[INFO ] 2020-05-15 00:14:53 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:14:53 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:14:53 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:14:53 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:14:53 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:14:53 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:14:53 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:14:53 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.098 seconds (JVM running for 4.764)
+[INFO ] 2020-05-15 00:15:11 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:15:11 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:15:11 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:15:11 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:15:11 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:15:11 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:15:11 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:15:11 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.093 seconds (JVM running for 4.78)
+[INFO ] 2020-05-15 00:16:40 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:16:40 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:16:40 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:16:40 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:16:40 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:16:40 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:16:40 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:16:40 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.137 seconds (JVM running for 4.82)
+[INFO ] 2020-05-15 00:18:50 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:18:50 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:18:50 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:18:50 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:18:50 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:18:50 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:18:50 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:18:50 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.139 seconds (JVM running for 4.916)
+[INFO ] 2020-05-15 00:19:20 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 00:19:20 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:19:20 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[INFO ] 2020-05-15 00:19:20 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-15 00:19:20 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-15 00:19:20 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-15 00:19:20 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-15 00:19:20 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.235 seconds (JVM running for 4.927)

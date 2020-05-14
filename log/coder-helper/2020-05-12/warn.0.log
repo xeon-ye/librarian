@@ -1,1 +1,0 @@
-[WARN ] 2020-05-12 00:12:00 [main] o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/librarian/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect

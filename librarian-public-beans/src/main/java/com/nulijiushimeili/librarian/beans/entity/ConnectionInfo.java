@@ -64,6 +64,11 @@ public class ConnectionInfo {
     private String remark;
 
     /**
+     * 连接是否可用，数据源是否存活
+     */
+    private Boolean alive;
+
+    /**
      * 数据源的描述
      */
     private String resourceDesc;

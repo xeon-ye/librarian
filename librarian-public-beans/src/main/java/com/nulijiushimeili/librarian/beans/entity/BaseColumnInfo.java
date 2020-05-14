@@ -1,5 +1,10 @@
 package com.nulijiushimeili.librarian.beans.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 /******************************
  * @Project: librarian-parent
  * @FileName: BaseColumnInfo.java
@@ -9,6 +14,10 @@ package com.nulijiushimeili.librarian.beans.entity;
  * @author nulijiushimeili
  * @Description: TODO
  ******************************/
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class BaseColumnInfo {
 
     private Integer id;

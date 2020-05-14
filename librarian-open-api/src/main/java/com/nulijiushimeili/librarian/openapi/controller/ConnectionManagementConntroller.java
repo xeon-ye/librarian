@@ -1,5 +1,8 @@
 package com.nulijiushimeili.librarian.openapi.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+
 /******************************
  * @Project: librarian-parent
  * @FileName: ConnectionManagementConntroller.java
@@ -9,5 +12,6 @@ package com.nulijiushimeili.librarian.openapi.controller;
  * @author nulijiushimeili
  * @Description: TODO
  ******************************/
+@RestController
 public class ConnectionManagementConntroller {
 }

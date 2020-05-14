@@ -11,6 +11,7 @@
         <module name="elasticsearch-data-service" />
         <module name="librarian-web-ui" />
         <module name="librarian-common" />
+        <module name="mysql5-data-service" />
         <module name="librarian-connectors" />
         <module name="service-config-center-server-10000" />
         <module name="micro-service-eureka-10001" />
@@ -25,6 +26,7 @@
       <module name="librarian-public-beans" target="1.8" />
       <module name="librarian-web-ui" target="1.8" />
       <module name="micro-service-eureka-10001" target="1.8" />
+      <module name="mysql5-data-service" target="1.8" />
       <module name="service-config-center-server-10000" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -37,6 +39,7 @@
       <module name="librarian-public-beans" options="-parameters" />
       <module name="librarian-web-ui" options="-parameters" />
       <module name="micro-service-eureka-10001" options="-parameters" />
+      <module name="mysql5-data-service" options="-parameters" />
       <module name="service-config-center-server-10000" options="-parameters" />
     </option>
   </component>

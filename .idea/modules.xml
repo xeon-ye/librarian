@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" filepath="$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" filepath="$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" filepath="$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" filepath="$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-config-center-server-10000/service-config-center-server-10000.iml" filepath="$PROJECT_DIR$/service-config-center-server-10000/service-config-center-server-10000.iml" />
     </modules>
   </component>

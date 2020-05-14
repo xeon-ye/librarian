@@ -1,5 +1,6 @@
-package com.nulijiushimeili.librarian.openapi.service;
+package com.nulijiushimeili.librarian.openapi.service.impl;
 
+import com.nulijiushimeili.librarian.openapi.service.IConnectionManagementService;
 import org.springframework.stereotype.Service;
 
 /******************************

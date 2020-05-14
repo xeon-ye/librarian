@@ -1,89 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1c9ce58-4e5b-4463-930e-934c2f44a321" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elasticsearch-data-service/src/main/java/com/nu/es/dataservice/controller/EsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/exception/UserDefinedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-common/src/resources/errors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/exception/ConnTimeoutException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-connectors/src/main/resources/errors.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-open-api/librarian-open-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-open-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/ConnectionManagementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/IConnectionManagementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DataSourceUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DatabaseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/HostInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/BaseEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/IndexTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/NodeTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/result/RequestEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/BeanConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/EnumUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/FreemarkerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/PropertiesGetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/ScheduledService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/Swagger2Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mvc/EnumConverterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/AutoEnumTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/EnumOrderStatusHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/MetadataInfoManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/mapper/ConnectionInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/mapper/ConnectionInfoMapper.xml" afterDir="false" />
+    <list default="true" id="69df7074-ca81-4c47-b591-265435174009" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_annotation_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_base_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_spring_boot_starter_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_web_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nulijiushimeili_librarian_connectors_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_ooxml_schemas_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/menu/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/entity/SystemMenuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/service/IConnectionInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/service/impl/ConnectionInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/utils/EasyPoiExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/errors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/connection/connection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/show/console.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql5-data-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearch-data-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/librarian-common/librarian-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/librarian-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/utils/MyDateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/config/MyDataSourcePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/MysqlDataSourcePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/config/Swagger2Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/Swagger2Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/config/TimeoutCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/TimeoutCallable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/config/TimeoutUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/TimeoutUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/controller/ConnectionManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/controller/ConnectionManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-open-api/librarian-open-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-open-api/librarian-open-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/ConnectionManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/impl/ConnectionManagementServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/librarian-public-beans.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-public-beans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-public-beans/target/classes/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/librarian-web-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/annotation/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/annotation/Monitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/aspect/MethodMonitorAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/aspect/MethodMonitorAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/librarian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/navs.json" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/navs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/js/okadmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/js/okadmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/doc/markdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/coder-helper/2020-05-12/debug.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/coder-helper/2020-05-12/error.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/coder-helper/2020-05-12/info.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/coder-helper/2020-05-12/trace.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/coder-helper/2020-05-12/warn.0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-service-eureka-10001/micro-service-eureka-10001.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/librarian-common/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/service-config-center-server-10000/target/" />
-    <ignored path="$PROJECT_DIR$/librarian-connectors/target/" />
     <ignored path="$PROJECT_DIR$/micro-service-eureka-10001/target/" />
-    <ignored path="$PROJECT_DIR$/librarian-public-beans/target/" />
-    <ignored path="$PROJECT_DIR$/librarian-web-ui/target/" />
-    <ignored path="$PROJECT_DIR$/elasticsearch-data-service/target/" />
+    <ignored path="$PROJECT_DIR$/librarian-connectors/target/" />
+    <ignored path="$PROJECT_DIR$/librarian-common/target/" />
     <ignored path="$PROJECT_DIR$/librarian-open-api/target/" />
+    <ignored path="$PROJECT_DIR$/librarian-public-beans/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/librarian-web-ui/target/" />
+    <ignored path="$PROJECT_DIR$/service-config-center-server-10000/target/" />
+    <ignored path="$PROJECT_DIR$/elasticsearch-data-service/target/" />
+    <ignored path="$PROJECT_DIR$/mysql5-data-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,97 +87,117 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/annotation/Monitor.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/aspect/MethodMonitorAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/PropertiesGetter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-473">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="88">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/MetadataInfoManagementController.java">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="227">
+              <caret line="134" column="22" lean-forward="true" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/js/okadmin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/show/console.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="165" column="15" lean-forward="true" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/navs.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/connection/connection.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="121" column="71" lean-forward="true" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/lib/layui/css/layui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="5195" selection-start-line="1" selection-start-column="5195" selection-end-line="1" selection-end-column="5195" />
+              <folding>
+                <element signature="e#62498#62637#2" expanded="true" />
+                <element signature="e#64091#64230#2" expanded="true" />
+                <element signature="e#64778#64917#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/css/okadmin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2992">
+              <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="396">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.class">
+        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/Swagger2Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state>
+              <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,14 +214,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>joda</find>
-      <find>lang</find>
-      <find>mybati</find>
-      <find>StringUtils</find>
-      <find>gson</find>
-      <find>Monitor</find>
-      <find>com.mysql.cj.jdbc.Driver</find>
-      <find>mysql</find>
+      <find>proces</find>
+      <find>poi</find>
+      <find>EasyPoiExcelUtils</find>
+      <find>layui-input-search</find>
+      <find>OK-admin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,57 +227,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/exception/ConnTimeoutException.java" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/TimeoutCallable.java" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/exception/UserDefinedException.java" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/TimeoutUtils.java" />
-        <option value="$PROJECT_DIR$/elasticsearch-data-service/src/main/java/com/nu/es/dataservice/controller/EsController.java" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/MyDataSourcePool.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-connectors/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/ConnectionInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/DatabaseInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DatabaseInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/HostInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/BaseEnum.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/ConnNodeTypeEnum.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/NodeTypeEnum.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/IndexTypeEnum.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DataSourceUserInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mvc/WebAppConf.java" />
-        <option value="$PROJECT_DIR$/librarian-open-api/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/EnumUtils.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/EnumOrderStatusHandler.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mvc/EnumConverterFactory.java" />
-        <option value="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/ConnectionManagementServiceImpl.java" />
-        <option value="$PROJECT_DIR$/librarian-common/src/resources/errors.json" />
-        <option value="$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/MysqlDataSourcePool.java" />
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/exception/UserDefinedException.java" />
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/utils/MyDateUtils.java" />
-        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/result/RequestEntity.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/mapper/ConnectionInfoMapper.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/mapper/ConnectionInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/TimeoutCallable.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/AutoEnumTypeHandler.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/ScheduledService.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/aspect/MethodMonitorAspect.java" />
-        <option value="$PROJECT_DIR$/librarian-common/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/aspect/MethodMonitorAspect.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/PropertiesGetter.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/Swagger2Configuration.java" />
+        <option value="$PROJECT_DIR$/elasticsearch-data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/service/impl/ConnectionInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/entity/SystemMenuEntity.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/errors.json" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/menu/MenuController.java" />
         <option value="$PROJECT_DIR$/librarian-web-ui/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/MetadataInfoManagementController.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/utils/EasyPoiExcelUtils.java" />
+        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java" />
+        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java" />
+        <option value="$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java" />
+        <option value="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java" />
+        <option value="$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/mapper/ConnectionManagementMapper.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/css/okadmin.css" />
         <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java" />
-        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/MetadataInfoManagementController.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/connection/connection.html" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/show/console.html" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/IndexController.java" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/js/okadmin.js" />
+        <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/navs.json" />
       </list>
     </option>
   </component>
@@ -283,15 +269,6 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="librarian-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="librarian-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="librarian-web-ui" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -321,293 +298,37 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="connectors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="connectors" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-open-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -615,61 +336,37 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
               <item name="librarianwebui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
               <item name="librarianwebui" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nulijiushimeili" type="462c0819:PsiDirectoryNode" />
               <item name="librarianwebui" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -677,22 +374,71 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
               <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="librarian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="show" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,30 +450,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/show" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2564338" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources\static" />
-      <recent name="F:\code\librarian\librarian-common\src\main\java\com\nulijiushimeili\common" />
-      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources\mapper" />
-      <recent name="F:\code\librarian-parent\librarian-web-ui\src\main\java\com\nulijiushimeili\librarianwebui\config" />
-      <recent name="F:\code\librarian-parent\librarian-common\src\resources" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nulijiushimeili.librarianwebui.config" />
-      <recent name="com.nulijiushimeili.common.exception" />
-      <recent name="com.nulijiushimeili.librarian.beans.enums" />
+      <recent name="com.nulijiushimeili.librarianwebui.utils" />
+      <recent name="com.nulijiushimeili.librarianwebui.entity" />
+      <recent name="com.nulijiushimeili.librarianwebui.controller.menu" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\code\librarian-parent\librarian-public-beans\src\main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources\templates\page\show" />
+      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources\templates\page\connection" />
+      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources" />
+      <recent name="F:\code\librarian\librarian-web-ui\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -743,8 +485,14 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.LibrarianWebUiApplication">
-    <configuration name="LibrarianWebUiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="LibrarianWebUiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="librarian-web-ui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nulijiushimeili.librarianwebui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nulijiushimeili.librarianwebui.LibrarianWebUiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -757,255 +505,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LibrarianWebUiApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a1c9ce58-4e5b-4463-930e-934c2f44a321" name="Default Changelist" comment="" />
-      <created>1589047391159</created>
+      <changelist id="69df7074-ca81-4c47-b591-265435174009" name="Default Changelist" comment="" />
+      <created>1589466212404</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589047391159</updated>
-      <workItem from="1589047392262" duration="1947000" />
-      <workItem from="1589197083263" duration="389000" />
-      <workItem from="1589197500138" duration="11465000" />
-      <workItem from="1589209213672" duration="3728000" />
-      <workItem from="1589213106462" duration="313000" />
+      <updated>1589466212404</updated>
+      <workItem from="1589466213580" duration="7149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17842000" />
+    <option name="totallyTimeSpent" value="7149000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25725028" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32998884" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32998884" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32998884" />
+      <window_info anchor="bottom" id="Tail" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.53400224" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32998884" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Tail" order="15" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
+      <window_info anchor="right" id="Maven" weight="0.32975295" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32975295" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DatabaseInfo.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/LibrarianWebUiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/IndexTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/NodeTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding>
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/enums/BaseEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/type/BaseTypeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DataSourceUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/HostInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/exception/UserDefinedException.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/IConnectionManagementService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-connectors/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mvc/WebAppConf.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/org/apache/commons/lang/time/DateUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/utils/MyDateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mvc/EnumConverterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/ConnectionManagementServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="220">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-connectors/src/main/java/com/nulijiushimeili/connectors/config/MysqlDataSourcePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/resources/errors.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/exception/UserDefinedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/result/RequestEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/bootstrap.yml" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/mapper/ConnectionInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-open-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -1016,66 +595,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/TimeoutCallable.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/AutoEnumTypeHandler.java">
+    <entry file="file://$PROJECT_DIR$/elasticsearch-data-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="11" column="38" selection-start-line="4" selection-start-column="3" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/mybatis/EnumOrderStatusHandler.java">
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/LibrarianWebUiApplication.java">
+    <entry file="file://$PROJECT_DIR$/librarian-connectors/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="462">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/mapper/ConnectionInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="242">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/ScheduledService.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/pages/doc/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="506">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/RestTemplateConfig.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/mapper/ConnectionInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/service/IConnectionInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="242">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/FreemarkerConfig.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/service/impl/ConnectionInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="194">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/EnumUtils.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/MetadataInfoManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="265">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1086,47 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/WebSocketConfig.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/annotation/Monitor.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/aspect/MethodMonitorAspect.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/BeanConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/annotation/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/common/aspect/MethodMonitorAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/PropertiesGetter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1134,43 +671,237 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.class">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/errors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/Swagger2Configuration.java">
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/menu/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/MetadataInfoManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="262">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/entity/SystemMenuEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseColumnInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/BaseMetadataEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DatabaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/DataSourceUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/HostInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-public-beans/src/main/java/com/nulijiushimeili/librarian/beans/entity/ConnectionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/controller/ConnectionManagementConntroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/IConnectionManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/mapper/ConnectionManagementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-open-api/src/main/java/com/nulijiushimeili/librarian/openapi/service/impl/ConnectionManagementServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/utils/EasyPoiExcelUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-473">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="88">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/lib/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="5195" selection-start-line="1" selection-start-column="5195" selection-end-line="1" selection-end-column="5195" />
+          <folding>
+            <element signature="e#62498#62637#2" expanded="true" />
+            <element signature="e#64091#64230#2" expanded="true" />
+            <element signature="e#64778#64917#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/css/okadmin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="134" column="22" lean-forward="true" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/connection/connection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="121" column="71" lean-forward="true" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/templates/page/show/console.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="165" column="15" lean-forward="true" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/static/js/okadmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/resources/navs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" lean-forward="true" selection-start-column="59" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/page/ConnectionPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,7 +955,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>librarian-open-api</last-edited>
+          <last-edited>mysql5-data-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
