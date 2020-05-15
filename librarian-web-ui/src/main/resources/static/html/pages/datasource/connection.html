@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>产品列表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="/css/oksub.css">
+    <link rel="stylesheet" href="../../../css/oksub.css">
 </head>
 <body>
     <div class="ok-body">
@@ -23,7 +23,7 @@
         <table class="layui-hide" id="tableId" lay-filter="tableFilter"></table>
     </div>
     <!--js逻辑-->
-    <script src="/lib/layui/layui.js"></script>
+    <script src="../../../lib/layui/layui.js"></script>
     <script>
         layui.use(["table", "form", "laydate", "okLayer", "okUtils", "okMock"], function () {
             let table = layui.table;
@@ -82,8 +82,17 @@
                     case "batchDelete":
                         batchDelete();
                         break;
-                    case "add":
-                        add();
+                    case "addMysqlConn":
+                        addMysqlConn();
+                        break;
+                    case "addOracleConn":
+                        addOracleConn();
+                        break;
+                    case "addHiveConn":
+                        addHiveConn();
+                        break;
+                    case "addPhoenixConn":
+                        addPhoenixConn();
                         break;
                 }
             });
@@ -142,8 +151,26 @@
                 });
             }
 
-            function add() {
-                okLayer.open("添加产品", "product-add.html", "90%", "90%", null, function () {
+            function addMysqlConn() {
+                okLayer.open("添加MySQL连接", "addMysqlConnectionPage", "90%", "90%", null, function () {
+                    articleTable.reload();
+                })
+            }
+
+            function addOracleConn() {
+                okLayer.open("添加ORACLE连接", "addOracleConnectionPage", "90%", "90%", null, function () {
+                    articleTable.reload();
+                })
+            }
+
+            function addHiveConn() {
+                okLayer.open("添加HIVE连接", "addHiveConnectionPage", "90%", "90%", null, function () {
+                    articleTable.reload();
+                })
+            }
+
+            function addPhoenixConn() {
+                okLayer.open("添加PHOENIX连接", "addPhoenixConnectionPage", "90%", "90%", null, function () {
                     articleTable.reload();
                 })
             }
@@ -168,10 +195,13 @@
     <!-- 头工具栏模板 -->
     <script type="text/html" id="toolbarTpl">
         <div class="layui-btn-container">
-            <button class="layui-btn layui-btn-sm layui-btn-normal" lay-event="batchEnabled">批量上架</button>
-            <button class="layui-btn layui-btn-sm layui-btn-warm" lay-event="batchDisabled">批量下架</button>
-            <button class="layui-btn layui-btn-sm layui-btn-danger" lay-event="batchDelete">批量删除</button>
-            <button class="layui-btn layui-btn-sm" lay-event="add">添加产品</button>
+<!--            <button class="layui-btn layui-btn-sm layui-btn-normal" lay-event="batchEnabled">批量上架</button>-->
+<!--            <button class="layui-btn layui-btn-sm layui-btn-warm" lay-event="batchDisabled">批量下架</button>-->
+<!--            <button class="layui-btn layui-btn-sm layui-btn-danger" lay-event="batchDelete">批量删除</button>-->
+            <button class="layui-btn layui-btn-sm" lay-event="addMysqlConn">添加MySQL数据源</button>
+            <button class="layui-btn layui-btn-sm" lay-event="addOracleConn">添加ORACLE数据源</button>
+            <button class="layui-btn layui-btn-sm" lay-event="addHiveConn">添加Hive数据源</button>
+            <button class="layui-btn layui-btn-sm" lay-event="addPhoenixConn">添加Phoenix数据源</button>
         </div>
     </script>
     <!-- 行工具栏模板 -->

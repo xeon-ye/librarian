@@ -8,17 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="librarian-public-beans" />
         <module name="librarian-open-api" />
-        <module name="elasticsearch-data-service" />
         <module name="librarian-web-ui" />
+        <module name="librarian-connectors" />
         <module name="librarian-common" />
         <module name="mysql5-data-service" />
-        <module name="librarian-connectors" />
         <module name="service-config-center-server-10000" />
+        <module name="elasticsearch7-data-service" />
         <module name="micro-service-eureka-10001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="elasticsearch-data-service" target="1.8" />
+      <module name="elasticsearch7-data-service" target="1.8" />
       <module name="librarian-common" target="1.8" />
       <module name="librarian-connectors" target="1.8" />
       <module name="librarian-open-api" target="1.8" />
@@ -32,7 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="elasticsearch-data-service" options="-parameters" />
+      <module name="elasticsearch7-data-service" options="-parameters" />
       <module name="librarian-common" options="-parameters" />
       <module name="librarian-connectors" options="-parameters" />
       <module name="librarian-open-api" options="-parameters" />

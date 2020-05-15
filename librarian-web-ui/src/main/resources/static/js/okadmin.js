@@ -14,7 +14,6 @@ layui.use(["element", "layer", "okUtils", "okTab", "okLayer", "jQContextMenu"], 
     openTabNum: 30,
     // 如果返回的结果和navs.json中的数据结构一致可省略这个方法
     parseData: function (data) {
-      console.info("返回的菜单信息：" + JSON.stringify(data));
       return data.data.children;
     }
   });

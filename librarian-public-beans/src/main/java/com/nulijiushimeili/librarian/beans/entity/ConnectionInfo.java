@@ -71,7 +71,7 @@ public class ConnectionInfo {
     /**
      * 数据源的描述
      */
-    private String resourceDesc;
+    private String resourceArgs;
 
     /**
      * 数据源节点列表

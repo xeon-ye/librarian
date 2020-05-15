@@ -15,12 +15,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Description: TODO
  ******************************/
 @Controller
-@RequestMapping(value = "/page")
+@RequestMapping(value = "/datasource")
 public class ConnectionPageController {
 
     @GetMapping(value = "/connection")
-    public String connection(){
-        return "/templates/page/connection";
+    public String connectionPage(){
+        return "/html/pages/datasource/connection.html";
     }
+
+    @GetMapping(value = "addMysqlConnectionPage")
+    public String addMysqlConnectionPage(){
+
+        return "/html/pages/datasource/connection-mysql-add.html";
+    }
+
+
+
+
 
 }
