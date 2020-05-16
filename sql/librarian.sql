@@ -1,0 +1,16 @@
+
+
+-- 数据源连接
+CREATE TABLE `t_connection` (
+  `CONN_NAME` varchar(50) NOT NULL COMMENT '连接实例名，唯一主键',
+  `DATASOURCE_TYPE` VARCHAR(50) NOT NULL COMMENT '数据源类型',
+  `DATASOURCE_VERSION` VARCHAR() NOT NULL COMMENT '数据源版本',
+  `ARGS` varchar(255) DEFAULT NULL COMMENT '备用字段，oracle如果用sid连接会在此字段显示sid，hbase的路径信息也会存在此',
+  `DATA_TYPE_NAME` varchar(50) DEFAULT NULL COMMENT '数据源类型',
+  `CREATE_DATE` datetime COMMENT '创建时间',
+  `UPDATE_DATE` datetime COMMENT '更新时间',
+  `NAMESPACE` VARCHAR() NOT NULL COMMENT '命名空间，ORACLE的服务名',
+  `USER_NAME` varchar(255) DEFAULT NULL COMMENT '用户名',
+  `PASS_WORD` varchar(255) DEFAULT NULL COMMENT '密码',
+  PRIMARY KEY (`CONN_NAME`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;

@@ -54,5 +54,6 @@ public class BaseMetadataEntity {
     private Integer replica;          // 副本数
 
     private List<Integer> idList;          //批量操作id的集合
+    private List<BaseColumnInfo> columnInfoList;
 
 }

@@ -23,25 +23,22 @@ import java.util.List;
 @ToString
 public class ConnectionInfo {
 
-    /**
-     * id
-     */
-    private Integer id;
+
 
     /**
      * 数据源的名称，唯一标识一个数据源
      */
-    private String resourceName;
+    private String connName;
 
     /**
      * 数据源的类型
      */
-    private String resourceType;
+    private String datasourceType;
 
     /**
      * 数据源的版本号
      */
-    private String resourceVersion;
+    private String datasourceVersion;
 
     /**
      * 连接数据源使用的用户名
