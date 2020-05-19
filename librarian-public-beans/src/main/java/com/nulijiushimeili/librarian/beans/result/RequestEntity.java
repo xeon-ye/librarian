@@ -7,6 +7,8 @@ import lombok.Data;
 @Data
 public class RequestEntity<T> {
 
+
+
     private int code;
     private String message;
     private String information;
@@ -25,6 +27,13 @@ public class RequestEntity<T> {
     }
 
     public static RequestEntity success() {
+        RequestEntity success = new RequestEntity();
+        success.setCode(0);
+        success.setMessage(SUCCESS_MESSAGE);
+        return success;
+    }
+
+    public static RequestEntity success(boolean flag) {
         RequestEntity success = new RequestEntity();
         success.setCode(0);
         success.setMessage(SUCCESS_MESSAGE);

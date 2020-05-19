@@ -25,9 +25,10 @@
         <module>librarian-connectors</module>
         <module>service-config-center-server-10000</module>
         <module>micro-service-eureka-10001</module>
-        <module>elasticsearch-data-service</module>
+        <module>elasticsearch7-data-service</module>
         <module>librarian-open-api</module>
         <module>mysql5-data-service</module>
+        <module>hbase1_2-data-service</module>
     </modules>
 
 

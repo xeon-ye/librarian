@@ -1,4 +1,5 @@
 var $;
+var config;
 String.prototype.format = function () {
    //字符串占位符
    //eg: var str1 = "hello {0}".format("world");
@@ -18,54 +19,67 @@ String.prototype.format = function () {
    }
 };
 
-/**打开已经打开的tabMenu**/
-let OpenTabMenuFun = function ($, fun) {
-   var tabMenu = sessionStorage.getItem("tabMenu");//已经打开的tab页面
-   var tabMenuLeft = sessionStorage.getItem("tabMenuLeft");//tab的位置
-   if (tabMenu) {
-      tabMenu = JSON.parse(tabMenu);
-      $("#tabTitle").html(tabMenu.tabTitle).animate({
-         left: tabMenuLeft
-      }, 50);
-      $("#tabContent").html(tabMenu.tabContent);
-      if (typeof fun == 'function') {
-         fun();
+/**打开缓存中的tabMenu**/
+let OpenTabMenuFun = function ($, callback) {
+   if(config && config.isTabMenu){
+      var tabMenu = sessionStorage.getItem("tabMenu");//已经打开的tab页面
+      if (tabMenu) {
+         tabMenu = JSON.parse(tabMenu);
+         $("#tabTitle").html(tabMenu.tabTitle);
+         $("#tabContent").html(tabMenu.tabContent);
+         if (typeof callback == 'function') {
+            callback();
+         }
       }
+   }
+
+};
+
+/**删除缓存中的tabMenu**/
+let removeTabMenu = function (okTab, callback) {
+   sessionStorage.removeItem("tabMenu");
+   sessionStorage.removeItem("notice");
+   sessionStorage.removeItem("lay-id");
+   if (typeof callback == "function") {
+      callback(okTab);
    }
 };
 
 /**存储打开的tabMenu**/
 function saveTabMenuFun($) {
-   let tabTitle = $("<div>" + $("#tabTitle").html() + "</div>");
-   tabTitle.find("i.layui-tab-close").remove();
-   let tabMenu = JSON.stringify({
-      tabTitle: tabTitle.html(),
-      tabContent: $("#tabContent").html()
-   });
-   sessionStorage.setItem('tabMenu', tabMenu);
-   sessionStorage.setItem('tabMenuLeft', $("#tabTitle").css('left'));
+   if(config && config.isTabMenu) {
+      let tabTitle = $("<div>" + $("#tabTitle").html() + "</div>");
+      tabTitle.find("i.layui-tab-close").remove();
+      let tabMenu = JSON.stringify({
+         tabTitle: tabTitle.html(),
+         tabContent: $("#tabContent").html()
+      });
+      sessionStorage.setItem('tabMenu', tabMenu);
+   }
 }
 
-/**tab的位置**/
-function saveTabMenuPosition(num) {
-   num = num || $("#tabTitle").css('left');
-   sessionStorage.setItem('tabMenuLeft', num);
-}
-
-layui.define(["element", "jquery"], function (exports) {
+layui.define(["element", "jquery", "okUtils"], function (exports) {
    var layui = parent.layui || layui;
+   var okUtils = layui.okUtils;
    $ = layui.jquery;
    var element = layui.element,
-      layer = layui.layer,
-      okTab = function () {
-         this.tabConfig = {
-            openTabNum: 30, //最大可打开窗口数量默认30
-            tabFilter: "ok-tab", //添加窗口的filter
-            url: "", //获取菜单的接口地址
-            data: [],//菜单数据列表(如果传入了url则data无效)
-            parseData: ''//这是一个方法处理url请求地址的返回值(该方法必须提供一个返回值)
-         }
-      };
+      layer = layui.layer;
+   config = okUtils.local("okConfig") || window.okConfig || {};
+
+   if(!config.isTabMenu){
+      okUtils.session("tabMenu", null);
+      okUtils.session("lay-id", null);
+   }
+
+   okTab = function () {
+      this.tabConfig = {
+         openTabNum: 30, //最大可打开窗口数量默认30
+         tabFilter: "ok-tab", //添加窗口的filter
+         url: "", //获取菜单的接口地址
+         data: [],//菜单数据列表(如果传入了url则data无效)
+         parseData: ''//这是一个方法处理url请求地址的返回值(该方法必须提供一个返回值)
+      }
+   };
    /**
     * 导航初始化的操作(只执行一次)
     * @param option 配置tabConfig参数
@@ -76,7 +90,6 @@ layui.define(["element", "jquery"], function (exports) {
       $.extend(true, _this.tabConfig, option); //函数用于将一个或多个对象的内容合并到目标对象。http://www.runoob.com/jquery/misc-extend.html
       this.tabDelete(); //关闭导航页的操作
       this.tab(); //tab导航切换时的操作
-
       return _this;
    };
 
@@ -129,6 +142,7 @@ layui.define(["element", "jquery"], function (exports) {
                }
             }
          }
+         // 设置菜单属性，菜单名称
          temp += '<cite>' + data.menuName + '</cite>';
          temp += '<span class="layui-nav-more"></span>';
          temp += '</a>';
@@ -220,15 +234,10 @@ layui.define(["element", "jquery"], function (exports) {
                left: -tempMove
             }, 50);
          }
-         /**存储tab位置**/
-         saveTabMenuPosition(-tempMove);
       } else {
          contEle.animate({
             left: 0
          }, 50);
-         //this.navMove("rightmax");
-         /**存储tab位置**/
-         saveTabMenuPosition(0);
       }
 
       /**
@@ -247,13 +256,18 @@ layui.define(["element", "jquery"], function (exports) {
    };
 
    // 点击导航页的操作
-   okTab.prototype.tab = function () {
+   okTab.prototype.tab = function (e) {
       var that = this;
       var filter = this.tabConfig.tabFilter;
       // "hello {0}".format("world");
       //`tab(${filter})`
       element.on("tab({0})".format(filter), function (data) {
+         if(config.isTabRefresh){ /**切换刷新*/
+            $(".ok-tab-content .layui-show").find("iframe")[0].contentWindow.location.reload(true);
+         }
          var index = data.index;//点击的某个tab索引
+         config = okUtils.local("okConfig") || okConfig || {};
+         sessionStorage.setItem('lay-id', this.getAttribute('lay-id'));
          var elSuper = $(".ok-tab"),//视窗元素
             elMove = $(".ok-tab-title"),//移动的元素
             elTabs = $(".ok-tab-title li"),//所有已存在的tab集合
@@ -267,12 +281,15 @@ layui.define(["element", "jquery"], function (exports) {
    okTab.prototype.tabDelete = function () {
       var that = this;
       var filter = this.tabConfig.tabFilter;
-      //`tabDelete(${filter})`
       element.on("tabDelete({0})".format(filter), function (data) {
-         // that.navMove("right");
          /**保存展开的tab**/
          saveTabMenuFun($);
       });
+   };
+
+   //删除缓存中的tab
+   okTab.prototype.removeTabStorage = function (callback) {
+      removeTabMenu(this, callback);
    };
 
    //添加tab页
@@ -296,7 +313,6 @@ layui.define(["element", "jquery"], function (exports) {
       if (_this.attr("target") == "_blank") {
          window.location.href = _this.attr("data-url");
       } else if (url != undefined) {
-         var title = '';
          var html = _this.html();
          // 去重复选项卡
          /**
@@ -333,17 +349,14 @@ layui.define(["element", "jquery"], function (exports) {
             content: contentIframe,
             id: tabId
          });
-
          // 切换选项卡
          element.tabChange(tabFilter, tabId);
          this.navMove("rightmax");
-         /**保存展开的tab**/
-         // saveTabMenuFun($);
       }
    };
 
    //重新对导航进行渲染(此处有个回调函数，主要用作渲染完成之后的操作)
-   okTab.prototype.render = function (fun) {
+   okTab.prototype.render = function (callback) {
       var _this = this;//data
       var _data = _this.tabConfig.data;
       if (_this.tabConfig.url) {
@@ -357,9 +370,11 @@ layui.define(["element", "jquery"], function (exports) {
             $(window).resize(function () {
                $("#navBar").height($(window).height() - 245);
             });
-            if (typeof fun == "function") {
-               fun();
+            if (typeof callback == "function") {
+               callback();
             }
+            var lay_id = sessionStorage.getItem('lay-id');
+            element.tabChange(_this.tabConfig.tabFilter, lay_id);
          });
          /**打开缓存中的tab**/
          OpenTabMenuFun($, function () {
@@ -376,8 +391,8 @@ layui.define(["element", "jquery"], function (exports) {
          $(window).resize(function () {
             $("#navBar").height($(window).height() - 245);
          });
-         if (typeof fun == "function") {
-            fun();
+         if (typeof callback == "function") {
+            callback();
          }
       } else {
          alert("你的菜单配置有误请查看菜单配置说明");
@@ -385,10 +400,13 @@ layui.define(["element", "jquery"], function (exports) {
    };
 
    //刷新当前tab页
-   okTab.prototype.refresh = function (_this) {
+   okTab.prototype.refresh = function (_this, callback) {
       if (!($(_this).hasClass("refreshThis"))) {
          $(_this).addClass("refreshThis");
          $(".ok-tab-content .layui-show").find("iframe")[0].contentWindow.location.reload(true);
+         if (typeof callback == "function") {
+            callback(okTab);
+         }
          setTimeout(function () {
             $(_this).removeClass("refreshThis");
          }, 2000)
@@ -431,9 +449,6 @@ layui.define(["element", "jquery"], function (exports) {
                   }
                });
                this.navMove('leftmax');
-               setTimeout(function () {
-                  saveTabMenuPosition(0);
-               }, 500);
             } else {
                layer.msg("您好！当前没有可关闭的窗口了 (๑╹◡╹)ﾉ");
                return;
@@ -444,9 +459,6 @@ layui.define(["element", "jquery"], function (exports) {
                element.tabDelete(filter, $(j).attr("lay-id"));
             });
             this.navMove('leftmax');
-            setTimeout(function () {
-               saveTabMenuPosition(0);
-            }, 500);
             break;
       }
       element.render("tab", filter);
@@ -471,7 +483,7 @@ layui.define(["element", "jquery"], function (exports) {
          postLeft = contEle.position().left;//当前移动的位置
 
       /*elTabs.each(function (i, j) {
-        moveWidth += $(j).outerWidth() * 1;
+         moveWidth += $(j).outerWidth() * 1;
       });*/
 
       var movePost = moveId.toLowerCase().indexOf("left") < 0 ? -1 : 1;//移动方向
@@ -525,19 +537,17 @@ layui.define(["element", "jquery"], function (exports) {
          contEle.animate({
             left: moveLeft
          }, 50);
-         //saveTabMenuPosition(moveLeft);
       } else {
          contEle.animate({
             left: 0
          }, 50);
-         saveTabMenuPosition(0);
       }
    };
 
    exports("okTab", function (option) {
-      if(parent.objOkTab){
+      if (parent.objOkTab) {
          return parent.objOkTab;
-      }else{
+      } else {
          return new okTab().init(option);
       }
    });

@@ -35,6 +35,8 @@ public enum NodeTypeEnum implements BaseEnum {
      */
     HIVESERVER2(5, "HiveServer2"),
 
+
+    KAFKA_NODE(6, "kafka-bootstrap.server"),
     /**
      * 其他节点
      */

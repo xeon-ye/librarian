@@ -35,8 +35,16 @@
         <div class="layui-form-item">
             <label class="layui-form-label">连接名称</label>
             <div class="layui-input-block">
-                <input type="text" name="resourceName" placeholder="请输入连接名称" autocomplete="off" class="layui-input"
+                <input type="text" name="connName" placeholder="请输入连接名称" autocomplete="off" class="layui-input"
                        lay-verify="required">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">主机名</label>
+            <div class="layui-input-block">
+                <input type="text" name="hostName" placeholder="请输入主机名称" autocomplete="off" class="layui-input"
+                       >
             </div>
         </div>
 
@@ -73,21 +81,21 @@
         <div class="layui-form-item">
             <label class="layui-form-label">连接模式</label>
             <div class="layui-input-block">
-                <input type="radio" name="sex" value="0" title="单机">
-                <input type="radio" name="sex" value="1" title="集群" checked>
+                <input type="radio" name="connectionMode" value="standalone" title="单机">
+                <input type="radio" name="connectionMode" value="cluster" title="集群" checked>
             </div>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">备用参数</label>
-            <div class="layui-input-block">
-                <input type="text" name="resourceArgs" placeholder="请输入备用参数，多个参数使用英文逗号分割" autocomplete="off" class="layui-input">
-            </div>
-        </div>
+<!--        <div class="layui-form-item">-->
+<!--            <label class="layui-form-label">备用参数</label>-->
+<!--            <div class="layui-input-block">-->
+<!--                <input type="text" name="resourceArgs" placeholder="请输入备用参数，多个参数使用英文逗号分割" autocomplete="off" class="layui-input">-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">备注</label>
             <div class="layui-input-block">
-                <textarea name="remarks" placeholder="请输入内容" class="layui-textarea"></textarea>
+                <textarea name="remark" placeholder="请输入内容" class="layui-textarea"></textarea>
             </div>
         </div>
         <div class="layui-form-item">

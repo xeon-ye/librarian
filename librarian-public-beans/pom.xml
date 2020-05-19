@@ -37,5 +37,15 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
+
+
+        <!--   excel 工具  -->
+        <dependency>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-spring-boot-starter</artifactId>
+            <version>3.3.0</version>
+            <!--            <version>${easypoi-springboot.version}</version>-->
+        </dependency>
     </dependencies>
 </project>

@@ -20,10 +20,20 @@ import lombok.ToString;
 @ToString
 public class DatabaseInfo {
 
+    /**
+     * 连接名称
+     */
     private String connName;
 
+    /**
+     * 数据库名称
+     */
     private String dbName;
 
+
+    /**
+     * 数据库描述信息
+     */
     private String dbDesc;
 
 }

@@ -1,5 +1,6 @@
 package com.nulijiushimeili.librarian.beans.entity;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,6 +29,7 @@ public class ConnectionInfo {
     /**
      * 数据源的名称，唯一标识一个数据源
      */
+    @Excel(name="连接名称", orderNum = "0")
     private String connName;
 
     /**
@@ -56,6 +58,11 @@ public class ConnectionInfo {
     private String namespace;
 
     /**
+     * 连接模式:  cluster/standalone
+     */
+    private String connectionMode;
+
+    /**
      * 备注信息
      */
     private String remark;
@@ -80,10 +87,7 @@ public class ConnectionInfo {
      */
     private List<DatabaseInfo> databaseInfoList;
 
-    /**
-     * 数据源下的用户列表
-     */
-    private List<DataSourceUserInfo> dataSourceUserInfoList;
+
 
 
 

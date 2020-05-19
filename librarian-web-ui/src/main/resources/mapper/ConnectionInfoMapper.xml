@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.nulijiushimeili.librarianwebui.mapper">
+<mapper namespace="com.nulijiushimeili.librarianwebui.mapper.ConnectionInfoMapper">
 
 
+<!--    // 添加数据源信息-->
+    <insert id="addConnectionInfo" parameterType="com.nulijiushimeili.librarian.beans.entity.ConnectionInfo">
+
+
+    </insert>
+
+
+    // 添加数据源节点信息
+
+    <insert id="addConnectionHostInfo" parameterType="com.nulijiushimeili.librarian.beans.entity.ConnectionInfo">
+
+
+    </insert>
 
 </mapper>

@@ -98,7 +98,7 @@
             });
 
             table.on("tool(tableFilter)", function (obj) {
-                let data = obj.data;
+                let data = obj.dataservice;
                 switch (obj.event) {
                     case "updateById":
                         updateById(data.id);

@@ -36,24 +36,64 @@ import java.util.List;
 //@Accessors(chain = true)    // setter 方法使用链式调用
 public class BaseMetadataEntity {
 
+    /**
+     * 元数据 id
+     */
     private Integer id;
-    private Integer dbId;          // 与数据类型关联的id
-    private String connName;
-    private String dbName;
-    private String metadataName;
-    private String comment;
-    private String isIndexed;
-    private String physicalLocation;
-    private String primaryUser;
-    private String tableName;
-    private String chineseName;
-    private String metadataLevel;
-    private String businessName;
-    private String hiveSepartor;
-    private Integer partition;     // 分区数
-    private Integer replica;          // 副本数
 
-    private List<Integer> idList;          //批量操作id的集合
+    /**
+     * 元数据所属 数据库id
+     */
+    private Integer dbId;
+
+    /**
+     * 元数据所在库的连接名称
+     */
+    private String connName;
+
+    /**
+     * 元数据 所在 库
+     */
+    private String dbName;
+
+    /**
+     * 元数据名称， hdfs路径，RDBMS表名称
+     */
+    private String metadataName;
+
+    /**
+     * 表描述信息
+     */
+    private String comment;
+
+    /**
+     *
+     */
+    private String isIndexed;
+
+    /**
+     * 物理路径
+     */
+    private String physicalLocation;
+
+    /**
+     * 分区数
+     */
+    private Integer partition;
+
+    /**
+     * 副本数
+     */
+    private Integer replica;
+
+    /**
+     *  批量操作id的集合
+     */
+    private List<Integer> idList;
+
+    /**
+     * 列信息集合
+     */
     private List<BaseColumnInfo> columnInfoList;
 
 }

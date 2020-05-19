@@ -29,29 +29,75 @@ public class SystemMenuEntity<T> {
      */
     private Gson gson = new Gson();
 
+    /**
+     * id
+     */
     @Excel(name = "id", width = 10, orderNum = "0")
     private Integer id;
 
+    /**
+     * 菜单顺序编号
+     */
     @Excel(name="菜单顺序", orderNum = "1")
-    private Integer orderId;      // 菜单顺序
+    private Integer orderId;
+
+    /**
+     * 系统名称
+     */
     @Excel(name="系统名称", orderNum = "2")
-    private String systemName;    // 系统名称
+    private String systemName;
+
+    /**
+     * 菜单名称
+     */
     @Excel(name="菜单名称", orderNum = "3")
-    private String menuName;      // 菜单名称
+    private String menuName;
+
+    /**
+     * 菜单路径
+     */
     @Excel(name="菜单地址", orderNum = "4")
-    private String href;          // 菜单路径
+    private String href;
+
+    /**
+     * 菜单字体
+     */
     @Excel(name="菜单字体", orderNum = "5")
-    private String fontFamily;    // 字体
+    private String fontFamily;
+
+    /**
+     * 菜单图标
+     */
     @Excel(name="菜单图标", orderNum = "6")
-    private String icon;          // 图标
+    private String icon;
+
+    /**
+     * 菜单是否展开
+     */
     @Excel(name="菜单是否展开", orderNum = "7")
-    private Boolean spread;       // 是否展开
+    private Boolean spread;
+
+    /**
+     * 菜单是否为被选中状态
+     */
     @Excel(name="菜单是否被选中", orderNum = "8")
-    private Boolean isCheck;      // 是否被选中
+    private Boolean isCheck;
+
+    /**
+     * 菜单的 父id
+     */
     @Excel(name="菜单的父ID", orderNum = "9")
-    private Integer parentId;     // 父id
+    private Integer parentId;
+
+    /**
+     * 菜单的描述信息
+     */
     @Excel(name="菜单描述信息", orderNum = "10")
-    private String menuDesc;      // 菜单描述
+    private String menuDesc;
+
+    /**
+     * 菜单子项
+     */
     private List<SystemMenuEntity<T>> children = new ArrayList<>();
 
     @Override

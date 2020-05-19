@@ -1,7 +1,16 @@
 package com.nulijiushimeili.librarianwebui.service.impl;
 
+import com.nulijiushimeili.common.exception.UserDefinedException;
+import com.nulijiushimeili.librarian.beans.entity.ConnectionInfo;
+import com.nulijiushimeili.librarian.beans.entity.HostInfo;
+import com.nulijiushimeili.librarianwebui.mapper.ConnectionInfoMapper;
+import com.nulijiushimeili.librarianwebui.service.IConnectionInfoService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /******************************
  * @Project: librarian-parent
@@ -14,7 +23,23 @@ import org.springframework.stereotype.Service;
  ******************************/
 @Slf4j
 @Service
-public class ConnectionInfoServiceImpl {
+public class ConnectionInfoServiceImpl implements IConnectionInfoService {
+
+    @Autowired
+    private ConnectionInfoMapper connectionInfoMapper;
+
+    @Override
+    @Transactional(rollbackFor = UserDefinedException.class)
+    public Integer addConnectionInfo(ConnectionInfo connectionInfo) {
+        int res1 = connectionInfoMapper.addConnectionInfo(connectionInfo);
+        int res2 = connectionInfoMapper.addConnectionHostInfo(connectionInfo.getHostInfoList());
+        if (res1 > 0 && res2 > 0) {
+            return 1;
+        } else {
+            throw UserDefinedException.except(110001);
+        }
+    }
+
 
 
 }

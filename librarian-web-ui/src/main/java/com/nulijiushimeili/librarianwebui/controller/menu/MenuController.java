@@ -28,13 +28,10 @@ public class MenuController {
     @Autowired
     private Gson gson;
 
-
     @Autowired
     private PropertiesGetter propertiesGetter;
 
     private SystemMenuEntity menuList;
-
-
 
 
     /**
@@ -83,7 +80,7 @@ public class MenuController {
                                                 SystemMenuEntity>>>>>>>>() {
             }).getType());
         } catch (IOException e) {
-            throw UserDefinedException.except(11000);
+            throw UserDefinedException.except(110000);
         }
 
 

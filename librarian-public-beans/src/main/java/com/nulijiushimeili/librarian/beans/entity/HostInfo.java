@@ -24,6 +24,11 @@ public class HostInfo {
     private Integer id;
 
     /**
+     * 连接名称
+     */
+    private String connName;
+
+    /**
      * 主机名称
      */
     private String hostName;
