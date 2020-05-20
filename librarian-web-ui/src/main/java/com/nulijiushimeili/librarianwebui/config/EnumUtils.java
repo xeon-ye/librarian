@@ -1,7 +1,7 @@
 package com.nulijiushimeili.librarianwebui.config;
 
 
-import com.nulijiushimeili.librarian.beans.enums.BaseEnum;
+import com.nulijiushimeili.librarianwebui.beans.enums.BaseEnum;
 
 public class EnumUtils {
 

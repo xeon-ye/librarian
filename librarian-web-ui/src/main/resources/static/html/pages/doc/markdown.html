@@ -59,6 +59,7 @@
         $.ajax({
             url:'/markdown/showMarkdownFile',
             method:'get',
+            async:false,
             data:{"filePath": "none"},
             success:function (res) {
                 if(res.code === 0) {

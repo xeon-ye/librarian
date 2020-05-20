@@ -1,6 +1,0 @@
-com\nulijiushimeili\connectors\config\TimeoutCallable.class
-com\nulijiushimeili\controller\ConnectionManagementController.class
-com\nulijiushimeili\config\Swagger2Configuration.class
-com\nulijiushimeili\connectors\config\MysqlDataSourcePool.class
-com\nulijiushimeili\connectors\config\TimeoutUtils.class
-com\nulijiushimeili\connectors\exception\ConnTimeoutException.class

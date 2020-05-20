@@ -8,19 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="elasticsearch7-data-service" />
         <module name="hbase1_2-data-service" />
-        <module name="librarian-common" />
-        <module name="librarian-connectors" />
-        <module name="librarian-open-api" />
-        <module name="librarian-public-beans" />
+        <module name="hive1_2-data-service" />
         <module name="librarian-web-ui" />
-        <module name="micro-service-eureka-10001" />
         <module name="mysql5-data-service" />
-        <module name="service-config-center-server-10000" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="data-service-parent" target="1.5" />
       <module name="elasticsearch7-data-service" target="1.8" />
       <module name="hbase1_2-data-service" target="1.8" />
+      <module name="hive1_2-data-service" target="1.8" />
       <module name="librarian-common" target="1.8" />
       <module name="librarian-connectors" target="1.8" />
       <module name="librarian-open-api" target="1.8" />

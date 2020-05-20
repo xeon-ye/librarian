@@ -1,7 +1,7 @@
 package com.nulijiushimeili.librarianwebui.controller;
 
-import com.nulijiushimeili.librarian.beans.entity.BaseMetadataEntity;
-import com.nulijiushimeili.librarian.beans.result.RequestEntity;
+import com.nulijiushimeili.librarianwebui.beans.entity.BaseMetadataEntity;
+import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

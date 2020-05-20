@@ -1,7 +1,8 @@
 package com.nulijiushimeili.librarianwebui.mapper;
 
-import com.nulijiushimeili.librarian.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarian.beans.entity.HostInfo;
+import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
+import com.nulijiushimeili.librarianwebui.beans.entity.HostInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -15,6 +16,8 @@ import java.util.List;
  * @author nulijiushimeili
  * @Description: TODO
  ******************************/
+
+@Mapper
 public interface ConnectionInfoMapper {
 
     /**

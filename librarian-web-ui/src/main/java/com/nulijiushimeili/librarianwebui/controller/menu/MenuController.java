@@ -3,10 +3,10 @@ package com.nulijiushimeili.librarianwebui.controller.menu;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import com.nulijiushimeili.common.exception.UserDefinedException;
-import com.nulijiushimeili.librarian.beans.result.RequestEntity;
+import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
 import com.nulijiushimeili.librarianwebui.config.PropertiesGetter;
-import com.nulijiushimeili.librarianwebui.entity.SystemMenuEntity;
+import com.nulijiushimeili.librarianwebui.beans.entity.SystemMenuEntity;
+import com.nulijiushimeili.librarianwebui.exception.UserDefinedException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

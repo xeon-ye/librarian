@@ -1,6 +1,6 @@
 package com.nulijiushimeili.librarianwebui.config.mvc;
 
-import com.nulijiushimeili.librarian.beans.enums.BaseEnum;
+import com.nulijiushimeili.librarianwebui.beans.enums.BaseEnum;
 import com.nulijiushimeili.librarianwebui.config.EnumUtils;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.converter.ConverterFactory;
@@ -10,6 +10,7 @@ import org.springframework.core.convert.converter.ConverterFactory;
  */
 public class EnumConverterFactory implements ConverterFactory<String, BaseEnum> {
 
+    @Override
     public <T extends BaseEnum> Converter<String, T> getConverter(Class<T> enumClass) {
         return new EnumConverter<T>(enumClass);
     }
@@ -26,6 +27,7 @@ public class EnumConverterFactory implements ConverterFactory<String, BaseEnum> 
          * @param s
          * @return
          */
+        @Override
         public T convert(String s) {
             return EnumUtils.valueOf(enumType, s);
         }

@@ -1,7 +1,6 @@
 @import "../css/common.css";
 @import "../lib/layui/css/layui.css";
 @import "okadmin.animate.css";
-@import "../lib/loading/okLoading.css";
 
 /**控制台样式*/
 .console .map-body{height:360px}
@@ -73,7 +72,7 @@
 .seting-pass{background: #FFFFFF;}
 .seting-pass .user_right p{margin:10px 0 25px;font-size:12px;text-align:center;color:#ff5722}
 .seting-pass .layui-table th{text-align:center}
-.seting-pass .changePwd{width:100%;max-width: 480px;}
+.seting-pass .changePwd{width:30%;margin:3% 0 0 5%}
 
 
 /*响应样式*/

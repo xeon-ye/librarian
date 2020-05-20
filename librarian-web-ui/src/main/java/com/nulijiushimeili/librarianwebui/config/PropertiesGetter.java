@@ -15,8 +15,8 @@ public class PropertiesGetter {
     @Value("${spring.application.name}")
     private String applicationName;
 
-//    @Value("${project.version}")
-//    private String projectVersion;
+    @Value("${project.version}")
+    private String projectVersion;
 
 
 }

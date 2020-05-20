@@ -4,16 +4,15 @@
 
 
 <!--    // 添加数据源信息-->
-    <insert id="addConnectionInfo" parameterType="com.nulijiushimeili.librarian.beans.entity.ConnectionInfo">
-
+    <insert id="addConnectionInfo" parameterType="com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo">
+        insert into aaa values('a')
 
     </insert>
 
 
-    // 添加数据源节点信息
-
-    <insert id="addConnectionHostInfo" parameterType="com.nulijiushimeili.librarian.beans.entity.ConnectionInfo">
-
+    <!--// 添加数据源节点信息-->
+    <insert id="addConnectionHostInfo" parameterType="com.nulijiushimeili.librarianwebui.beans.entity.HostInfo">
+        insert into aaa values('a')
 
     </insert>
 

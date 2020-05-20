@@ -1,7 +1,7 @@
 package com.nulijiushimeili.librarianwebui.controller;
 
-import com.nulijiushimeili.librarian.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarian.beans.result.RequestEntity;
+import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
+import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
 import com.nulijiushimeili.librarianwebui.service.IConnectionInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
