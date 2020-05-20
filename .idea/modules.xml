@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch7-data-service.iml" filepath="$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch7-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch-data-service.iml" filepath="$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase1_2-data-service/hbase1_2-data-service.iml" filepath="$PROJECT_DIR$/hbase1_2-data-service/hbase1_2-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarian-common/librarian-common.iml" filepath="$PROJECT_DIR$/librarian-common/librarian-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" filepath="$PROJECT_DIR$/librarian-connectors/librarian-connectors.iml" />

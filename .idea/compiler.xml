@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="librarian-public-beans" />
-        <module name="librarian-open-api" />
-        <module name="mysql5-data-service" />
-        <module name="librarian-web-ui" />
+        <module name="elasticsearch7-data-service" />
+        <module name="hbase1_2-data-service" />
         <module name="librarian-common" />
         <module name="librarian-connectors" />
-        <module name="service-config-center-server-10000" />
-        <module name="hbase1_2-data-service" />
-        <module name="elasticsearch7-data-service" />
+        <module name="librarian-open-api" />
+        <module name="librarian-public-beans" />
+        <module name="librarian-web-ui" />
         <module name="micro-service-eureka-10001" />
+        <module name="mysql5-data-service" />
+        <module name="service-config-center-server-10000" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,19 +31,5 @@
       <module name="mysql5-data-service" target="1.8" />
       <module name="service-config-center-server-10000" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="elasticsearch7-data-service" options="-parameters" />
-      <module name="hbase1_2-data-service" options="-parameters" />
-      <module name="librarian-common" options="-parameters" />
-      <module name="librarian-connectors" options="-parameters" />
-      <module name="librarian-open-api" options="-parameters" />
-      <module name="librarian-public-beans" options="-parameters" />
-      <module name="librarian-web-ui" options="-parameters" />
-      <module name="micro-service-eureka-10001" options="-parameters" />
-      <module name="mysql5-data-service" options="-parameters" />
-      <module name="service-config-center-server-10000" options="-parameters" />
-    </option>
   </component>
 </project>
