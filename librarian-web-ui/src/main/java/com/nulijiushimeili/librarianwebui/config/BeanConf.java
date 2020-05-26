@@ -27,13 +27,6 @@ public class BeanConf {
     @Autowired
     private RestTemplateBuilder builder;
 
-    @Bean
-    public RestTemplate restTemplate() {
-        Duration timeout = Duration.ofSeconds(3);
-        return builder.setConnectTimeout(timeout)
-                .setReadTimeout(timeout)
-                .build();
-    }
 
     @Bean
     public Executor taskPool() {

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch-data-service.iml" filepath="$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch7-data-service.iml" filepath="$PROJECT_DIR$/elasticsearch7-data-service/elasticsearch7-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase1_2-data-service/hbase1_2-data-service.iml" filepath="$PROJECT_DIR$/hbase1_2-data-service/hbase1_2-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hive1_2-data-service/hive1_2-data-service.iml" filepath="$PROJECT_DIR$/hive1_2-data-service/hive1_2-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarian-parent.iml" filepath="$PROJECT_DIR$/librarian-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" filepath="$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" filepath="$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phoenix14-data-service/phoenix14-data-service.iml" filepath="$PROJECT_DIR$/phoenix14-data-service/phoenix14-data-service.iml" />
     </modules>
   </component>
 </project>
