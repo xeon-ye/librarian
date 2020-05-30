@@ -14,8 +14,20 @@
     <artifactId>elasticsearch7-data-service</artifactId>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>7.7.0</version>
+        </dependency>
 
 
+        <!--依赖本系统项目工具包-->
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-common</artifactId>
+            <version>${librarian-common.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

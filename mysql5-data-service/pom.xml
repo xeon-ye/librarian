@@ -17,10 +17,21 @@
 
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.2.6.RELEASE</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-jdbc.version}</version>
         </dependency>
+
+
+
+
+        <!--依赖本系统项目工具包-->
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-common</artifactId>
+            <version>${librarian-common.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

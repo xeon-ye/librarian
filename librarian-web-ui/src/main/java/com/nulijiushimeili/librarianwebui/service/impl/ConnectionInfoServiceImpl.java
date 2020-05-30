@@ -1,15 +1,13 @@
 package com.nulijiushimeili.librarianwebui.service.impl;
 
-import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarianwebui.exception.UserDefinedException;
+import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.exception.UserDefinedException;
 import com.nulijiushimeili.librarianwebui.mapper.ConnectionInfoMapper;
 import com.nulijiushimeili.librarianwebui.service.IConnectionInfoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /******************************
  * @Project: librarian-parent

@@ -3,10 +3,10 @@ package com.nulijiushimeili.librarianwebui.controller.menu;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
-import com.nulijiushimeili.librarianwebui.config.PropertiesGetter;
+import com.nulijiushimeili.librariancommon.beans.ResultEntity;
+import com.nulijiushimeili.librariancommon.exception.UserDefinedException;
 import com.nulijiushimeili.librarianwebui.beans.entity.SystemMenuEntity;
-import com.nulijiushimeili.librarianwebui.exception.UserDefinedException;
+import com.nulijiushimeili.librarianwebui.config.PropertiesGetter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,13 +40,13 @@ public class MenuController {
      * @return
      */
     @RequestMapping(value = "/loadMenu", method = RequestMethod.GET)
-    public RequestEntity loadMenu() {
+    public ResultEntity loadMenu() {
 
         if (menuList != null && menuList.getChildren().size() != 0) {
-            return RequestEntity.success(menuList);
+            return ResultEntity.success(menuList);
         }
         menuList = loadMenuFromJson();
-        return RequestEntity.success(menuList);
+        return ResultEntity.success(menuList);
 
 
     }

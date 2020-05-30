@@ -9,19 +9,24 @@
         <module name="elasticsearch7-data-service" />
         <module name="hbase1_2-data-service" />
         <module name="hive1_2-data-service" />
+        <module name="librarian-common" />
         <module name="librarian-web-ui" />
         <module name="mysql5-data-service" />
         <module name="phoenix14-data-service" />
+        <module name="presto-unified-query" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="assembly" target="1.8" />
       <module name="elasticsearch7-data-service" target="1.8" />
       <module name="hbase1_2-data-service" target="1.8" />
       <module name="hive1_2-data-service" target="1.8" />
+      <module name="librarian-common" target="1.8" />
       <module name="librarian-parent" target="1.8" />
       <module name="librarian-web-ui" target="1.8" />
       <module name="mysql5-data-service" target="1.8" />
       <module name="phoenix14-data-service" target="1.8" />
+      <module name="presto-unified-query" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

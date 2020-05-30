@@ -1,0 +1,21 @@
+[INFO ] 2020-05-30 10:10:19 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20200318BFUG with PID 5788 (E:\code\librarian\librarian-web-ui\target\classes started by Administrator in E:\code\librarian)
+[INFO ] 2020-05-30 10:10:19 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-30 10:10:19 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-30 10:10:19 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[INFO ] 2020-05-30 10:10:19 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-30 10:10:19 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-30 10:10:19 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-30 10:10:19 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-30 10:10:19 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 3.124 seconds (JVM running for 5.229)
+[INFO ] 2020-05-30 11:47:45 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20180922LEEF with PID 3224 (D:\code\librarian\librarian-web-ui\target\classes started by Mypc in D:\code\librarian)
+[INFO ] 2020-05-30 11:47:45 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-30 11:47:45 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-30 11:48:40 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20180922LEEF with PID 1812 (D:\code\librarian\librarian-web-ui\target\classes started by Mypc in D:\code\librarian)
+[INFO ] 2020-05-30 11:48:40 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-30 11:48:40 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-30 11:48:40 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[INFO ] 2020-05-30 11:48:40 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-30 11:48:40 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-30 11:48:40 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-30 11:48:40 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-30 11:48:40 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 4.685 seconds (JVM running for 5.783)

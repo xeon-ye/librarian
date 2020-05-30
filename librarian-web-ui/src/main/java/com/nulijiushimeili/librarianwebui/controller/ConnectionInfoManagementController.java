@@ -1,14 +1,13 @@
 package com.nulijiushimeili.librarianwebui.controller;
 
-import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
+import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.beans.ResultEntity;
 import com.nulijiushimeili.librarianwebui.service.IConnectionInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,26 +42,26 @@ public class ConnectionInfoManagementController {
 
 
     @GetMapping(value = "/allResourceTypes")
-    public RequestEntity queryAllResourceTypes(){
+    public ResultEntity queryAllResourceTypes(){
 
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
 
     @GetMapping(value = "/datasourceTypes")
-    public RequestEntity queryDatasourceTypeFromDb(){
+    public ResultEntity queryDatasourceTypeFromDb(){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
 
     @GetMapping(value = "/getConnNameByDatasourceType")
-    public RequestEntity getConnNameByDatasourceType(@RequestParam("datasourceType") String datasourceType){
+    public ResultEntity getConnNameByDatasourceType(@RequestParam("datasourceType") String datasourceType){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
@@ -81,14 +80,14 @@ public class ConnectionInfoManagementController {
             @ApiImplicitParam(name = "remark", value = "备注",   dataType = "String"),
     })
     @PutMapping(value = "/addMysqlConnInfo")
-    public RequestEntity addMysqlConnInfo(ConnectionInfo connectionInfo){
+    public ResultEntity addMysqlConnInfo(ConnectionInfo connectionInfo){
         // todo 仍然需要测试连接可用性
 
 
         // 插入连接信息
         int res = connectionInfoService.addConnectionInfo(connectionInfo);
 
-        return RequestEntity.success(res > 0);
+        return ResultEntity.success(res > 0);
     }
 
 
@@ -106,9 +105,9 @@ public class ConnectionInfoManagementController {
             @ApiImplicitParam(name = "remark", value = "备注",   dataType = "String"),
     })
     @PostMapping(value = "/testMysqlConnection")
-    public RequestEntity testMysqlConnection(ConnectionInfo connectionInfo){
+    public ResultEntity testMysqlConnection(ConnectionInfo connectionInfo){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
@@ -119,9 +118,9 @@ public class ConnectionInfoManagementController {
             @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号",  dataType = "String"),
     })
     @GetMapping(value = "/connections")
-    public RequestEntity conditionSearchConnectionInfo(ConnectionInfo connectionInfo){
+    public ResultEntity conditionSearchConnectionInfo(ConnectionInfo connectionInfo){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
@@ -131,9 +130,9 @@ public class ConnectionInfoManagementController {
      * @return
      */
     @GetMapping(value = "/connection/{id}")
-    public RequestEntity getConnectionInfoById(@PathVariable("id") Integer id){
+    public ResultEntity getConnectionInfoById(@PathVariable("id") Integer id){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
@@ -143,9 +142,9 @@ public class ConnectionInfoManagementController {
      * @return
      */
     @PatchMapping(value = "/connection/{id}")
-    public RequestEntity updateConnectionInfoById(@PathVariable("id") Integer id){
+    public ResultEntity updateConnectionInfoById(@PathVariable("id") Integer id){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 

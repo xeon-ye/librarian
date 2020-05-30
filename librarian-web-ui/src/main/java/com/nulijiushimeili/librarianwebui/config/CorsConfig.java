@@ -31,8 +31,9 @@ public class CorsConfig {
 
         UrlBasedCorsConfigurationSource corsSource = new UrlBasedCorsConfigurationSource();
         corsSource.registerCorsConfiguration("/**", config);
-
         return new CorsFilter(corsSource);
+
+
     }
 
 

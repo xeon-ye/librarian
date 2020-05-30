@@ -20,8 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwaggerBootstrapUI
 public class Swagger2Configuration {
 
-    @Autowired
-    private PropertiesGetter propertiesGetter;
+
 
     @Bean
     public Docket createRestApi() {

@@ -20,7 +20,22 @@
         <java.version>1.8</java.version>
     </properties>
 
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>ccs</id>-->
+            <!--<name>ccs</name>-->
+            <!--<url>http://192.168.10.178:8081/repository/ccs/</url>-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+
     <dependencies>
+
+
+
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -52,11 +67,6 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
 
-        <!--  时间处理工具-->
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-        </dependency>
 
 
 
@@ -74,6 +84,7 @@
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
         </dependency>
 
 
@@ -81,20 +92,10 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
         </dependency>
 
-        <!--        //数据序列化系统-->
-        <dependency>
-            <groupId>org.apache.avro</groupId>
-            <artifactId>avro</artifactId>
-            <version>1.9.2</version>
-        </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.57</version>
-        </dependency>
 
 
 
@@ -143,11 +144,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
-
-
-
-
 
 
         <!--        // swagger 接口文档 -->
@@ -168,6 +166,22 @@
             <artifactId>springfox-bean-validators</artifactId>
         </dependency>
 
+
+
+
+        <!--依赖本系统项目工具包-->
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-common</artifactId>
+            <version>${librarian-common.version}</version>
+        </dependency>
+
+        <!--mysql5适配器依赖-->
+        <dependency>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>mysql5-data-service</artifactId>
+            <version>${mysql5-data-service.version}</version>
+        </dependency>
 
 
 

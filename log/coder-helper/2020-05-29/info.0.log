@@ -1,0 +1,26 @@
+[INFO ] 2020-05-29 13:54:29 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20200318BFUG with PID 4268 (E:\code\librarian\librarian-web-ui\target\classes started by Administrator in E:\code\librarian)
+[INFO ] 2020-05-29 13:54:29 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-29 13:54:29 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 13:55:39 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20200318BFUG with PID 4348 (E:\code\librarian\librarian-web-ui\target\classes started by Administrator in E:\code\librarian)
+[INFO ] 2020-05-29 13:55:39 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-29 13:55:39 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 13:55:39 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[INFO ] 2020-05-29 13:55:39 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-29 13:55:39 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-29 13:55:39 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-29 13:55:39 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 13:55:39 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 2.499 seconds (JVM running for 3.01)
+[INFO ] 2020-05-29 13:58:55 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20200318BFUG with PID 2600 (E:\code\librarian\librarian-web-ui\target\classes started by Administrator in E:\code\librarian)
+[INFO ] 2020-05-29 13:58:55 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-29 13:58:55 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 13:58:55 [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[INFO ] 2020-05-29 13:58:55 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2020-05-29 13:58:55 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2020-05-29 13:58:55 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2020-05-29 13:58:55 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 13:58:55 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 2.62 seconds (JVM running for 3.17)
+[INFO ] 2020-05-29 14:27:51 [main] c.n.l.LibrarianWebUiApplication - Starting LibrarianWebUiApplication on PC-20200318BFUG with PID 1460 (E:\code\librarian\librarian-web-ui\target\classes started by Administrator in E:\code\librarian)
+[INFO ] 2020-05-29 14:27:51 [main] c.n.l.LibrarianWebUiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-29 14:27:51 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 14:27:51 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8999"]
+[INFO ] 2020-05-29 14:27:51 [main] c.n.l.LibrarianWebUiApplication - Started LibrarianWebUiApplication in 2.035 seconds (JVM running for 2.551)

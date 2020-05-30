@@ -1,7 +1,7 @@
 package com.nulijiushimeili.librarianwebui.mapper;
 
-import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarianwebui.beans.entity.HostInfo;
+import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.beans.HostInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

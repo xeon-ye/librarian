@@ -14,10 +14,14 @@
     <artifactId>hbase1_2-data-service</artifactId>
 
     <dependencies>
+
+
+
+        <!--依赖本系统项目工具包-->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis-boot.version}</version>
+            <groupId>com.nulijiushimeili</groupId>
+            <artifactId>librarian-common</artifactId>
+            <version>${librarian-common.version}</version>
         </dependency>
     </dependencies>
 </project>

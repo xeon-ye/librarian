@@ -1,12 +1,11 @@
 package com.nulijiushimeili.librarianwebui.controller;
 
-import com.nulijiushimeili.librarianwebui.beans.entity.BaseMetadataEntity;
-import com.nulijiushimeili.librarianwebui.beans.entity.RequestEntity;
+import com.nulijiushimeili.librariancommon.beans.BaseMetadataEntity;
+import com.nulijiushimeili.librariancommon.beans.ResultEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,9 +41,9 @@ public class MetadataInfoManagementController {
             @ApiImplicitParam(name = "sp", value = "运营商",  dataType = "String")
     })
     @PutMapping(value = "/addMetadataInfo")
-    public RequestEntity addMetadataInfo(BaseMetadataEntity baseMetadataEntity){
+    public ResultEntity addMetadataInfo(BaseMetadataEntity baseMetadataEntity){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 
 
@@ -60,8 +59,8 @@ public class MetadataInfoManagementController {
             @ApiImplicitParam(name = "sp", value = "运营商",  dataType = "String")
     })
     @GetMapping(value = "/metadataInfos")
-    public RequestEntity conditionSearchMetadataInfos(HttpServletRequest request){
+    public ResultEntity conditionSearchMetadataInfos(HttpServletRequest request){
 
-        return RequestEntity.success();
+        return ResultEntity.success();
     }
 }
