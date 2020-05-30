@@ -1,70 +1,70 @@
-
 <assembly>
-  <id>dist</id>
-  <formats>
-    <format>tar.gz</format>
-    <format>dir</format>
-  </formats>
-  <includeBaseDirectory>false</includeBaseDirectory>
+    <!--归档包后缀-->
+    <id>dist</id>
+    <formats>
+        <!--// 压缩方式-->
+        <format>tar.gz</format>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
 
-  <fileSets>
-    <fileSet>
-      <includes>
-        <include>README</include>
-      </includes>
-    </fileSet>
-    <fileSet>
-      <directory>
-        ${project.parent.basedir}/librarian-web-ui/src/main/resources/
-      </directory>
-      <outputDirectory>conf</outputDirectory>
-      <includes>
-        <include>**/*.properties</include>
-        <include>**/*.yml</include>
-      </includes>
-    </fileSet>
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
 
-    <fileSet>
-      <directory>
-        ${project.parent.basedir}/bin/
-      </directory>
-      <outputDirectory>bin</outputDirectory>
-      <includes>
-        <include>**/*</include>
-      </includes>
-    </fileSet>
+        <fileSet>
+            <directory>
+                ${project.parent.basedir}/librarian-web-ui/src/main/resources/
+            </directory>
+            <outputDirectory>conf</outputDirectory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.yml</include>
+            </includes>
+        </fileSet>
 
-    <fileSet>
-      <directory>
-        ${project.parent.basedir}/**/target/
-      </directory>
-      <outputDirectory>lib</outputDirectory>
-      <includes>
-        <include>**/*.jar</include>
-      </includes>
-    </fileSet>
-  </fileSets>
+        <fileSet>
+            <directory>
+                ${project.parent.basedir}/conf/
+            </directory>
+            <outputDirectory>conf</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>
+                ${project.parent.basedir}/sql/
+            </directory>
+            <outputDirectory>conf</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
 
 
-  <dependencySets>
-    <dependencySet>
-      <includes>
-        <include>*:jar</include>
-      </includes>
-      <excludes>
-        <exclude>com.nulijiushimeili:assembly:jar</exclude>
-      </excludes>
-    </dependencySet>
-    <dependencySet>
-      <outputDirectory>lib</outputDirectory>
-      <useTransitiveDependencies>true</useTransitiveDependencies>
-      <unpack>false</unpack>
-      <scope>runtime</scope>
-      <useProjectArtifact>false</useProjectArtifact>
-      <excludes>
-        <!--<exclude>org.apache.hadoop:*:jar</exclude>-->
-      </excludes>
-    </dependencySet>
-  </dependencySets>
+        <fileSet>
+            <directory>${project.parent.basedir}/bin/</directory>
+            <outputDirectory>bin</outputDirectory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+
+
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>${project.parent.basedir}/lib</outputDirectory>
+            <scope>runtime</scope>
+            <useProjectArtifact>true</useProjectArtifact>
+        </dependencySet>
+
+    </dependencySets>
 
 </assembly>

@@ -13,7 +13,8 @@
     </parent>
 
     <artifactId>librarian</artifactId>
-    <name>数据中台，元数据管理，数据地图，数据统一查询</name>
+    <name>librarian</name>
+    <description>数据中台，元数据管理，数据地图，数据统一查询</description>
     <packaging>pom</packaging>
 
 
@@ -25,34 +26,30 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <!-- zip pyspark archives to run python application on yarn mode -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
+                <artifactId>maven-javadoc-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>package</phase>
+                        <id>attach-javadoc</id>
+                        <phase>deploy</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
+                    <show>public</show>
+                    <charset>UTF-8</charset>
+                    <encoding>UTF-8</encoding>
+                    <docencoding>UTF-8</docencoding>
+                    <links>
+                        <link>http://docs.oracle.com/javase/6/docs/api</link>
+                    </links>
                 </configuration>
             </plugin>
+
+
+
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -74,6 +71,9 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+
         </plugins>
     </build>
 

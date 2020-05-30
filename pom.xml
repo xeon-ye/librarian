@@ -166,89 +166,52 @@
 
 
     <build>
-        <plugins>
-
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-javadoc</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <show>public</show>
-                    <charset>UTF-8</charset>
-                    <encoding>UTF-8</encoding>
-                    <docencoding>UTF-8</docencoding>
-                    <links>
-                        <link>http://docs.oracle.com/javase/6/docs/api</link>
-                    </links>
-                </configuration>
-            </plugin>
-            <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-shade-plugin</artifactId>-->
-            <!--<version>3.2.3</version>-->
-            <!--<executions>-->
-            <!--<execution>-->
-            <!--<phase>package</phase>-->
-            <!--<goals>-->
-            <!--<goal>shade</goal>-->
-            <!--</goals>-->
-            <!--<configuration>-->
-            <!--<createSourcesJar>false</createSourcesJar>-->
-            <!--<promoteTransitiveDependencies>true</promoteTransitiveDependencies>-->
-            <!--<artifactSet>-->
-            <!--<includes>-->
-            <!--&lt;!&ndash; 这里只是随便拿了几个模块来作为例子，实际上如下模块是不应该打包在一起的 &ndash;&gt;-->
-            <!--<include>com.nulijiushimeili: librarian-web-ui             </include>-->
-            <!--<include>com.nulijiushimeili: elasticsearch7-data-service  </include>-->
-            <!--<include>com.nulijiushimeili: mysql5-data-service          </include>-->
-            <!--<include>com.nulijiushimeili: hbase1_2-data-service        </include>-->
-            <!--<include>com.nulijiushimeili: hive1_2-data-service         </include>-->
-            <!--<include>com.nulijiushimeili: phoenix14-data-service       </include>-->
-            <!--<include>com.nulijiushimeili: presto-unified-query         </include>-->
-            <!--<include>com.nulijiushimeili: librarian-common             </include>-->
-            <!--</includes>-->
-            <!--</artifactSet>-->
-            <!--<transformers>-->
-
-            <!--</transformers>-->
-            <!--</configuration>-->
-            <!--</execution>-->
-            <!--</executions>-->
-            <!--</plugin>-->
-
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <!--<appendAssemblyId>true</appendAssemblyId>-->
-                    <!--<descriptors> &lt;!&ndash;描述文件路径&ndash;&gt;-->
-                        <!--<descriptor>${project.parent.basedir}/assemble/package.xml</descriptor>-->
-                    <!--</descriptors>-->
-                </configuration>
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>make-zip</id>-->
-                        <!--&lt;!&ndash; 绑定到package生命周期阶段上 &ndash;&gt;-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--&lt;!&ndash; 绑定到package生命周期阶段上 &ndash;&gt;-->
-                            <!--<goal>single</goal>-->
-                        <!--</goals>-->
-
-                    <!--</execution>-->
-                <!--</executions>-->
-            </plugin>
-
-        </plugins>
-
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${assembly.version}</version>
+                    <executions>
+                        <execution>
+                            <id>librarian</id>
+                            <!-- 绑定到package生命周期阶段 -->
+                            <phase>package</phase>
+                            <goals>
+                                <!-- 只运行一次 -->
+                                <goal>single</goal>
+                            </goals>
+                            <configuration>
+                                <descriptors>
+                                    <!--描述文件路径 ，默认跟当前pom.xml同一级目录下 -->
+                                    <descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
+                                </descriptors>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- 依赖分析插件 执行 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven_dependency_plugin_version}</version>
+                    <!--//package阶段绑定,将maven依赖的构建jar拷贝到项目根目录/lib目录下-->
+                    <executions>
+                        <execution>
+                            <id>copy-dependencies</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>copy-dependencies</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${project.build.directory}/lib/
+                                </outputDirectory>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
