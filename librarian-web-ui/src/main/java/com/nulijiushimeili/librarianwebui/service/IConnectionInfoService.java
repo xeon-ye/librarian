@@ -1,9 +1,7 @@
 package com.nulijiushimeili.librarianwebui.service;
 
 
-import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
-
-import java.util.List;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo;
 
 /******************************
  * @Project: librarian-parent

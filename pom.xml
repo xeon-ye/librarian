@@ -65,6 +65,13 @@
         <easypoi-springboot.version>3.3.0</easypoi-springboot.version>
         <spring-hot-load.version>1.2.0.RELEASE</spring-hot-load.version>
 
+        <!--打包插件-->
+        <assembly.version>3.3.0</assembly.version>
+
+
+
+        <librarian-parent.version>1.0-SNAPSHOT</librarian-parent.version>
+
 
         <librarian-common.version>1.0-SNAPSHOT</librarian-common.version>
         <mysql5-data-service.version>1.0-SNAPSHOT</mysql5-data-service.version>
@@ -136,7 +143,6 @@
                 <version>${lombok.version}</version>
             </dependency>
 
-
             <!--        // swagger 接口文档 -->
             <dependency>
                 <groupId>com.spring4all</groupId>
@@ -159,59 +165,21 @@
                 <version>2.9.2</version>
             </dependency>
 
-
         </dependencies>
 
     </dependencyManagement>
 
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>${assembly.version}</version>
-                    <executions>
-                        <execution>
-                            <id>librarian</id>
-                            <!-- 绑定到package生命周期阶段 -->
-                            <phase>package</phase>
-                            <goals>
-                                <!-- 只运行一次 -->
-                                <goal>single</goal>
-                            </goals>
-                            <configuration>
-                                <descriptors>
-                                    <!--描述文件路径 ，默认跟当前pom.xml同一级目录下 -->
-                                    <descriptor>${project.basedir}/src/main/assembly/assembly.xml</descriptor>
-                                </descriptors>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!-- 依赖分析插件 执行 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>${maven_dependency_plugin_version}</version>
-                    <!--//package阶段绑定,将maven依赖的构建jar拷贝到项目根目录/lib目录下-->
-                    <executions>
-                        <execution>
-                            <id>copy-dependencies</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>copy-dependencies</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${project.build.directory}/lib/
-                                </outputDirectory>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+    <!--<build>-->
+        <!--<pluginManagement>-->
+            <!--<plugins>-->
+                <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                    <!--<version>${assembly.version}</version>-->
+                <!--</plugin>-->
+            <!--</plugins>-->
+        <!--</pluginManagement>-->
+    <!--</build>-->
 
 </project>

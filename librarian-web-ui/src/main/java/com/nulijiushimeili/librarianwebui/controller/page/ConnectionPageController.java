@@ -23,11 +23,19 @@ public class ConnectionPageController {
         return "/html/pages/datasource/connection.html";
     }
 
-    @GetMapping(value = "addMysqlConnectionPage")
+    @GetMapping(value = "/addMysqlConnectionPage")
     public String addMysqlConnectionPage(){
 
         return "/html/pages/datasource/connection-mysql-add.html";
     }
+
+
+    @GetMapping(value = "/")
+    public String uploadExcelConnectionInfoPage(){
+        return "";
+    }
+
+
 
 
 

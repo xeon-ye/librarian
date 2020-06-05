@@ -32,6 +32,7 @@ public class UserDefinedException extends RuntimeException {
      * 异常代码
      */
     private Integer code;
+
     /**
      * 异常提示信息
      */

@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librariancommon.beans;
+package com.nulijiushimeili.librariancommon.beans.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

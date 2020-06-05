@@ -1,7 +1,7 @@
 package com.nulijiushimeili.mysql5.utils;
 
-import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
-import com.nulijiushimeili.librariancommon.beans.HostInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.HostInfo;
 import com.nulijiushimeili.librariancommon.exception.UserDefinedException;
 
 import java.sql.Connection;

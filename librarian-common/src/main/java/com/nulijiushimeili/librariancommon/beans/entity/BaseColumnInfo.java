@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librarianwebui.beans.entity;
+package com.nulijiushimeili.librariancommon.beans.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -39,6 +39,11 @@ public class BaseColumnInfo {
      * 列名
      */
     private String columnName;
+
+    /**
+     * 列中文名称，提示名称
+     */
+    private String columnTitle;
 
     /**
      * 列类型

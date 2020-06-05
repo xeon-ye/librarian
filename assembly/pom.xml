@@ -12,9 +12,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>librarian</artifactId>
-    <name>librarian</name>
-    <description>数据中台，元数据管理，数据地图，数据统一查询</description>
+    <artifactId>assembly</artifactId>
+    <name>assembly</name>
+    <description>打包专用</description>
     <packaging>pom</packaging>
 
 
@@ -25,27 +25,27 @@
 
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-javadoc</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <show>public</show>
-                    <charset>UTF-8</charset>
-                    <encoding>UTF-8</encoding>
-                    <docencoding>UTF-8</docencoding>
-                    <links>
-                        <link>http://docs.oracle.com/javase/6/docs/api</link>
-                    </links>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>attach-javadoc</id>-->
+                        <!--<phase>deploy</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>jar</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+                <!--<configuration>-->
+                    <!--<show>public</show>-->
+                    <!--<charset>UTF-8</charset>-->
+                    <!--<encoding>UTF-8</encoding>-->
+                    <!--<docencoding>UTF-8</docencoding>-->
+                    <!--<links>-->
+                        <!--<link>http://docs.oracle.com/javase/6/docs/api</link>-->
+                    <!--</links>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
 
 

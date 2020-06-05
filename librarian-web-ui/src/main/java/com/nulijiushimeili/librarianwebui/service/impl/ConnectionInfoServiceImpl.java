@@ -1,6 +1,6 @@
 package com.nulijiushimeili.librarianwebui.service.impl;
 
-import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo;
 import com.nulijiushimeili.librariancommon.exception.UserDefinedException;
 import com.nulijiushimeili.librarianwebui.mapper.ConnectionInfoMapper;
 import com.nulijiushimeili.librarianwebui.service.IConnectionInfoService;

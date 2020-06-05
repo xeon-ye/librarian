@@ -1,6 +1,6 @@
 package com.nulijiushimeili.librarianwebui.config.mybatis;
 
-import com.nulijiushimeili.librarianwebui.beans.enums.BaseEnum;
+import com.nulijiushimeili.librariancommon.beans.enums.BaseEnum;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.EnumTypeHandler;
 import org.apache.ibatis.type.JdbcType;

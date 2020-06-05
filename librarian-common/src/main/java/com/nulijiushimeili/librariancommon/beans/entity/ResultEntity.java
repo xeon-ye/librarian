@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librariancommon.beans;
+package com.nulijiushimeili.librariancommon.beans.entity;
 
 import com.nulijiushimeili.librariancommon.utils.MyDateUtils;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librariancommon.beans;
+package com.nulijiushimeili.librariancommon.beans.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import lombok.AllArgsConstructor;
@@ -6,17 +6,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.List;
+
+/******************************
+ * @Project: librarian-parent
+ * @FileName: ConnectionInfo.java
+ * @ClassName: ConnectionInfo
+ * @time 2020/5/11 20:42
+ * @version 1.00
+ * @author nulijiushimeili
+ * @Description:  连接数据源的连接信息
+ ******************************/
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ConnectionInfoSpread {
+public class ConnectionInfo {
 
-    /**
-     * id
-     */
-    private Integer id;
+
 
     /**
      * 数据源的名称，唯一标识一个数据源
@@ -65,61 +73,26 @@ public class ConnectionInfoSpread {
     private Boolean alive;
 
     /**
-     * 数据源的描述
+     * 连接数据源的备用参数
      */
     private String resourceArgs;
 
-
+    /**
+     * 数据源节点列表
+     */
+    private List<HostInfo> hostInfoList;
 
     /**
-     * 主机名称
+     * 数据库 列表
      */
-    private String hostName;
+    private List<DatabaseInfo> databaseInfoList;
 
 
-    /**
-     * IP地址
-     */
-    private String ip;
 
 
-    /**
-     * 端口号
-     */
-    private Integer port;
-
-    /**
-     * 连接标识， 类比Oracle的服务名连接、sid连接等
-     */
-    private String connFlag;
-
-    /**
-     * 驱动名称
-     */
-    private String driverName;
 
 
-    /**
-     * 驱动类名称
-     */
-    private String driverClassName;
 
-    /**
-     * 连接url
-     */
-    private String url;
-
-
-    /**
-     * 数据库名称
-     */
-    private String dbName;
-
-
-    /**
-     * 数据库描述信息
-     */
-    private String dbDesc;
 
 
 }

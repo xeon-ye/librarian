@@ -1,6 +1,6 @@
 package com.nulijiushimeili.librarianwebui.config.mvc;
 
-import com.nulijiushimeili.librarianwebui.beans.enums.BaseEnum;
+import com.nulijiushimeili.librariancommon.beans.enums.BaseEnum;
 import com.nulijiushimeili.librarianwebui.config.EnumUtils;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.converter.ConverterFactory;

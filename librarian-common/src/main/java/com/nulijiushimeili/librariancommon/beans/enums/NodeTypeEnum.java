@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librarianwebui.beans.enums;
+package com.nulijiushimeili.librariancommon.beans.enums;
 
 
 
@@ -17,26 +17,26 @@ public enum NodeTypeEnum implements BaseEnum {
     /**
      * 主节点
      */
-    MASTER(1, "master节点"),
+    MASTER(1, "MASTER"),
     /**
      * 从节点
      */
-    SLAVE(2, "slave节点"),
+    SLAVE(2, "SLAVE"),
     /**
      * zk节点
      */
-    ZOOKEEPER(3, "zookeeper节点"),
+    ZOOKEEPER(3, "ZOOKEEPER"),
     /**
      * hdfs-master 节点
      */
-    HDFS_MASTER(4, "hdfs_Master节点"),
+    HDFS_MASTER(4, "NAMENODE"),
     /**
      * hive-jdbc 节点
      */
-    HIVESERVER2(5, "HiveServer2"),
+    HIVESERVER2(5, "HIVESERVER2"),
 
 
-    KAFKA_NODE(6, "kafka-bootstrap.server"),
+    KAFKA_NODE(6, "KAFKANODE"),
     /**
      * 其他节点
      */

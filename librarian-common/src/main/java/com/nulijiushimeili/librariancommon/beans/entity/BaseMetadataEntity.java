@@ -1,13 +1,11 @@
-package com.nulijiushimeili.librarianwebui.beans.entity;
+package com.nulijiushimeili.librariancommon.beans.entity;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import lombok.experimental.Accessors;
 
-import java.util.Date;
 import java.util.List;
 
 /******************************
@@ -79,7 +77,7 @@ public class BaseMetadataEntity {
     /**
      * 分区数
      */
-    private Integer partition;
+    private Integer partitionNum;
 
     /**
      * 副本数

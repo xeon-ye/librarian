@@ -1,6 +1,6 @@
 <assembly>
     <!--归档包后缀-->
-    <id>dist</id>
+    <id>bin</id>
     <formats>
         <!--// 压缩方式-->
         <format>tar.gz</format>
@@ -55,16 +55,34 @@
             </includes>
         </fileSet>
 
+
+
     </fileSets>
+
+
+
 
 
     <dependencySets>
         <dependencySet>
-            <outputDirectory>${project.parent.basedir}/lib</outputDirectory>
-            <scope>runtime</scope>
-            <useProjectArtifact>true</useProjectArtifact>
+            <includes>
+                <include>com.nulijiushimeili:*:jar</include>
+            </includes>
+            <excludes>
+                <exclude>com.nulijiushimeili:assembly:jar</exclude>
+            </excludes>
         </dependencySet>
-
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <useTransitiveDependencies>true</useTransitiveDependencies>
+            <unpack>false</unpack>
+            <scope>runtime</scope>
+            <useProjectArtifact>false</useProjectArtifact>
+            <excludes>
+                <!--<exclude>org.apache.hadoop:*:jar</exclude>-->
+            </excludes>
+        </dependencySet>
     </dependencySets>
+
 
 </assembly>

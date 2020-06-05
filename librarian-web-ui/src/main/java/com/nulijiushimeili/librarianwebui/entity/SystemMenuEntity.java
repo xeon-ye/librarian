@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librarianwebui.beans.entity;
+package com.nulijiushimeili.librarianwebui.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.fasterxml.jackson.annotation.JsonInclude;

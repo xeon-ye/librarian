@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librarianwebui.beans.enums;
+package com.nulijiushimeili.librariancommon.beans.enums;
 
 
 

@@ -22,9 +22,6 @@
             <version>${mysql-jdbc.version}</version>
         </dependency>
 
-
-
-
         <!--依赖本系统项目工具包-->
         <dependency>
             <groupId>com.nulijiushimeili</groupId>

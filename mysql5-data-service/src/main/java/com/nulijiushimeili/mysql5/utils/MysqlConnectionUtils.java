@@ -1,12 +1,10 @@
 package com.nulijiushimeili.mysql5.utils;
 
 
-import com.nulijiushimeili.librariancommon.beans.ConnectionInfo;
-import com.nulijiushimeili.librariancommon.beans.ConnectionInfoSpread;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfoSpread;
 import com.nulijiushimeili.librariancommon.exception.UserDefinedException;
 import lombok.extern.slf4j.Slf4j;
 
-import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

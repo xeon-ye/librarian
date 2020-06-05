@@ -1,7 +1,7 @@
 package com.nulijiushimeili.librarianwebui.config;
 
-import com.nulijiushimeili.librarianwebui.beans.entity.ConnectionInfo;
-import com.nulijiushimeili.librarianwebui.beans.entity.HostInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.HostInfo;
 import com.nulijiushimeili.librarianwebui.exception.UserDefinedException;
 import lombok.extern.slf4j.Slf4j;
 
