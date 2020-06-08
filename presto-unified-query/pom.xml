@@ -22,6 +22,12 @@
             <version>0.235</version>
         </dependency>
 
+        <!-- 引入jdbc支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
         <!-- fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>

@@ -33,7 +33,11 @@
     <!--</repositories>-->
 
     <dependencies>
-
+        <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>${mybatis-boot.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.commons</groupId>
