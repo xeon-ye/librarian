@@ -75,9 +75,9 @@ public class MenuController {
 //                log.info("菜单信息：\n" + everyLine);
 
             menuList = gson.fromJson(everyLine, (new TypeToken<SystemMenuEntity<
-                                SystemMenuEntity<SystemMenuEntity<SystemMenuEntity<
-                                        SystemMenuEntity<SystemMenuEntity<SystemMenuEntity<
-                                                SystemMenuEntity>>>>>>>>() {
+                    SystemMenuEntity<SystemMenuEntity<SystemMenuEntity<
+                            SystemMenuEntity<SystemMenuEntity<SystemMenuEntity<
+                                    SystemMenuEntity>>>>>>>>() {
             }).getType());
         } catch (IOException e) {
             throw UserDefinedException.except(110000);

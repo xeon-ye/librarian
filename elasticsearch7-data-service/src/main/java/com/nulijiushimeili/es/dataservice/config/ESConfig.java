@@ -20,8 +20,6 @@ import java.util.Arrays;
 import java.util.Objects;
 
 
-
-
 @Configuration
 @Slf4j
 public class ESConfig {
@@ -70,6 +68,7 @@ public class ESConfig {
 
     /**
      * 处理请求地址
+     *
      * @param s
      * @return HttpHost
      */

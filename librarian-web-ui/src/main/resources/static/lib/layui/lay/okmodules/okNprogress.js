@@ -75,7 +75,8 @@
             speed = Settings.speed,
             ease = Settings.easing;
 
-        progress.offsetWidth; /* Repaint */
+        progress.offsetWidth;
+        /* Repaint */
 
         queue(function (next) {
             // Set positionUsing if it hasn't already been set
@@ -90,7 +91,8 @@
                     transition: 'none',
                     opacity: 1
                 });
-                progress.offsetWidth; /* Repaint */
+                progress.offsetWidth;
+                /* Repaint */
 
                 setTimeout(function () {
                     css(progress, {

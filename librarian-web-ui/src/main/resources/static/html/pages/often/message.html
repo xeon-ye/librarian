@@ -117,7 +117,7 @@
             });
         }
 
-        function batchDel(){
+        function batchDel() {
             okLayer.confirm("确定要批量删除吗？", function (index) {
                 layer.close(index);
                 var idsStr = okUtils.table.batchCheck(table);
@@ -132,13 +132,13 @@
             });
         }
 
-        function edit (id) {
+        function edit(id) {
             okLayer.open("留言回复", "message-reply.html?id=" + id, "90%", "90%", null, function () {
                 articleTable.reload();
             })
         }
 
-        function del (id) {
+        function del(id) {
             okLayer.confirm("确定要删除吗？", function () {
                 okUtils.ajax("/message/batchDel", "post", {idsStr: id}).done(function (response) {
                     console.log(response)

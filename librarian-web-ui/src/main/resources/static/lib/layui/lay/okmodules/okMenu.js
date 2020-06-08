@@ -8,20 +8,20 @@ layui.define(["element", "okUtils"], function (exports) {
     var okMenu = {
         generatorMenu: function (url, method) {
             okUtils.ajax(url, method).done(function (res) {
-                    var response = res.t.children;
-                    var html = "";
-                    for (var i = 0; i < response.length; i++) {
-                        var d = response[i];
-                        html += okMenu.liHtml(d);
-                        html += "<a href='javascript:;'>"
-                        html += okMenu.iconHtml(d) + " " + response[i].title;
-                        html += "</a>";
-                        var temp = okMenu.createMenu(d.children);
-                        html += temp;
-                        html += "</li>";
-                    }
-                    $(".layui-nav-tree").html(html);
-                    element.render("nav");
+                var response = res.t.children;
+                var html = "";
+                for (var i = 0; i < response.length; i++) {
+                    var d = response[i];
+                    html += okMenu.liHtml(d);
+                    html += "<a href='javascript:;'>"
+                    html += okMenu.iconHtml(d) + " " + response[i].title;
+                    html += "</a>";
+                    var temp = okMenu.createMenu(d.children);
+                    html += temp;
+                    html += "</li>";
+                }
+                $(".layui-nav-tree").html(html);
+                element.render("nav");
             }).fail(function (error) {
                 console.log(error)
             });

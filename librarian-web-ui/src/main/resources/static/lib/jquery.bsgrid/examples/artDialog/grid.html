@@ -48,7 +48,7 @@
         // get column value by record and index: gridObj.getRecordIndexValue(record, index)
         // get column value by rowIndex and index: gridObj.getColumnValue(rowIndex, index)
         return '<a href="#" onclick="alert(\'edit. ID=' + gridObj.getRecordIndexValue(gridObj.getRecord(rowIndex), 'ID') + '\');">edit</a>'
-                + '&emsp;<a href="#" onclick="doDelete(' + gridObj.getColumnValue(rowIndex, 'ID') + ');">delete</a>';
+            + '&emsp;<a href="#" onclick="doDelete(' + gridObj.getColumnValue(rowIndex, 'ID') + ');">delete</a>';
     }
 
     function doDelete(id) {

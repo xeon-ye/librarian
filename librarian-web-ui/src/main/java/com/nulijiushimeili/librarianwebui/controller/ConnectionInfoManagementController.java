@@ -42,24 +42,22 @@ public class ConnectionInfoManagementController {
 
 
     @GetMapping(value = "/allResourceTypes")
-    public ResultEntity queryAllResourceTypes(){
+    public ResultEntity queryAllResourceTypes() {
 
 
         return ResultEntity.success();
     }
-
 
 
     @GetMapping(value = "/datasourceTypes")
-    public ResultEntity queryDatasourceTypeFromDb(){
+    public ResultEntity queryDatasourceTypeFromDb() {
 
         return ResultEntity.success();
     }
 
 
-
     @GetMapping(value = "/getConnNameByDatasourceType")
-    public ResultEntity getConnNameByDatasourceType(@RequestParam("datasourceType") String datasourceType){
+    public ResultEntity getConnNameByDatasourceType(@RequestParam("datasourceType") String datasourceType) {
 
         return ResultEntity.success();
     }
@@ -67,20 +65,21 @@ public class ConnectionInfoManagementController {
 
     /**
      * 添加MySQL数据源信息
+     *
      * @param connectionInfo
      * @return
      */
-    @ApiOperation(value = "测试MySQL数据源连接", notes="测试MySQL数据源连接")
+    @ApiOperation(value = "测试MySQL数据源连接", notes = "测试MySQL数据源连接")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "connName", value = "连接名称",   dataType = "String",required = true),
-            @ApiImplicitParam(name = "datasourceType", value = "数据源类型",   dataType = "String",required = true),
-            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号",  dataType = "String",required = true),
-            @ApiImplicitParam(name = "username", value = "用户名",   dataType = "String", required = true),
-            @ApiImplicitParam(name = "password", value = "密码",   dataType = "String", required = true),
-            @ApiImplicitParam(name = "remark", value = "备注",   dataType = "String"),
+            @ApiImplicitParam(name = "connName", value = "连接名称", dataType = "String", required = true),
+            @ApiImplicitParam(name = "datasourceType", value = "数据源类型", dataType = "String", required = true),
+            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号", dataType = "String", required = true),
+            @ApiImplicitParam(name = "username", value = "用户名", dataType = "String", required = true),
+            @ApiImplicitParam(name = "password", value = "密码", dataType = "String", required = true),
+            @ApiImplicitParam(name = "remark", value = "备注", dataType = "String"),
     })
     @PutMapping(value = "/addMysqlConnInfo")
-    public ResultEntity addMysqlConnInfo(ConnectionInfo connectionInfo){
+    public ResultEntity addMysqlConnInfo(ConnectionInfo connectionInfo) {
         // todo 仍然需要测试连接可用性
 
 
@@ -93,32 +92,33 @@ public class ConnectionInfoManagementController {
 
     /**
      * 测试MySQL连接
+     *
      * @return
      */
-    @ApiOperation(value = "测试MySQL数据源连接", notes="测试MySQL数据源连接")
+    @ApiOperation(value = "测试MySQL数据源连接", notes = "测试MySQL数据源连接")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "connName", value = "连接名称",   dataType = "String",required = true),
-            @ApiImplicitParam(name = "datasourceType", value = "数据源类型",   dataType = "String",required = true),
-            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号",  dataType = "String",required = true),
-            @ApiImplicitParam(name = "username", value = "用户名",   dataType = "String", required = true),
-            @ApiImplicitParam(name = "password", value = "密码",   dataType = "String", required = true),
-            @ApiImplicitParam(name = "remark", value = "备注",   dataType = "String"),
+            @ApiImplicitParam(name = "connName", value = "连接名称", dataType = "String", required = true),
+            @ApiImplicitParam(name = "datasourceType", value = "数据源类型", dataType = "String", required = true),
+            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号", dataType = "String", required = true),
+            @ApiImplicitParam(name = "username", value = "用户名", dataType = "String", required = true),
+            @ApiImplicitParam(name = "password", value = "密码", dataType = "String", required = true),
+            @ApiImplicitParam(name = "remark", value = "备注", dataType = "String"),
     })
     @PostMapping(value = "/testMysqlConnection")
-    public ResultEntity testMysqlConnection(ConnectionInfo connectionInfo){
+    public ResultEntity testMysqlConnection(ConnectionInfo connectionInfo) {
 
         return ResultEntity.success();
     }
 
 
-    @ApiOperation(value = "条件查询数据源连接信息", notes="条件查询数据源连接信息")
+    @ApiOperation(value = "条件查询数据源连接信息", notes = "条件查询数据源连接信息")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "connName", value = "连接名称",   dataType = "String"),
-            @ApiImplicitParam(name = "datasourceType", value = "数据源类型",   dataType = "String"),
-            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号",  dataType = "String"),
+            @ApiImplicitParam(name = "connName", value = "连接名称", dataType = "String"),
+            @ApiImplicitParam(name = "datasourceType", value = "数据源类型", dataType = "String"),
+            @ApiImplicitParam(name = "datasourceVersion", value = "数据源版本号", dataType = "String"),
     })
     @GetMapping(value = "/connections")
-    public ResultEntity conditionSearchConnectionInfo(ConnectionInfo connectionInfo){
+    public ResultEntity conditionSearchConnectionInfo(ConnectionInfo connectionInfo) {
 
         return ResultEntity.success();
     }
@@ -126,11 +126,12 @@ public class ConnectionInfoManagementController {
 
     /**
      * 查询某个连接的连接信息
+     *
      * @param id
      * @return
      */
     @GetMapping(value = "/connection/{id}")
-    public ResultEntity getConnectionInfoById(@PathVariable("id") Integer id){
+    public ResultEntity getConnectionInfoById(@PathVariable("id") Integer id) {
 
         return ResultEntity.success();
     }
@@ -138,11 +139,12 @@ public class ConnectionInfoManagementController {
 
     /**
      * 修改连接信息
+     *
      * @param id
      * @return
      */
     @PatchMapping(value = "/connection/{id}")
-    public ResultEntity updateConnectionInfoById(@PathVariable("id") Integer id){
+    public ResultEntity updateConnectionInfoById(@PathVariable("id") Integer id) {
 
         return ResultEntity.success();
     }

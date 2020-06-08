@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="../../css/oksub.css">
 </head>
 <body>
-    <div class="ok-body">
-        <blockquote class="layui-elem-quote">
-            <p>Animate.css 一款强大的预设css3动画库</p>
-        </blockquote>
-        <pre>
+<div class="ok-body">
+    <blockquote class="layui-elem-quote">
+        <p>Animate.css 一款强大的预设css3动画库</p>
+    </blockquote>
+    <pre>
 // Step1
 引入：css/oksub.css
 // Step2
 <span class="ok-anim shake">文字特效</span>>
         </pre>
-        <button type="button" class="layui-btn" id="try">试一下</button>
-    </div>
-    <!--js逻辑-->
-    <script src="../../lib/layui/layui.js"></script>
-    <script>
-        layui.use(["code"], function () {
-            let code = layui.code;
-            let $ = layui.jquery;
+    <button type="button" class="layui-btn" id="try">试一下</button>
+</div>
+<!--js逻辑-->
+<script src="../../lib/layui/layui.js"></script>
+<script>
+    layui.use(["code"], function () {
+        let code = layui.code;
+        let $ = layui.jquery;
 
-            code({
-                elem: "pre",
-                title: "代码示例",
-                encode: true
-            });
-
-            $("#try").click(function () {
-                $(this).addClass("ok-anim shake");
-            });
+        code({
+            elem: "pre",
+            title: "代码示例",
+            encode: true
         });
-    </script>
+
+        $("#try").click(function () {
+            $(this).addClass("ok-anim shake");
+        });
+    });
+</script>
 </body>
 </html>

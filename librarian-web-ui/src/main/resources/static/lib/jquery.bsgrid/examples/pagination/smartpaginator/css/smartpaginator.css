@@ -1,5 +1,4 @@
-﻿.pager
-{
+﻿.pager {
     width: 720px;
     height: 30px;
     padding: 0;
@@ -7,37 +6,37 @@
     padding-top: 10px;
     padding-left: 10px; /*border-radius: 8px; 	-moz-border-radius: 8px;*/
 }
-.pager div.short
-{
+
+.pager div.short {
     float: right;
     margin: 0;
     padding: 0;
     margin-right: 10px;
     width: 74px;
 }
-.pager div.short input
-{
+
+.pager div.short input {
     width: 28px;
     height: 18px;
     border: none;
     margin-left: 8px;
     float: left;
 }
-.pager ul
-{
+
+.pager ul {
     list-style: none;
     padding: 0;
     margin: 0;
     float: left;
     margin-right: 4px;
 }
-.pager ul li
-{
+
+.pager ul li {
     display: inline;
     margin-left: 2px;
 }
-.pager ul li a
-{
+
+.pager ul li a {
     text-decoration: none;
     display: inline-table;
     width: 20px;
@@ -47,14 +46,13 @@
     -moz-border-radius: 4px;
 }
 
-.pager span
-{
+.pager span {
     margin-left: 4px;
     color: White;
     float: left;
 }
-.pager .btn
-{
+
+.pager .btn {
     display: block;
     width: 40px;
     text-align: center;
@@ -73,73 +71,76 @@
     -o-user-select: none;
     user-select: none;
 }
-.pager .disabled
-{
+
+.pager .disabled {
     color: #A0A0A0 !important;
     text-shadow: 1px 1px 1px #FFFFFF;
 }
-/*green*/.green
-{
+
+/*green*/
+.green {
     background-color: #4f7305;
 }
-.green.normal
-{
+
+.green.normal {
     background-color: #588500;
     color: White;
     border: solid 1px #5f9000;
 }
-.green.active
-{
+
+.green.active {
     background-color: #344C00;
     color: #F8EB00;
     border: solid 1px #5f9000;
 }
-.pager.green .btn
-{
+
+.pager.green .btn {
     background-color: #588500;
     color: White;
     border: solid 1px #5f9000;
 }
-/*black*/.black
-{
+
+/*black*/
+.black {
     background-color: #202020;
 }
-.black.normal
-{
+
+.black.normal {
     background-color: #1d1d1d;
     color: #B0D551;
     border: solid 1px #000;
 }
-.black.active
-{
+
+.black.active {
     background-color: #333333;
     color: White;
     border: solid 1px #000;
 }
-.pager.black .btn
-{
+
+.pager.black .btn {
     background-color: #1d1d1d;
     color: White;
     border: solid 1px #000;
 }
-/*red*/.red
-{
+
+/*red*/
+.red {
     background-color: #D50B07;
 }
-.red.normal
-{
+
+.red.normal {
     background-color: #E71C18;
     color: White;
     border: solid 1px #F82723;
 }
-.red.active
-{
+
+.red.active {
     background-color: #C00D09;
     color: White;
     border: solid 1px #A90B08;
 }
-.pager.red .btn
-{
+
+.pager.red .btn {
     background-color: #E71C18;
     color: White;
     border: solid 1px #F82723;

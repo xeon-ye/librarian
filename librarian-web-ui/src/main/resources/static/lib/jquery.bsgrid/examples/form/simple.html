@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -15,12 +16,12 @@
     <table>
         <tr showType="false">
             <td class="formLabel">ID:</td>
-            <td class="formInput"><input name="id" type="text" value="100" /></td>
+            <td class="formInput"><input name="id" type="text" value="100"/></td>
         </tr>
         <tr>
             <td class="formLabel"><span class="require">*</span>Account:</td>
             <td class="formInput">
-                <input name="account" type="text" editAble="false" value="Account" />
+                <input name="account" type="text" editAble="false" value="Account"/>
                 <span class="inputTip" showType="add">Start with letter, can contains number</span>
                 <span class="inputTip" showType="edit">Can not modify</span>
             </td>
@@ -28,20 +29,20 @@
         <tr showType="add,edit">
             <td class="formLabel">Password:</td>
             <td class="formInput">
-                <input name="password" type="password" value="123456" />
+                <input name="password" type="password" value="123456"/>
             </td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;">
-                <input type="button" value="Refresh" onclick="location.href = location.href;" />
+                <input type="button" value="Refresh" onclick="location.href = location.href;"/>
                 &emsp;
-                <input type="button" value="view style" onclick="formObj.showForm('view');" />
+                <input type="button" value="view style" onclick="formObj.showForm('view');"/>
                 &emsp;
-                <input type="button" value="add style" onclick="formObj.showForm('add');" />
+                <input type="button" value="add style" onclick="formObj.showForm('add');"/>
                 &emsp;
-                <input type="button" value="edit style" onclick="formObj.showForm('edit');" />
+                <input type="button" value="edit style" onclick="formObj.showForm('edit');"/>
                 &emsp;
-                <input type="button" value="Commit" onclick="doCommit();" />
+                <input type="button" value="Commit" onclick="doCommit();"/>
             </td>
         </tr>
     </table>
@@ -59,7 +60,7 @@
         } else if (type == 'add') {
             alert($('#formDemo').serialize() + '&formType=' + type);
         } else if (type == 'edit') {
-        	// editAble false not commit
+            // editAble false not commit
             alert($('#formDemo :not([editAble="false"])').serialize() + '&formType=' + type);
         } else {
             alert('None.');

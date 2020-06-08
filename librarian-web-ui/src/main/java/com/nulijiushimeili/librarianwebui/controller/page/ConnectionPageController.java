@@ -19,26 +19,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ConnectionPageController {
 
     @GetMapping(value = "/connection")
-    public String connectionPage(){
+    public String connectionPage() {
         return "/html/pages/datasource/connection.html";
     }
 
     @GetMapping(value = "/addMysqlConnectionPage")
-    public String addMysqlConnectionPage(){
+    public String addMysqlConnectionPage() {
 
         return "/html/pages/datasource/connection-mysql-add.html";
     }
 
 
     @GetMapping(value = "/")
-    public String uploadExcelConnectionInfoPage(){
+    public String uploadExcelConnectionInfoPage() {
         return "";
     }
-
-
-
-
-
 
 
 }

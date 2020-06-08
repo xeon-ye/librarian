@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../../css/oksub.css">
 </head>
 <body>
-    <div class="ok-body">
-        <blockquote class="layui-elem-quote">
-            <p>JavaScript Cookies操作</p>
-        </blockquote>
-        <pre>
+<div class="ok-body">
+    <blockquote class="layui-elem-quote">
+        <p>JavaScript Cookies操作</p>
+    </blockquote>
+    <pre>
 layui.use(["okCookie"], function () {
     let $ = layui.jquery;
     <br/>
@@ -26,29 +26,29 @@ layui.use(["okCookie"], function () {
     $.cookie("hello", null);
 });
         </pre>
-    </div>
-    <!--js逻辑-->
-    <script src="../../lib/layui/layui.js"></script>
-    <script>
-        layui.use(["code", "okCookie"], function () {
-            let code = layui.code;
-            let $ = layui.jquery;
+</div>
+<!--js逻辑-->
+<script src="../../lib/layui/layui.js"></script>
+<script>
+    layui.use(["code", "okCookie"], function () {
+        let code = layui.code;
+        let $ = layui.jquery;
 
-            code({
-                elem: "pre",
-                title: "代码示例"
-            });
-
-            // 创建cookie
-            $.cookie("hello", "word")
-
-            // 读取cookie
-            let hello = $.cookie("hello");
-            console.log(hello);
-
-            // 删除cookie
-            $.cookie("hello", null);
+        code({
+            elem: "pre",
+            title: "代码示例"
         });
-    </script>
+
+        // 创建cookie
+        $.cookie("hello", "word")
+
+        // 读取cookie
+        let hello = $.cookie("hello");
+        console.log(hello);
+
+        // 删除cookie
+        $.cookie("hello", null);
+    });
+</script>
 </body>
 </html>

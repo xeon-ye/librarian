@@ -11,7 +11,7 @@
     <script type="text/javascript" src="../../builds/merged/grid.simple.min.js"></script>
 </head>
 <body style="background-color: #fff;">
-<input type="button" value="Get Checked Ids" onclick="getCheckedIds()"  />
+<input type="button" value="Get Checked Ids" onclick="getCheckedIds()"/>
 <table id="searchTable">
     <tr>
         <th w_render="checkbox" w_index="ID" width="3%;"><input type="checkbox"/></th>
@@ -34,39 +34,39 @@
             pageSize: 10
         });
 
-    	// 表格的checkbox选择
-    	if($('#searchTable thead tr th:eq(0) input[type=checkbox]').length == 1) {
-    	    $('#searchTable thead tr th:eq(0) input[type=checkbox]').change(function () {
+        // 表格的checkbox选择
+        if ($('#searchTable thead tr th:eq(0) input[type=checkbox]').length == 1) {
+            $('#searchTable thead tr th:eq(0) input[type=checkbox]').change(function () {
                 var checked = $.bsgrid.adaptAttrOrProp($(this), 'checked') ? true : false;
                 $.bsgrid.adaptAttrOrProp($('#searchTable tbody tr td:nth-child(1)>input[type=checkbox]'), 'checked', checked);
-    	    });
-    	}
+            });
+        }
 
     });
 
     function checkbox(record, rowIndex, colIndex, options) {
-    	return '<input type="checkbox" value="' + gridObj.getColumnValue(rowIndex, gridObj.getColumnModel(colIndex).index) + '"/>';
+        return '<input type="checkbox" value="' + gridObj.getColumnValue(rowIndex, gridObj.getColumnModel(colIndex).index) + '"/>';
     }
 
     function getCheckedIds() {
-    	var records = getCheckedRecords();
+        var records = getCheckedRecords();
         var ids = '';
-        for(var i = 0; i < records.length; i++) {
-        	ids += ',' + gridObj.getRecordIndexValue(records[i], 'ID');
+        for (var i = 0; i < records.length; i++) {
+            ids += ',' + gridObj.getRecordIndexValue(records[i], 'ID');
         }
         alert(ids.length > 0 ? ids.substring(1) : '');
     }
-    
+
     function getCheckedRecords() {
         var records = new Array();
-        $('#searchTable tbody tr').each(function() {
-        	if($(this).find('td:eq(0)>input:checked').length == 1){
-        		records[records.length] = gridObj.getRowRecord($(this));
-        	}
+        $('#searchTable tbody tr').each(function () {
+            if ($(this).find('td:eq(0)>input:checked').length == 1) {
+                records[records.length] = gridObj.getRowRecord($(this));
+            }
         });
         return records;
     }
-    
+
     function operate(record, rowIndex, colIndex, options) {
         return '<a href="#" onclick="alert(\'ID=' + gridObj.getRecordIndexValue(record, 'ID') + '\');">Operate</a>';
     }

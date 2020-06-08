@@ -11,7 +11,7 @@
     <script type="text/javascript" src="../../builds/merged/bsgrid.all.min.js"></script>
 </head>
 <body style="background-color: #fff;">
-<input type="button" value="Get Checked Ids" onclick="getCheckedIds()"  />
+<input type="button" value="Get Checked Ids" onclick="getCheckedIds()"/>
 <table id="searchTable">
     <tr>
         <th w_num="line" width="3%;"></th>
@@ -30,7 +30,7 @@
     var gridObj;
     $(function () {
         gridObj = $.fn.bsgrid.init('searchTable', {
-        	//autoLoad: false,
+            //autoLoad: false,
             url: 'data/json.jsp',
             pageSizeSelect: true,
             pageSize: 10
@@ -41,7 +41,7 @@
         // values are array
         alert(gridObj.getCheckedValues('ID'));
     }
-    
+
     function operate(record, rowIndex, colIndex, options) {
         return '<a href="#" onclick="alert(\'ID=' + gridObj.getRecordIndexValue(record, 'ID') + '\');">Operate</a>';
     }

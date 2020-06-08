@@ -27,7 +27,6 @@
 <!--        height="100%"></iframe>-->
 
 
-
 <script type="text/javascript" src="../../../lib/layui/layui.js"></script>
 <!--<script type="text/javascript" src="../../../lib/jquery-3.4.1.js"></script>-->
 <script type="text/javascript" src="../../../js/doc/markdown.js"></script>
@@ -55,14 +54,13 @@
         // });
 
 
-
         $.ajax({
-            url:'/markdown/showMarkdownFile',
-            method:'get',
-            async:false,
-            data:{"filePath": "none"},
-            success:function (res) {
-                if(res.code === 0) {
+            url: '/markdown/showMarkdownFile',
+            method: 'get',
+            async: false,
+            data: {"filePath": "none"},
+            success: function (res) {
+                if (res.code === 0) {
                     $("#markdownContent").append(res.message);
                     $("#markdownContent").trigger("create");
                     $("#markdownContent").listView("refresh");
@@ -77,18 +75,16 @@
                     hljs.initHighlightingOnLoad();
                     console.info("Markdown 文档内容：" + JSON.stringify(res.message));
 
-                }else{
+                } else {
                     layer.error("获取文档内容失败!");
                 }
             },
-            error:function () {
+            error: function () {
                 layer.msg("获取文档内容失败!");
 
             }
 
         });
-
-
 
 
         //添加平板样式文件
@@ -101,7 +97,7 @@
         }
 
         // 动态加载js文件
-        function loadJavaScript(src){
+        function loadJavaScript(src) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.src = src;  //引入的文件名
@@ -109,13 +105,13 @@
         }
 
         //移除平板样式文件
-        function removeStyles(href){
+        function removeStyles(href) {
             // var filename = 'css/mpad.css';  //移除引入的文件名
             var filename = href;  //移除引入的文件名
             var targetelement = "link";
             var targetattr = "href";
             var allsuspects = document.getElementsByTagName(targetelement);
-            for (var i = allsuspects.length; i>=0 ; i--){
+            for (var i = allsuspects.length; i >= 0; i--) {
                 if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null && allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1) {
                     allsuspects[i].parentNode.removeChild(allsuspects[i])
                 }
@@ -124,9 +120,6 @@
 
 
     });
-
-
-
 
 
 </script>

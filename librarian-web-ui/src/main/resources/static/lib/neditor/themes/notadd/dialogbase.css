@@ -47,7 +47,7 @@ table {
 */
 body {
     background-color: #fff;
-    font: 13px/1.5 Microsoft yahei,sans-serif, "宋体", "Arial Narrow", HELVETICA;
+    font: 13px/1.5 Microsoft yahei, sans-serif, "宋体", "Arial Narrow", HELVETICA;
     color: #646464;
 }
 
@@ -76,7 +76,7 @@ body {
     /*height: 31px;*/
     border-bottom: none;
     background: #3498db;
-    color:#fff;
+    color: #fff;
 }
 
 .tabbody {

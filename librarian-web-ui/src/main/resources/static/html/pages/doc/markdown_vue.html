@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../../../css/highlight-styles/atom-one-light.css">
     <link rel="stylesheet" href="../../../css/highlight/default.min.css">
 
-<!--    解析Markdown-->
-<!--    <script type="text/javascript" src="../../../lib/marked/marked.min.js"></script>-->
+    <!--    解析Markdown-->
+    <!--    <script type="text/javascript" src="../../../lib/marked/marked.min.js"></script>-->
 
 
     <script type="text/javascript" src="../../../lib/vue/vue-2.6.10.js"></script>
@@ -35,7 +35,7 @@
     <router-link to="/doc_show">文档查看</router-link>
 
     <!--    容器-->
-    <router-view ></router-view>
+    <router-view></router-view>
 
 </div>
 
@@ -46,7 +46,6 @@
 <script>
 
 
-
     // 2. 创建子组件
     var doc_list = {
         template: '<div v-html="md_text"></div>'
@@ -54,15 +53,15 @@
 
 
     var doc_show = {
-        template : ' <div v-html="result"></div>'
+        template: ' <div v-html="result"></div>'
     };
 
     // 创建一个路由对象
     var router = new VueRouter({
-        routes:[  // 路由规则数据
-            {path: '/', redirect: doc_show },
-            {path: '/doc_list', component: doc_list },
-            {path: '/doc_show', component: doc_show },
+        routes: [  // 路由规则数据
+            {path: '/', redirect: doc_show},
+            {path: '/doc_list', component: doc_list},
+            {path: '/doc_show', component: doc_show},
         ],
         linkActiveClass: "myActive"
     });
@@ -75,7 +74,7 @@
             result: ''
         },
         // 初始化的时候执行
-        mounted: function(){
+        mounted: function () {
             this.compile();
         },
         methods: {
@@ -86,7 +85,7 @@
                     method: 'get',
                     responseType: 'json', // 默认的
                     data: {
-                        "filePath":"暂未开放"
+                        "filePath": "暂未开放"
                     }
                 }).then(function (response) {
                     console.log(response.data);

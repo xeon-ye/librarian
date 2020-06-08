@@ -66,11 +66,9 @@ public class EsDataOperationController {
     private RestHighLevelClient restHighLevelClient;
 
     /**
-     * @param indexName
-     *            索引名称
+     * @param indexName 索引名称
      * @return 数量
-     * @throws IOException
-     *             异常
+     * @throws IOException 异常
      */
     @ApiOperation(value = "查询文档个数", notes = "查询文档个数")
     @GetMapping(value = "/docCount")
@@ -87,10 +85,8 @@ public class EsDataOperationController {
     }
 
 
-
-
     @ApiOperation(value = "es插入数据", notes = "es插入数据")
-    @PutMapping(value = "/insertData" )
+    @PutMapping(value = "/insertData")
     public ResultEntity insertUser(@RequestBody User user, @RequestParam String indexName) {
         IndexRequest indexRequest = new IndexRequest(indexName);
         String userJson = JSONObject.toJSONString(user);
@@ -104,10 +100,10 @@ public class EsDataOperationController {
                 log.info("index:{},id:{}", index, id);
                 if (indexResponse.getResult() == DocWriteResponse.Result.CREATED) {
                     log.info("新增文档成功!" + index + "-" + id + "-" + version);
-                    return  ResultEntity.success();
+                    return ResultEntity.success();
                 } else if (indexResponse.getResult() == DocWriteResponse.Result.UPDATED) {
                     log.info("修改文档成功!");
-                    return ResultEntity.error(500,"插入数据失败！");
+                    return ResultEntity.error(500, "插入数据失败！");
                 }
                 // 分片处理信息
                 ReplicationResponse.ShardInfo shardInfo = indexResponse.getShardInfo();
@@ -132,7 +128,7 @@ public class EsDataOperationController {
     @ApiOperation(value = "es普通查询", notes = "es普通查询")
 
     @RequestMapping(value = "/queryData", method = RequestMethod.GET)
-    public ResultEntity testESFind( @RequestParam String indexName) {
+    public ResultEntity testESFind(@RequestParam String indexName) {
         SearchRequest searchRequest = new SearchRequest(indexName);
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
         //如果用name直接查询，其实是匹配name分词过后的索引查到的记录(倒排索引)；如果用name.keyword查询则是不分词的查询，正常查询到的记录
@@ -162,7 +158,7 @@ public class EsDataOperationController {
             return ResultEntity.success();
         } catch (IOException e) {
             e.printStackTrace();
-            return ResultEntity.error(500, "查询失败" );
+            return ResultEntity.error(500, "查询失败");
         }
     }
 
@@ -199,7 +195,7 @@ public class EsDataOperationController {
     }
 
     @ApiOperation(value = "es更新数据", notes = "es测试更新数据")
-    @PostMapping(value = "/updateData" )
+    @PostMapping(value = "/updateData")
     public ResultEntity testESUpdate(@RequestParam String indexName, @RequestParam String id, @RequestParam Double money) {
         UpdateRequest updateRequest = new UpdateRequest(indexName, id);
         Map<String, Object> map = new HashMap<>();
@@ -208,31 +204,31 @@ public class EsDataOperationController {
         try {
             UpdateResponse updateResponse = restHighLevelClient.update(updateRequest, RequestOptions.DEFAULT);
             if (updateResponse.getResult() == DocWriteResponse.Result.UPDATED) {
-               return ResultEntity.success();
+                return ResultEntity.success();
             } else {
-                return ResultEntity.error(500, "删除失败" );
+                return ResultEntity.error(500, "删除失败");
             }
         } catch (IOException e) {
             e.printStackTrace();
-            return ResultEntity.error(500, "删除异常" );
+            return ResultEntity.error(500, "删除异常");
         }
     }
 
     @ApiOperation(value = "es删除数据", notes = "es删除数据")
-    @DeleteMapping(value = "/deleteData" )
-    public ResultEntity testESDelete(@RequestParam String indexName,@RequestParam String id) {
+    @DeleteMapping(value = "/deleteData")
+    public ResultEntity testESDelete(@RequestParam String indexName, @RequestParam String id) {
         DeleteRequest deleteRequest = new DeleteRequest(indexName);
         deleteRequest.id(id);
         try {
             DeleteResponse deleteResponse = restHighLevelClient.delete(deleteRequest, RequestOptions.DEFAULT);
             if (deleteResponse.getResult() == DocWriteResponse.Result.NOT_FOUND) {
-                return ResultEntity.error(500, "删除失败" );
+                return ResultEntity.error(500, "删除失败");
             } else {
                 return ResultEntity.success();
             }
         } catch (IOException e) {
             e.printStackTrace();
-            return ResultEntity.error(500, "删除异常" );
+            return ResultEntity.error(500, "删除异常");
         }
     }
 

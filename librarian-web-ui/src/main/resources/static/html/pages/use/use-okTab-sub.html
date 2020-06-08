@@ -25,7 +25,7 @@
         使用方法1：用按钮点击打开
     </blockquote>
 
-<pre class="layui-code" lay-title="JavaScript" lay-encode="true">
+    <pre class="layui-code" lay-title="JavaScript" lay-encode="true">
 /**
  * 添加tab
  * @param title 标题
@@ -35,14 +35,14 @@ okTab.tabAdd("ok-tool", "http://www.xlbweb.cn")
 </pre>
 
     <button class="layui-btn" id="addTab1">打开一个新的Tab1</button>
-	<button class="layui-btn" id="addTab2">打开一个新的Tab2</button>
+    <button class="layui-btn" id="addTab2">打开一个新的Tab2</button>
 </div>
 <!--js逻辑-->
 <script src="../../lib/layui/layui.js"></script>
 <script>
     layui.use(["element", "code", "okTab"], function () {
         var $ = layui.jquery;
-		var okTab = layui.okTab;
+        var okTab = layui.okTab;
 
         layui.code({about: false});
 
@@ -50,9 +50,9 @@ okTab.tabAdd("ok-tool", "http://www.xlbweb.cn")
             okTab.add("瓜子二手车", "https://www.guazi.com");
         });
 
-		$("#addTab2").click(function () {
-		    okTab.add("国美电器", "https://www.gome.com.cn");
-		});
+        $("#addTab2").click(function () {
+            okTab.add("国美电器", "https://www.gome.com.cn");
+        });
     })
 </script>
 </body>

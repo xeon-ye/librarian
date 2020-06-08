@@ -20,43 +20,43 @@ public class HelpPageController {
 
     // help---------------------------------------------------------------------------------
     @GetMapping(value = "/nav_icon")
-    public String navIcon(){
+    public String navIcon() {
         return "/html/pages/help/nav_icon.html";
     }
 
 
     @GetMapping(value = "/nav_operate")
-    public String nav_operate(){
+    public String nav_operate() {
         return "/html/pages/help/nav_operate.html";
     }
 
 
     @GetMapping(value = "/nav_parameter")
-    public String nav_parameter(){
+    public String nav_parameter() {
         return "/html/pages/help/nav_parameter.html";
     }
 
 
     @GetMapping(value = "/ok_font")
-    public String ok_font(){
+    public String ok_font() {
         return "/html/pages/help/ok_font.html";
     }
 
 
     @GetMapping(value = "/okLayer")
-    public String okLayer(){
+    public String okLayer() {
         return "/html/pages/help/okLayer.html";
     }
 
 
     @GetMapping(value = "/okUtils")
-    public String okUtils(){
+    public String okUtils() {
         return "/html/pages/help/okUtils.html";
     }
 
 
     @GetMapping(value = "/plug_directory")
-    public String plug_directory(){
+    public String plug_directory() {
         return "/html/pages/help/plug_directory.html";
     }
 }

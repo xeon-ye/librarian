@@ -22,20 +22,17 @@
 
 
     <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>ccs</id>-->
-            <!--<name>ccs</name>-->
-            <!--<url>http://192.168.10.178:8081/repository/ccs/</url>-->
-            <!--<releases>-->
-                <!--<enabled>true</enabled>-->
-            <!--</releases>-->
-        <!--</repository>-->
+    <!--<repository>-->
+    <!--<id>ccs</id>-->
+    <!--<name>ccs</name>-->
+    <!--<url>http://192.168.10.178:8081/repository/ccs/</url>-->
+    <!--<releases>-->
+    <!--<enabled>true</enabled>-->
+    <!--</releases>-->
+    <!--</repository>-->
     <!--</repositories>-->
 
     <dependencies>
-
-
-
 
 
         <dependency>
@@ -43,9 +40,6 @@
             <artifactId>commons-lang3</artifactId>
             <version>${common.lang3.version}</version>
         </dependency>
-
-
-
 
 
         <!--        // json 格式化和解析工具-->
@@ -64,15 +58,12 @@
         </dependency>
 
 
-
-
-
         <!-- alibaba的druid数据库连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.9</version>
-<!--            <version>${durid-springboot.version}</version>-->
+            <!--            <version>${durid-springboot.version}</version>-->
         </dependency>
 
 
@@ -81,7 +72,7 @@
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-spring-boot-starter</artifactId>
             <version>3.3.0</version>
-<!--            <version>${easypoi-springboot.version}</version>-->
+            <!--            <version>${easypoi-springboot.version}</version>-->
         </dependency>
 
         <!--导入配置文件处理器，配置文件进行绑定就会有提示-->
@@ -92,7 +83,6 @@
         </dependency>
 
 
-
         <!--启用webSocket-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -100,13 +90,11 @@
         </dependency>
 
 
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-jdbc.version}</version>
         </dependency>
-
 
 
         <dependency>
@@ -135,7 +123,6 @@
         </dependency>
 
 
-
         <!--依赖本系统项目工具包-->
         <dependency>
             <groupId>com.nulijiushimeili</groupId>
@@ -151,10 +138,7 @@
         </dependency>
 
 
-
     </dependencies>
-
-
 
 
 </project>

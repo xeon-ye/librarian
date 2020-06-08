@@ -19,13 +19,14 @@ public class MethodMonitorAspect {
 
 
     @Pointcut(value = "@annotation(com.nulijiushimeili.librarianwebui.annotation.Monitor)")
-    public void ioMonitor(){}
+    public void ioMonitor() {
+    }
 
     @Around(value = "ioMonitor()")
-    public Object doMonitor(ProceedingJoinPoint joinPoint){
+    public Object doMonitor(ProceedingJoinPoint joinPoint) {
 
         // 获取监控方法的入参
-        Object [] args = joinPoint.getArgs();
+        Object[] args = joinPoint.getArgs();
         // 获取方法执行的返回值
         Object returnValue = null;
 
@@ -36,12 +37,12 @@ public class MethodMonitorAspect {
         // 当前执行的方法的方法名
         String methodName = signature.getMethod().getName();
         StringBuilder sb = new StringBuilder();
-        sb.append("执行方法：").append( className).append(".").append(methodName).append("(") ;
-        for (Object arg :  args) {
+        sb.append("执行方法：").append(className).append(".").append(methodName).append("(");
+        for (Object arg : args) {
             sb.append(arg.toString());
             sb.append(",");
         }
-        String methodInfo = sb.toString().substring(0,sb.toString().length()-1);
+        String methodInfo = sb.toString().substring(0, sb.toString().length() - 1);
         methodInfo += ")";
 
         log.info(methodInfo);

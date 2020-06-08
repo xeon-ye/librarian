@@ -25,7 +25,7 @@ public class ConnectionInfoSpread {
     /**
      * 数据源的名称，唯一标识一个数据源
      */
-    @Excel(name="连接名称", orderNum = "0")
+    @Excel(name = "连接名称", orderNum = "0")
     private String connName;
 
     /**
@@ -72,7 +72,6 @@ public class ConnectionInfoSpread {
      * 数据源的描述
      */
     private String resourceArgs;
-
 
 
     /**

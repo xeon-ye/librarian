@@ -85,7 +85,7 @@ public class BaseMetadataEntity {
     private Integer replica;
 
     /**
-     *  批量操作id的集合
+     * 批量操作id的集合
      */
     private List<Integer> idList;
 

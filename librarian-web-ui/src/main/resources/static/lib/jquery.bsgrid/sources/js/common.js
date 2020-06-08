@@ -46,6 +46,7 @@ function StringBuilder() {
         this.append.apply(this, arguments);
     }
 }
+
 /**
  * StringBuilder.
  * Property: length

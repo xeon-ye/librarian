@@ -63,23 +63,30 @@
 &emsp;<input type="button" value="get Selected Row(inner html)" onclick="alert(gridObj.getSelectedRow().html());"/>
 
 <p/>
-&emsp;<input type="button" value="get All records" onclick="alert(gridObj.getAllRecords()); console.log(gridObj.getAllRecords());"/>
-&emsp;<input type="button" value="get Row 2 record" onclick="alert(gridObj.getRecord(2)); console.log(gridObj.getRecord(2));"/>
-&emsp;<input type="button" value="get Selected Row record" onclick="alert(gridObj.getRowRecord(gridObj.getSelectedRow())); console.log(gridObj.getRowRecord(gridObj.getSelectedRow()));"/>
-&emsp;<input type="button" value="get Selected Row record XH value" onclick="alert(gridObj.getRecordIndexValue(gridObj.getRowRecord(gridObj.getSelectedRow()), 'XH'));"/>
+&emsp;<input type="button" value="get All records"
+             onclick="alert(gridObj.getAllRecords()); console.log(gridObj.getAllRecords());"/>
+&emsp;<input type="button" value="get Row 2 record"
+             onclick="alert(gridObj.getRecord(2)); console.log(gridObj.getRecord(2));"/>
+&emsp;<input type="button" value="get Selected Row record"
+             onclick="alert(gridObj.getRowRecord(gridObj.getSelectedRow())); console.log(gridObj.getRowRecord(gridObj.getSelectedRow()));"/>
+&emsp;<input type="button" value="get Selected Row record XH value"
+             onclick="alert(gridObj.getRecordIndexValue(gridObj.getRowRecord(gridObj.getSelectedRow()), 'XH'));"/>
 &emsp;<input type="button" value="get Row 2 XH value" onclick="alert(gridObj.getColumnValue(2, 'XH'));"/>
 &emsp;<input type="button" value="get Row 2 Col 0 Cell XH value" onclick="alert(gridObj.getCellRecordValue(2, 0));"/>
 
 <p/>
 &emsp;<input type="button" value="get Rows(Dom Object length)" onclick="alert(gridObj.getRows().length);"/>
-&emsp;<input type="button" value="get Row 2(Dom Object outerHTML)" onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getRow(2), 'outerHTML'));"/>
+&emsp;<input type="button" value="get Row 2(Dom Object outerHTML)"
+             onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getRow(2), 'outerHTML'));"/>
 &emsp;<input type="button" value="get Row 0 Cells(Dom Object length)" onclick="alert(gridObj.getRowCells(0).length);"/>
 &emsp;<input type="button" value="get Col 0 Cells(Dom Object length)" onclick="alert(gridObj.getColCells(0).length);"/>
-&emsp;<input type="button" value="get Cell(Row 2 Col 0, Dom Object outerHTML)" onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getCell(2, 0), 'outerHTML'));"/>
+&emsp;<input type="button" value="get Cell(Row 2 Col 0, Dom Object outerHTML)"
+             onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getCell(2, 0), 'outerHTML'));"/>
 
 <p/>
 &emsp;<input type="button" value="Clear Rows 0 data" onclick="gridObj.clearRowData(0);"/>
-&emsp;<input type="button" value="Replace Row 0 data with Row 1" onclick="gridObj.loadRowData(gridObj.getRecord(1), 0);"/>
+&emsp;<input type="button" value="Replace Row 0 data with Row 1"
+             onclick="gridObj.loadRowData(gridObj.getRecord(1), 0);"/>
 &emsp;<input type="button" value="Clear grid body data" onclick="gridObj.clearGridBodyData();"/>
 
 <p/>

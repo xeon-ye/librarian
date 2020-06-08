@@ -30,24 +30,23 @@ import javax.servlet.http.HttpServletRequest;
 public class MetadataInfoManagementController {
 
 
-    @ApiOperation(value = "添加元数据信息", notes="添加元数据信息")
+    @ApiOperation(value = "添加元数据信息", notes = "添加元数据信息")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "beginTime", value = "查询起始时间",   dataType = "Date"),
+            @ApiImplicitParam(name = "beginTime", value = "查询起始时间", dataType = "Date"),
     })
     @PutMapping(value = "/addMetadataInfo")
-    public ResultEntity addMetadataInfo(BaseMetadataEntity baseMetadataEntity){
+    public ResultEntity addMetadataInfo(BaseMetadataEntity baseMetadataEntity) {
 
         return ResultEntity.success();
     }
 
 
-
-    @ApiOperation(value = "查询元数据信息", notes="条件查询所有的元数据信息")
+    @ApiOperation(value = "查询元数据信息", notes = "条件查询所有的元数据信息")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "beginTime", value = "查询起始时间",   dataType = "Date"),
+            @ApiImplicitParam(name = "beginTime", value = "查询起始时间", dataType = "Date"),
     })
     @GetMapping(value = "/metadataInfos")
-    public ResultEntity conditionSearchMetadataInfos(HttpServletRequest request){
+    public ResultEntity conditionSearchMetadataInfos(HttpServletRequest request) {
 
         return ResultEntity.success();
     }

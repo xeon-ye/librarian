@@ -28,6 +28,7 @@ public class EnumOrderStatusHandler<E extends Enum<?> & BaseEnum> extends BaseTy
     /**
      * 枚举类写入数据库时的转换器
      * 将枚举类转为code
+     *
      * @param preparedStatement
      * @param i
      * @param baseEnum
@@ -41,6 +42,7 @@ public class EnumOrderStatusHandler<E extends Enum<?> & BaseEnum> extends BaseTy
 
     /**
      * 通过字段名获取数据时，把数据库类型转换为Java类型
+     *
      * @param resultSet
      * @param s
      * @return
@@ -54,6 +56,7 @@ public class EnumOrderStatusHandler<E extends Enum<?> & BaseEnum> extends BaseTy
 
     /**
      * 通过字段索引获取数据时，把数据库类型转换为Java类型
+     *
      * @param resultSet
      * @param i
      * @return
@@ -67,6 +70,7 @@ public class EnumOrderStatusHandler<E extends Enum<?> & BaseEnum> extends BaseTy
 
     /**
      * 调用存储过程时，把数据库类型转换为Java类型
+     *
      * @param callableStatement
      * @param i
      * @return

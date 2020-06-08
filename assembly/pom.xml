@@ -18,7 +18,6 @@
     <packaging>pom</packaging>
 
 
-
     <dependencies>
 
     </dependencies>
@@ -26,29 +25,26 @@
     <build>
         <plugins>
             <!--<plugin>-->
-                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>attach-javadoc</id>-->
-                        <!--<phase>deploy</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>jar</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-                <!--<configuration>-->
-                    <!--<show>public</show>-->
-                    <!--<charset>UTF-8</charset>-->
-                    <!--<encoding>UTF-8</encoding>-->
-                    <!--<docencoding>UTF-8</docencoding>-->
-                    <!--<links>-->
-                        <!--<link>http://docs.oracle.com/javase/6/docs/api</link>-->
-                    <!--</links>-->
-                <!--</configuration>-->
+            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>attach-javadoc</id>-->
+            <!--<phase>deploy</phase>-->
+            <!--<goals>-->
+            <!--<goal>jar</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--<configuration>-->
+            <!--<show>public</show>-->
+            <!--<charset>UTF-8</charset>-->
+            <!--<encoding>UTF-8</encoding>-->
+            <!--<docencoding>UTF-8</docencoding>-->
+            <!--<links>-->
+            <!--<link>http://docs.oracle.com/javase/6/docs/api</link>-->
+            <!--</links>-->
+            <!--</configuration>-->
             <!--</plugin>-->
-
-
-
 
 
             <plugin>
@@ -71,7 +67,6 @@
                     </execution>
                 </executions>
             </plugin>
-
 
 
         </plugins>

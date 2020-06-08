@@ -35,10 +35,26 @@
                     dataElements = $('' + settings.dataelement + '', dataContainer);
                 }
                 var list = $('<ul/>');
-                var btnPrev = $('<div/>').text(settings.prev).click(function () { if ($(this).hasClass('disabled')) return false; currentPage = parseInt(list.find('li a.active').text()) - 1; navigate(--currentPage); }).addClass('btn');
-                var btnNext = $('<div/>').text(settings.next).click(function () { if ($(this).hasClass('disabled')) return false; currentPage = parseInt(list.find('li a.active').text()); navigate(currentPage); }).addClass('btn');
-                var btnFirst = $('<div/>').text(settings.first).click(function () { if ($(this).hasClass('disabled')) return false; currentPage = 0; navigate(0); }).addClass('btn');
-                var btnLast = $('<div/>').text(settings.last).click(function () { if ($(this).hasClass('disabled')) return false; currentPage = totalpages - 1; navigate(currentPage); }).addClass('btn');
+                var btnPrev = $('<div/>').text(settings.prev).click(function () {
+                    if ($(this).hasClass('disabled')) return false;
+                    currentPage = parseInt(list.find('li a.active').text()) - 1;
+                    navigate(--currentPage);
+                }).addClass('btn');
+                var btnNext = $('<div/>').text(settings.next).click(function () {
+                    if ($(this).hasClass('disabled')) return false;
+                    currentPage = parseInt(list.find('li a.active').text());
+                    navigate(currentPage);
+                }).addClass('btn');
+                var btnFirst = $('<div/>').text(settings.first).click(function () {
+                    if ($(this).hasClass('disabled')) return false;
+                    currentPage = 0;
+                    navigate(0);
+                }).addClass('btn');
+                var btnLast = $('<div/>').text(settings.last).click(function () {
+                    if ($(this).hasClass('disabled')) return false;
+                    currentPage = totalpages - 1;
+                    navigate(currentPage);
+                }).addClass('btn');
                 var inputPage = $('<input/>').attr('type', 'text').keydown(function (e) {
                     if (isTextSelected(inputPage)) inputPage.val('');
                     if (e.which >= 48 && e.which < 58) {
@@ -46,7 +62,12 @@
                         if (!(value > 0 && value <= totalpages)) e.preventDefault();
                     } else if (!(e.which == 8 || e.which == 46)) e.preventDefault();
                 });
-                var btnGo = $('<input/>').attr('type', 'button').attr('value', settings.go).addClass('btn').click(function () { if (inputPage.val() == '') return false; else { currentPage = parseInt(inputPage.val()) - 1; navigate(currentPage); } });
+                var btnGo = $('<input/>').attr('type', 'button').attr('value', settings.go).addClass('btn').click(function () {
+                    if (inputPage.val() == '') return false; else {
+                        currentPage = parseInt(inputPage.val()) - 1;
+                        navigate(currentPage);
+                    }
+                });
                 container.append(btnFirst).append(btnPrev).append(list).append(btnNext).append(btnLast).append($('<div/>').addClass('short').append(inputPage).append(btnGo));
                 if (settings.display == 'single') {
                     btnGo.css('display', 'none');
@@ -57,29 +78,31 @@
                 currentPage = settings.initval - 1;
                 navigate(currentPage);
                 initialized = true;
+
                 function showLabels(pageIndex) {
                     container.find('span').remove();
                     var upper = (pageIndex + 1) * settings.recordsperpage;
                     if (upper > settings.totalrecords) upper = settings.totalrecords;
                     container.append($('<span/>').append($('<b/>').text(pageIndex * settings.recordsperpage + 1)))
-                                             .append($('<span/>').text('-'))
-                                             .append($('<span/>').append($('<b/>').text(upper)))
-                                             .append($('<span/>').text('of'))
-                                             .append($('<span/>').append($('<b/>').text(settings.totalrecords)));
+                        .append($('<span/>').text('-'))
+                        .append($('<span/>').append($('<b/>').text(upper)))
+                        .append($('<span/>').text('of'))
+                        .append($('<span/>').append($('<b/>').text(settings.totalrecords)));
                 }
+
                 function buildNavigation(startPage) {
                     list.find('li').remove();
                     if (settings.totalrecords <= settings.recordsperpage) return;
                     for (var i = startPage; i < startPage + settings.length; i++) {
                         if (i == totalpages) break;
                         list.append($('<li/>')
-                                    .append($('<a>').attr('id', (i + 1)).addClass(settings.theme).addClass('normal')
-                                    .attr('href', 'javascript:void(0)')
-                                    .text(i + 1))
-                                    .click(function () {
-                                        currentPage = startPage + $(this).closest('li').prevAll().length;
-                                        navigate(currentPage);
-                                    }));
+                            .append($('<a>').attr('id', (i + 1)).addClass(settings.theme).addClass('normal')
+                                .attr('href', 'javascript:void(0)')
+                                .text(i + 1))
+                            .click(function () {
+                                currentPage = startPage + $(this).closest('li').prevAll().length;
+                                navigate(currentPage);
+                            }));
                     }
                     showLabels(startPage);
                     inputPage.val((startPage + 1));
@@ -88,9 +111,10 @@
                     //set width of paginator
                     var sW = list.find('li:eq(0) a').outerWidth() + (parseInt(list.find('li:eq(0)').css('margin-left')) * 2);
                     var width = sW * list.find('li').length;
-                    list.css({ width: width });
+                    list.css({width: width});
                     showRequiredButtons(startPage);
                 }
+
                 function navigate(topage) {
                     //make sure the page in between min and max page count
                     var index = topage;
@@ -104,7 +128,8 @@
                             else if (totalpages > settings.length)
                                 startIndex = totalpages - settings.length;
                         }
-                        buildNavigation(startIndex); showLabels(currentPage);
+                        buildNavigation(startIndex);
+                        showLabels(currentPage);
                         list.find('li a').removeClass('active');
                         inputPage.val(currentPage + 1);
                         list.find('li a[id="' + (index + 1) + '"]').addClass('active');
@@ -135,6 +160,7 @@
                         showRequiredButtons();
                     }
                 }
+
                 function showRequiredButtons() {
                     if (totalpages > settings.length) {
                         if (currentPage > 0) {
@@ -201,7 +227,8 @@
                             else {
                                 btnLast.css('display', '').addClass('disabled');
                             }
-                        };
+                        }
+                        ;
                     }
                     else {
                         if (!settings.controlsalways) {
@@ -218,6 +245,7 @@
                         }
                     }
                 }
+
                 function isTextSelected(el) {
                     var startPos = el.get(0).selectionStart;
                     var endPos = el.get(0).selectionEnd;

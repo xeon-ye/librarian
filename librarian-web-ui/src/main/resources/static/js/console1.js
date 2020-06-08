@@ -23,7 +23,12 @@ layui.use(["okUtils", "countUp"], function () {
         return {
             color: color, toolbox: {show: false, feature: {saveAsImage: {}}},
             grid: {left: '-1%', right: '0', bottom: '0', top: '5px', containLabel: false},
-            xAxis: [{type: 'category', boundaryGap: false, splitLine: {show: false}, data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']}],
+            xAxis: [{
+                type: 'category',
+                boundaryGap: false,
+                splitLine: {show: false},
+                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+            }],
             yAxis: [{type: 'value', splitLine: {show: false}}],
             series: [{
                 name: '用户', type: 'line', stack: '总量', smooth: true, symbol: "none", clickable: false, areaStyle: {},
@@ -78,7 +83,10 @@ layui.use(["okUtils", "countUp"], function () {
         series: [
             {
                 name: '访问来源', type: 'pie', radius: '55%', center: ['50%', '60%'],
-                data: [{value: 335, name: '直接访问'}, {value: 310, name: '邮件营销'}, {value: 234, name: '联盟广告'}, {value: 135, name: '视频广告'}, {value: 1548, name: '搜索引擎'}],
+                data: [{value: 335, name: '直接访问'}, {value: 310, name: '邮件营销'}, {value: 234, name: '联盟广告'}, {
+                    value: 135,
+                    name: '视频广告'
+                }, {value: 1548, name: '搜索引擎'}],
                 itemStyle: {emphasis: {shadowBlur: 10, shadowOffsetX: 0, shadowColor: 'rgba(0, 0, 0, 0.5)'}}
             }
         ]
@@ -102,11 +110,47 @@ layui.use(["okUtils", "countUp"], function () {
         xAxis: [{type: 'category', boundaryGap: false, data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']}],
         yAxis: [{type: 'value', splitLine: {show: false},}],
         series: [
-            {name: '邮件营销', type: 'line', stack: '总量', smooth: true, areaStyle: {}, data: [120, 132, 101, 134, 90, 230, 210]},
-            {name: '联盟广告', type: 'line', stack: '总量', smooth: true, areaStyle: {}, data: [220, 182, 191, 234, 290, 330, 310]},
-            {name: '视频广告', type: 'line', stack: '总量', smooth: true, areaStyle: {}, data: [150, 232, 201, 154, 190, 330, 410]},
-            {name: '直接访问', type: 'line', stack: '总量', smooth: true, areaStyle: {normal: {}}, data: [320, 332, 301, 334, 390, 330, 320]},
-            {name: '搜索引擎', type: 'line', stack: '总量', smooth: true, label: {normal: {show: true, position: 'top'}}, areaStyle: {normal: {}}, data: [370, 932, 901, 934, 1290, 1330, 1320]}
+            {
+                name: '邮件营销',
+                type: 'line',
+                stack: '总量',
+                smooth: true,
+                areaStyle: {},
+                data: [120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+                name: '联盟广告',
+                type: 'line',
+                stack: '总量',
+                smooth: true,
+                areaStyle: {},
+                data: [220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name: '视频广告',
+                type: 'line',
+                stack: '总量',
+                smooth: true,
+                areaStyle: {},
+                data: [150, 232, 201, 154, 190, 330, 410]
+            },
+            {
+                name: '直接访问',
+                type: 'line',
+                stack: '总量',
+                smooth: true,
+                areaStyle: {normal: {}},
+                data: [320, 332, 301, 334, 390, 330, 320]
+            },
+            {
+                name: '搜索引擎',
+                type: 'line',
+                stack: '总量',
+                smooth: true,
+                label: {normal: {show: true, position: 'top'}},
+                areaStyle: {normal: {}},
+                data: [370, 932, 901, 934, 1290, 1330, 1320]
+            }
         ]
     };
 

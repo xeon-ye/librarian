@@ -11,6 +11,7 @@
             text-align: right;
             border-right-width: 0;
         }
+
         .bsgrid .aggValue {
             text-align: left;
             border-left-width: 0;
@@ -33,16 +34,16 @@
         <th w_render="operate" width="10%;">Operate</th>
     </tr>
     <tfoot>
-        <tr>
-            <td class="aggLabel">Count:</td>
-            <td w_agg="count" class="aggValue"></td>
-            <td class="aggLabel">Count(XH*ID):</td>
-            <td w_agg="custom,countXhMultId" class="aggValue"></td>
-            <td class="aggLabel">Max(NUM):</td>
-            <td w_agg="max,NUM" class="aggValue"></td>
-            <td class="aggLabel">Sum(NUM):</td>
-            <td w_agg="sum,NUM" class="aggValue"></td>
-        </tr>
+    <tr>
+        <td class="aggLabel">Count:</td>
+        <td w_agg="count" class="aggValue"></td>
+        <td class="aggLabel">Count(XH*ID):</td>
+        <td w_agg="custom,countXhMultId" class="aggValue"></td>
+        <td class="aggLabel">Max(NUM):</td>
+        <td w_agg="max,NUM" class="aggValue"></td>
+        <td class="aggLabel">Sum(NUM):</td>
+        <td w_agg="sum,NUM" class="aggValue"></td>
+    </tr>
     </tfoot>
 </table>
 <script type="text/javascript">

@@ -63,19 +63,24 @@
 &emsp;<input type="button" value="获取选中行(内部HTML)" onclick="alert(gridObj.getSelectedRow().html());"/>
 
 <p/>
-&emsp;<input type="button" value="获取所有记录值" onclick="alert(gridObj.getAllRecords()); console.log(gridObj.getAllRecords());"/>
+&emsp;<input type="button" value="获取所有记录值"
+             onclick="alert(gridObj.getAllRecords()); console.log(gridObj.getAllRecords());"/>
 &emsp;<input type="button" value="获取第三行记录值" onclick="alert(gridObj.getRecord(2)); console.log(gridObj.getRecord(2));"/>
-&emsp;<input type="button" value="获取选中行记录值" onclick="alert(gridObj.getRowRecord(gridObj.getSelectedRow())); console.log(gridObj.getRowRecord(gridObj.getSelectedRow()));"/>
-&emsp;<input type="button" value="获取选中行的XH值" onclick="alert(gridObj.getRecordIndexValue(gridObj.getRowRecord(gridObj.getSelectedRow()), 'XH'));"/>
+&emsp;<input type="button" value="获取选中行记录值"
+             onclick="alert(gridObj.getRowRecord(gridObj.getSelectedRow())); console.log(gridObj.getRowRecord(gridObj.getSelectedRow()));"/>
+&emsp;<input type="button" value="获取选中行的XH值"
+             onclick="alert(gridObj.getRecordIndexValue(gridObj.getRowRecord(gridObj.getSelectedRow()), 'XH'));"/>
 &emsp;<input type="button" value="获取第三行的XH值" onclick="alert(gridObj.getColumnValue(2, 'XH'));"/>
 &emsp;<input type="button" value="获取第三行第一列的XH值" onclick="alert(gridObj.getCellRecordValue(2, 0));"/>
 
 <p/>
 &emsp;<input type="button" value="获取所有行(Dom对象个数)" onclick="alert(gridObj.getRows().length);"/>
-&emsp;<input type="button" value="获取三行(Dom 对象 outerHTML)" onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getRow(2), 'outerHTML'));"/>
+&emsp;<input type="button" value="获取三行(Dom 对象 outerHTML)"
+             onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getRow(2), 'outerHTML'));"/>
 &emsp;<input type="button" value="获取第一行单元格(Dom对象个数)" onclick="alert(gridObj.getRowCells(0).length);"/>
 &emsp;<input type="button" value="获取第一列单元格(Dom对象个数)" onclick="alert(gridObj.getColCells(0).length);"/>
-&emsp;<input type="button" value="获取第三行第一列单元格(Dom对象outerHTML)" onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getCell(2, 0), 'outerHTML'));"/>
+&emsp;<input type="button" value="获取第三行第一列单元格(Dom对象outerHTML)"
+             onclick="alert($.bsgrid.adaptAttrOrProp(gridObj.getCell(2, 0), 'outerHTML'));"/>
 
 <p/>
 &emsp;<input type="button" value="清空第一行数据" onclick="gridObj.clearRowData(0);"/>

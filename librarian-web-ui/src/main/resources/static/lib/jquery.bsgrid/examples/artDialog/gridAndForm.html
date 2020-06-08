@@ -16,7 +16,7 @@
     <script type="text/javascript" src="../../plugins/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="../../builds/js/lang/grid.zh-CN.min.js"></script>
     <script type="text/javascript" src="../../builds/merged/bsgrid.all.min.js"></script>
-    
+
     <link rel="stylesheet" href="../../plugins/artDialog/skins/blue.css"/>
     <link rel="stylesheet" href="override/artDialog.skins.override.css"/>
     <script type="text/javascript" src="../../plugins/artDialog/jquery.artDialog.min.js"></script>
@@ -58,18 +58,18 @@
         <table>
             <tr showType="false">
                 <td class="formLabel">ID:</td>
-                <td class="formInput"><input name="ID" type="text" /></td>
+                <td class="formInput"><input name="ID" type="text"/></td>
             </tr>
             <tr>
                 <td class="formLabel"><span class="require">*</span>XH:</td>
                 <td class="formInput">
-                    <input name="XH" type="text" editAble="false" />
+                    <input name="XH" type="text" editAble="false"/>
                     <span class="inputTip" showType="add">Must unique</span>
                 </td>
             </tr>
             <tr>
                 <td class="formLabel">CHAR:</td>
-                <td class="formInput"><input name="CHAR" type="text" /></td>
+                <td class="formInput"><input name="CHAR" type="text"/></td>
             </tr>
             <tr>
                 <td class="formLabel">TEXT:</td>
@@ -77,21 +77,22 @@
             </tr>
             <tr>
                 <td class="formLabel">DATE:</td>
-                <td class="formInput"><input name="DATE" type="text" /></td>
+                <td class="formInput"><input name="DATE" type="text"/></td>
             </tr>
             <tr>
                 <td class="formLabel">TIME:</td>
-                <td class="formInput"><input name="TIME" type="text" /></td>
+                <td class="formInput"><input name="TIME" type="text"/></td>
             </tr>
             <tr>
                 <td class="formLabel">NUM:</td>
-                <td class="formInput"><input name="NUM" type="text" /></td>
+                <td class="formInput"><input name="NUM" type="text"/></td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center; border-left-width: 0; border-right-width: 0; border-bottom-width: 0;">
-                    <input type="button" value="Save" onclick="doCommit();" />
+                <td colspan="2"
+                    style="text-align: center; border-left-width: 0; border-right-width: 0; border-bottom-width: 0;">
+                    <input type="button" value="Save" onclick="doCommit();"/>
                     &emsp;
-                    <input type="button" value="Cancel" onclick="gridFormDialog.hidden();" />
+                    <input type="button" value="Cancel" onclick="gridFormDialog.hidden();"/>
                 </td>
             </tr>
         </table>
@@ -151,8 +152,8 @@
 
     function operate(record, rowIndex, colIndex, options, options) {
         return '<a href="#" onclick="doView(' + rowIndex + ');">View</a>'
-                + '&emsp;<a href="#" onclick="doEdit(' + rowIndex + ');">Edit</a>'
-                + '&emsp;<a href="#" onclick="doDelete(' + rowIndex + ');">Delete</a>';
+            + '&emsp;<a href="#" onclick="doEdit(' + rowIndex + ');">Edit</a>'
+            + '&emsp;<a href="#" onclick="doDelete(' + rowIndex + ');">Delete</a>';
     }
 
     function doAdd() {

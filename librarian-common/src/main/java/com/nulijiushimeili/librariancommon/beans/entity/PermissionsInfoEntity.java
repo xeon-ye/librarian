@@ -15,7 +15,6 @@ import java.util.Date;
 public class PermissionsInfoEntity {
 
 
-
     private String resourceTypeName;
     private String connName;
     private String dbName;

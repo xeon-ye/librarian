@@ -12,9 +12,9 @@ $color: #FF4806, #2D8CF0;
 
 .okadmin {
 
-  @each $c in $name{
-    $i:index($name,$c);
-    &.#{$c}_theme{
+  @each $c in $name {
+    $i: index($name, $c);
+    &.#{$c}_theme {
       /**头部导航*/
       /* .okadmin-header {
         .layui-nav-item a {
@@ -39,18 +39,18 @@ $color: #FF4806, #2D8CF0;
       /**左侧菜单*/
       .ok-left .okadmin-nav {
         .layui-nav-bar {
-          background: nth($color,$i);
+          background: nth($color, $i);
         }
         .layui-nav-item {
           &.layui-this {
             a {
-              background: nth($color,$i);
+              background: nth($color, $i);
             }
           }
           .layui-nav-child {
             .layui-this {
               a {
-                background: nth($color,$i);
+                background: nth($color, $i);
               }
             }
           }
@@ -61,7 +61,7 @@ $color: #FF4806, #2D8CF0;
       .ok-tab {
         .okadmin-tabs-control:hover,
         .layui-tab-title li.layui-this {
-          color: nth($color,$i);
+          color: nth($color, $i);
         }
       }
     }

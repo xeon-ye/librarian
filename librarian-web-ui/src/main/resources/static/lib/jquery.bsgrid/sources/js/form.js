@@ -14,11 +14,9 @@
     $.fn.bsgrid_form = {
 
         // defaults settings
-        defaults: {
-        },
+        defaults: {},
 
-        formObjs: {
-        },
+        formObjs: {},
 
         /**
          * init form.

@@ -29,11 +29,42 @@ layui.use(["okUtils", "table", "countUp", "okMock"], function () {
         "xAxis": [{"type": "category", "boundaryGap": false, "data": ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]}],
         "yAxis": [{"type": "value"}],
         "series": [
-            {"name": "邮件营销", "type": "line", "stack": "总量", "areaStyle": {}, "data": [120, 132, 101, 134, 90, 230, 210]},
-            {"name": "联盟广告", "type": "line", "stack": "总量", "areaStyle": {}, "data": [220, 182, 191, 234, 290, 330, 310]},
-            {"name": "视频广告", "type": "line", "stack": "总量", "areaStyle": {}, "data": [150, 232, 201, 154, 190, 330, 410]},
-            {"name": "直接访问", "type": "line", "stack": "总量", "areaStyle": {"normal": {}}, "data": [320, 332, 301, 334, 390, 330, 320]},
-            {"name": "搜索引擎", "type": "line", "stack": "总量", "label": {"normal": {"show": true, "position": "top"}}, "areaStyle": {"normal": {}}, "data": [820, 932, 901, 934, 1290, 1330, 1320]}
+            {
+                "name": "邮件营销",
+                "type": "line",
+                "stack": "总量",
+                "areaStyle": {},
+                "data": [120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+                "name": "联盟广告",
+                "type": "line",
+                "stack": "总量",
+                "areaStyle": {},
+                "data": [220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                "name": "视频广告",
+                "type": "line",
+                "stack": "总量",
+                "areaStyle": {},
+                "data": [150, 232, 201, 154, 190, 330, 410]
+            },
+            {
+                "name": "直接访问",
+                "type": "line",
+                "stack": "总量",
+                "areaStyle": {"normal": {}},
+                "data": [320, 332, 301, 334, 390, 330, 320]
+            },
+            {
+                "name": "搜索引擎",
+                "type": "line",
+                "stack": "总量",
+                "label": {"normal": {"show": true, "position": "top"}},
+                "areaStyle": {"normal": {}},
+                "data": [820, 932, 901, 934, 1290, 1330, 1320]
+            }
         ]
     };
 
@@ -110,7 +141,31 @@ layui.use(["okUtils", "table", "countUp", "okMock"], function () {
      */
     function userLocation() {
         var userLocationMap = echarts.init($("#userLocationMap")[0]);
-        var data = [{"name":"北京","value":100},{"name":"天津","value":83},{"name":"上海","value":113},{"name":"重庆","value":188},{"name":"河北","value":197},{"name":"河南","value":327},{"name":"云南","value":371},{"name":"辽宁","value":224},{"name":"黑龙江","value":295},{"name":"湖南","value":463},{"name":"安徽","value":7},{"name":"山东","value":176},{"name":"新疆","value":0},{"name":"江苏","value":396},{"name":"浙江","value":472},{"name":"江西","value":243},{"name":"湖北","value":226},{"name":"广西","value":404},{"name":"甘肃","value":210},{"name":"山西","value":451},{"name":"内蒙古","value":97},{"name":"陕西","value":369},{"name":"吉林","value":221},{"name":"福建","value":216},{"name":"贵州","value":221},{"name":"广东","value":85},{"name":"青海","value":21},{"name":"西藏","value":414},{"name":"四川","value":380},{"name":"宁夏","value":205},{"name":"海南","value":73},{"name":"台湾","value":348},{"name":"香港","value":54},{"name":"澳门","value":340}];
+        var data = [{"name": "北京", "value": 100}, {"name": "天津", "value": 83}, {
+            "name": "上海",
+            "value": 113
+        }, {"name": "重庆", "value": 188}, {"name": "河北", "value": 197}, {"name": "河南", "value": 327}, {
+            "name": "云南",
+            "value": 371
+        }, {"name": "辽宁", "value": 224}, {"name": "黑龙江", "value": 295}, {"name": "湖南", "value": 463}, {
+            "name": "安徽",
+            "value": 7
+        }, {"name": "山东", "value": 176}, {"name": "新疆", "value": 0}, {"name": "江苏", "value": 396}, {
+            "name": "浙江",
+            "value": 472
+        }, {"name": "江西", "value": 243}, {"name": "湖北", "value": 226}, {"name": "广西", "value": 404}, {
+            "name": "甘肃",
+            "value": 210
+        }, {"name": "山西", "value": 451}, {"name": "内蒙古", "value": 97}, {"name": "陕西", "value": 369}, {
+            "name": "吉林",
+            "value": 221
+        }, {"name": "福建", "value": 216}, {"name": "贵州", "value": 221}, {"name": "广东", "value": 85}, {
+            "name": "青海",
+            "value": 21
+        }, {"name": "西藏", "value": 414}, {"name": "四川", "value": 380}, {"name": "宁夏", "value": 205}, {
+            "name": "海南",
+            "value": 73
+        }, {"name": "台湾", "value": 348}, {"name": "香港", "value": 54}, {"name": "澳门", "value": 340}];
         userLocationOption.series.data = data;
         userLocationMap.setOption(userLocationOption);
         okUtils.echartsResize([userLocationMap]);

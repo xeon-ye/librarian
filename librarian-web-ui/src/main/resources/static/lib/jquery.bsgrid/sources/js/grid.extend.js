@@ -278,7 +278,7 @@
 
 
     /*************** extend render per column start ***************/
-        // render checkbox to check rows
+    // render checkbox to check rows
     $.fn.bsgrid.extendRenderPerColumn.renderCheck = function (record, rowIndex, colIndex, tdObj, trObj, options) {
         var columnModel = options.columnsModel[colIndex];
         if (columnModel.check == 'true') {
@@ -323,7 +323,7 @@
 
 
     /*************** extend after render grid start ***************/
-        // render line number
+    // render line number
     $.fn.bsgrid.extendAfterRenderGrid.renderLineNumber = function (parseSuccess, gridData, options) {
         $.fn.bsgrid.getGridHeaderObject(options).each(function (i) {
             var num = options.columnsModel[i].lineNumber;

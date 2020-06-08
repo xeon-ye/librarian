@@ -1,1 +1,0 @@
-[WARN ] 2020-05-25 10:56:17 [main] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)

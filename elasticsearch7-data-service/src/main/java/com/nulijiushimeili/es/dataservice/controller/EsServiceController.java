@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  ********************************************************/
 
 
-@Api(value = "ES 服务信息",tags = {"ES 服务信息"})
+@Api(value = "ES 服务信息", tags = {"ES 服务信息"})
 @RestController
 @RequestMapping(value = "/es/service")
 public class EsServiceController {

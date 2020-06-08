@@ -25,7 +25,8 @@
         <div class="layui-form-item">
             <label class="layui-form-label">标题</label>
             <div class="layui-input-block">
-                <input type="text" name="title" placeholder="请输入文章标题" autocomplete="off" class="layui-input" lay-verify="required">
+                <input type="text" name="title" placeholder="请输入文章标题" autocomplete="off" class="layui-input"
+                       lay-verify="required">
             </div>
         </div>
         <div class="layui-form-item">
@@ -42,7 +43,8 @@
         <div class="layui-form-item">
             <label class="layui-form-label">标签</label>
             <div class="layui-input-block">
-                <input type="text" name="label" placeholder="请输入文章标签" autocomplete="off" class="layui-input" lay-verify="required">
+                <input type="text" name="label" placeholder="请输入文章标签" autocomplete="off" class="layui-input"
+                       lay-verify="required">
             </div>
         </div>
         <div class="layui-form-item">
@@ -82,14 +84,14 @@
 
         var index = layedit.build("content", {});
         form.verify({
-        	// layedit内容校验
-        	content: function () {
-        		layedit.sync(index);
-        		var content = layedit.getContent(index);
-        		if (content.length < 10) {
-        			return "文章内容不得少于10个字符！";
-        		}
-        	}
+            // layedit内容校验
+            content: function () {
+                layedit.sync(index);
+                var content = layedit.getContent(index);
+                if (content.length < 10) {
+                    return "文章内容不得少于10个字符！";
+                }
+            }
         });
 
         form.on("submit(edit)", function (data) {

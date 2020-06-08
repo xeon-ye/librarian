@@ -13,9 +13,11 @@
             overflow-y: auto;
             margin-bottom: -1px;
         }
+
         #searchTable {
             width: auto;
         }
+
         #searchTable_pt_outTab {
             border-top-width: 1px;
         }
@@ -75,7 +77,10 @@
             $('#searchTable').width($('#searchTable_fixedDiv').width() - 1);
         }
         $('#searchTable thead tr:eq(0)').clone(true).prependTo('#searchTable thead');
-        $('#searchTable thead tr:eq(0)').css({'z-index': 10, position: 'fixed'}).width($('#searchTable thead tr:last').width());
+        $('#searchTable thead tr:eq(0)').css({
+            'z-index': 10,
+            position: 'fixed'
+        }).width($('#searchTable thead tr:last').width());
 
         var thObjs = $('#searchTable thead tr:eq(1) th');
         thObjs.each(function (i) {

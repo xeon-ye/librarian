@@ -1,6 +1,7 @@
 package com.nulijiushimeili.librariancommon.beans.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
+
 /******************************
  * @Project: librarian-parent
  * @FileName: BaseEnum.java

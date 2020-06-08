@@ -15,7 +15,7 @@ import java.util.List;
  * @time 2020/5/11 20:42
  * @version 1.00
  * @author nulijiushimeili
- * @Description:  连接数据源的连接信息
+ * @Description: 连接数据源的连接信息
  ******************************/
 
 @Data
@@ -25,11 +25,10 @@ import java.util.List;
 public class ConnectionInfo {
 
 
-
     /**
      * 数据源的名称，唯一标识一个数据源
      */
-    @Excel(name="连接名称", orderNum = "0")
+    @Excel(name = "连接名称", orderNum = "0")
     private String connName;
 
     /**
@@ -86,13 +85,6 @@ public class ConnectionInfo {
      * 数据库 列表
      */
     private List<DatabaseInfo> databaseInfoList;
-
-
-
-
-
-
-
 
 
 }

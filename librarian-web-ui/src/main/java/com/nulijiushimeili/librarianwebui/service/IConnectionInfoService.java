@@ -17,11 +17,11 @@ public interface IConnectionInfoService {
 
     /**
      * 添加数据源信息
+     *
      * @param connectionInfo
      * @return
      */
     public Integer addConnectionInfo(ConnectionInfo connectionInfo);
-
 
 
 }

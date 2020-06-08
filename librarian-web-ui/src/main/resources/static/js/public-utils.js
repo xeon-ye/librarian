@@ -8,7 +8,7 @@ function loadStyles(href) {
 }
 
 // 动态加载js文件
-function loadJavaScript(src){
+function loadJavaScript(src) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = src;  //引入的文件名
@@ -16,20 +16,18 @@ function loadJavaScript(src){
 }
 
 //移除平板样式文件
-function removeStyles(href){
+function removeStyles(href) {
     // var filename = 'css/mpad.css';  //移除引入的文件名
     var filename = href;  //移除引入的文件名
     var targetelement = "link";
     var targetattr = "href";
     var allsuspects = document.getElementsByTagName(targetelement);
-    for (var i = allsuspects.length; i>=0 ; i--){
+    for (var i = allsuspects.length; i >= 0; i--) {
         if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null && allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1) {
             allsuspects[i].parentNode.removeChild(allsuspects[i])
         }
     }
 }
-
-
 
 
 //日期转化为固定格式函数（参数为时间戳，或者直接new Date()）

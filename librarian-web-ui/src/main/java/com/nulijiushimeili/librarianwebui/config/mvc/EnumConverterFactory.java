@@ -24,6 +24,7 @@ public class EnumConverterFactory implements ConverterFactory<String, BaseEnum> 
 
         /**
          * 将value转换成枚举类
+         *
          * @param s
          * @return
          */

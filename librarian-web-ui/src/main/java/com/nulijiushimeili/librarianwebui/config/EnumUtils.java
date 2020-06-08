@@ -7,6 +7,7 @@ public class EnumUtils {
 
     /**
      * 将code转为对应的枚举类
+     *
      * @param enumClass
      * @param code
      * @param <E>
@@ -24,6 +25,7 @@ public class EnumUtils {
 
     /**
      * 将value转化为对应的枚举类
+     *
      * @param enumClass
      * @param value
      * @param <E>

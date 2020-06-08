@@ -13,13 +13,13 @@
     <script type="text/javascript" src="../../plugins/layui/laydate/laydate.js"></script>
 </head>
 <body style="background-color: #fff;">
-<p />
+<p/>
 Note:
-<br />1, Laydate v1.1 may not render display none input;
-<br />2, Laydate v1.1 may prevent input date change event;
-<br />
-<br /><input type="button" value="Get Rows Changed Columns value" onclick="getRowsChangedColumnsValue()"  />
-<p />
+<br/>1, Laydate v1.1 may not render display none input;
+<br/>2, Laydate v1.1 may prevent input date change event;
+<br/>
+<br/><input type="button" value="Get Rows Changed Columns value" onclick="getRowsChangedColumnsValue()"/>
+<p/>
 <table id="searchTable">
     <tr>
         <th w_check="true" width="3%;"></th>
@@ -37,7 +37,7 @@ Note:
     var gridObj;
     $(function () {
         gridObj = $.fn.bsgrid.init('searchTable', {
-        	//autoLoad: false,
+            //autoLoad: false,
             url: '../grid/data/json.jsp',
             pageSizeSelect: true,
             pageSize: 5,

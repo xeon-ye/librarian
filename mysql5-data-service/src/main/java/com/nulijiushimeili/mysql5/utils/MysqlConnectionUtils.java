@@ -24,13 +24,12 @@ public class MysqlConnectionUtils {
 
 
     /**
-     *
-     * @param connectionInfo  连接信息
-     * @param tClass  返回结果对象的类型
-     * @param <T>  将查询结果包装成 对象列表
+     * @param connectionInfo 连接信息
+     * @param tClass         返回结果对象的类型
+     * @param <T>            将查询结果包装成 对象列表
      * @return
      */
-    public static  <T> List<T> executeQuery(ConnectionInfoSpread connectionInfo,String sql, Class<T> tClass){
+    public static <T> List<T> executeQuery(ConnectionInfoSpread connectionInfo, String sql, Class<T> tClass) {
 
 
         return null;
@@ -38,12 +37,11 @@ public class MysqlConnectionUtils {
 
 
     /**
-     *
      * @param connectionInfo
      * @param fieldSize
      * @return
      */
-    public static List<List<String>> executeQuery(ConnectionInfoSpread connectionInfo ,String sql, int fieldSize){
+    public static List<List<String>> executeQuery(ConnectionInfoSpread connectionInfo, String sql, int fieldSize) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet resultSet = null;
@@ -112,14 +110,11 @@ public class MysqlConnectionUtils {
     }
 
 
-
-
-    public static List<Map<String, Object>> executeQuery(ConnectionInfoSpread connectionInfo, String sql , List<String> fieldNameList){
+    public static List<Map<String, Object>> executeQuery(ConnectionInfoSpread connectionInfo, String sql, List<String> fieldNameList) {
 
 
         return null;
     }
-
 
 
 }

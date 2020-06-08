@@ -38,11 +38,11 @@ public class UserDefinedException extends RuntimeException {
      */
     private String info;
 
-    public UserDefinedException(){
+    public UserDefinedException() {
         super();
     }
 
-    private UserDefinedException(String message){
+    private UserDefinedException(String message) {
         super(message);
     }
 
@@ -52,14 +52,14 @@ public class UserDefinedException extends RuntimeException {
         this.code = code;
     }
 
-    public UserDefinedException(int code, String message, String info){
+    public UserDefinedException(int code, String message, String info) {
         super(message);
         this.code = code;
         this.info = info;
     }
 
 
-    public static Map<Integer,String> loadErrorsInfo(){
+    public static Map<Integer, String> loadErrorsInfo() {
 
         String everyLine = null;
 
@@ -74,23 +74,24 @@ public class UserDefinedException extends RuntimeException {
                 sb.append(line + "\n");
             }
             everyLine = sb.toString();
-        }catch ( IOException e){
+        } catch (IOException e) {
             log.error("读取异常配置文件失败！");
             e.printStackTrace();
             throw new RuntimeException("读取异常配置文件失败！");
         }
 
-        return new Gson().fromJson(everyLine, (new TypeToken< Map<Integer,String>>() {
+        return new Gson().fromJson(everyLine, (new TypeToken<Map<Integer, String>>() {
         }).getType());
     }
 
 
     /**
      * 自定义异常类型
+     *
      * @param code
      * @return
      */
-    public static UserDefinedException except(int code){
+    public static UserDefinedException except(int code) {
         UserDefinedException userDefinedException = new UserDefinedException();
         userDefinedException.setCode(code);
         userDefinedException.setInfo(loadErrorsInfo().get(code));

@@ -1,7 +1,6 @@
 package com.nulijiushimeili.librariancommon.beans.enums;
 
 
-
 /******************************
  * @Project: librarian-parent
  * @FileName: NodeTypeEnum.java
@@ -17,7 +16,7 @@ public enum IndexTypeEnum implements BaseEnum {
     /**
      * 非索引
      */
-    NOT_INDEX(0,"非索引"),
+    NOT_INDEX(0, "非索引"),
 
     /**
      * 主键
@@ -29,14 +28,13 @@ public enum IndexTypeEnum implements BaseEnum {
     UNIQUE(2, "唯一索引"),
 
     /**
-     *  普通索引
+     * 普通索引
      */
     NORMAL(3, "普通索引"),
     /**
      * 全文索引
      */
     FULLTEXT(4, "全文索引");
-
 
 
     private int code;

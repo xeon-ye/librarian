@@ -1,7 +1,6 @@
 package com.nulijiushimeili.librariancommon.beans.enums;
 
 
-
 /******************************
  * @Project: librarian-parent
  * @FileName: NodeTypeEnum.java

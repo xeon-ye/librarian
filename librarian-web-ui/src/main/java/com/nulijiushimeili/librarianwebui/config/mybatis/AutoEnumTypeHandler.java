@@ -12,6 +12,7 @@ import java.sql.SQLException;
 
 /**
  * 自动枚举类转换器
+ *
  * @param <E>
  */
 public class AutoEnumTypeHandler<E extends Enum<E>> extends BaseTypeHandler<E> {
@@ -21,6 +22,7 @@ public class AutoEnumTypeHandler<E extends Enum<E>> extends BaseTypeHandler<E> {
     /**
      * 如果枚举类是BaseEnum的实现，使用自定义EnumOrderStatusHandler
      * 如果没有实现BaseEnum接口，则使用Mybatis默认的EnumTypeHandler
+     *
      * @param type
      */
     public AutoEnumTypeHandler(Class<E> type) {

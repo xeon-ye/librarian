@@ -18,6 +18,7 @@ public class CorsConfig {
     /**
      * 设置跨域配置, 增加了这个配置以后就可以在其他网站使用前端js调用本服务的接口，获取数据
      * 其他服务如果想要配置关于本服务地址的全局变量，可以采用thymeleaf模板，直接在后端插值保存。
+     *
      * @return 跨域配置
      */
     public CorsFilter corsFilter() {

@@ -3,7 +3,7 @@
 <mapper namespace="com.nulijiushimeili.librarianwebui.mapper.ConnectionInfoMapper">
 
 
-<!--    // 添加数据源信息-->
+    <!--    // 添加数据源信息-->
     <insert id="addConnectionInfo" parameterType="com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo">
         insert into aaa values('a')
 

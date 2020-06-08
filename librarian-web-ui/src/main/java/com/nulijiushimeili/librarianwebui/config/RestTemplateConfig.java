@@ -19,8 +19,8 @@ import java.util.List;
  * @Author: 努力就是魅力
  * @Since: 2019-02-22 22:40
  * Description:
- *
- *     RestTemplate 的配置
+ * <p>
+ * RestTemplate 的配置
  **/
 
 
@@ -28,7 +28,7 @@ import java.util.List;
 public class RestTemplateConfig {
 
     @Bean
-    @ConditionalOnMissingBean({ RestOperations.class, RestTemplate.class })
+    @ConditionalOnMissingBean({RestOperations.class, RestTemplate.class})
     //Spring Boot的自动配置机制依靠@ConditionalOnMissingBean注解判断是否执行初始化代码，
     // 即如果用户已经创建了bean，则相关的初始化代码不再执行。
     public RestTemplate restTemplate(ClientHttpRequestFactory factory) {

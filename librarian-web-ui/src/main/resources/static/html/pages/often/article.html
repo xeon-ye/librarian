@@ -125,7 +125,7 @@
             });
         }
 
-        function batchDisabled(){
+        function batchDisabled() {
             okLayer.confirm("确定要批量下架吗？", function (index) {
                 layer.close(index);
                 var idsStr = okUtils.table.batchCheck(table);
@@ -140,7 +140,7 @@
             });
         }
 
-        function batchDel(){
+        function batchDel() {
             okLayer.confirm("确定要批量删除吗？", function (index) {
                 layer.close(index);
                 var idsStr = okUtils.table.batchCheck(table);
@@ -155,19 +155,19 @@
             });
         }
 
-        function add () {
+        function add() {
             okLayer.open("添加文章", "article-add.html", "90%", "90%", null, function () {
                 articleTable.reload();
             })
         }
 
-        function edit (id) {
+        function edit(id) {
             okLayer.open("编辑文章", "article-edit.html?id=" + id, "90%", "90%", null, function () {
                 articleTable.reload();
             })
         }
 
-        function del (id) {
+        function del(id) {
             okLayer.confirm("确定要删除吗？", function () {
                 okUtils.ajax("/article/batchDel", "post", {idsStr: id}).done(function (response) {
                     console.log(response)
@@ -182,9 +182,15 @@
 <!-- 头工具栏模板 -->
 <script type="text/html" id="toolbarTpl">
     <div class="layui-btn-container">
-        <button class="layui-btn layui-btn-sm layui-btn-normal" lay-event="batchEnabled"><i class="iconfont icon-shangsheng"></i>批量上架</button>
-        <button class="layui-btn layui-btn-sm layui-btn-warm" lay-event="batchDisabled"><i class="iconfont icon-web-icon-"></i>批量下架</button>
-        <button class="layui-btn layui-btn-sm layui-btn-danger" lay-event="batchDel"><i class="layui-icon layui-icon-delete"></i>批量删除</button>
+        <button class="layui-btn layui-btn-sm layui-btn-normal" lay-event="batchEnabled"><i
+                class="iconfont icon-shangsheng"></i>批量上架
+        </button>
+        <button class="layui-btn layui-btn-sm layui-btn-warm" lay-event="batchDisabled"><i
+                class="iconfont icon-web-icon-"></i>批量下架
+        </button>
+        <button class="layui-btn layui-btn-sm layui-btn-danger" lay-event="batchDel"><i
+                class="layui-icon layui-icon-delete"></i>批量删除
+        </button>
         <button class="layui-btn layui-btn-sm" lay-event="add"><i class="layui-icon">&#xe61f;</i>添加文章</button>
     </div>
 </script>
@@ -197,9 +203,9 @@
 -->
 <script type="text/html" id="topTpl">
     {{#  if(d.isTop == true){ }}
-        <span class="layui-btn layui-btn-normal layui-btn-xs">已置顶</span>
+    <span class="layui-btn layui-btn-normal layui-btn-xs">已置顶</span>
     {{#  } else if(d.isTop == false) { }}
-        <span class="layui-btn layui-btn-warm layui-btn-xs">未置顶</span>
+    <span class="layui-btn layui-btn-warm layui-btn-xs">未置顶</span>
     {{#  } }}
 </script>
 <!-- 发布状态模板
@@ -207,9 +213,9 @@
 -->
 <script type="text/html" id="statusTpl">
     {{#  if(d.status == true){ }}
-        <span class="layui-btn layui-btn-normal layui-btn-xs">已发布</span>
+    <span class="layui-btn layui-btn-normal layui-btn-xs">已发布</span>
     {{#  } else if(d.status == false) { }}
-        <span class="layui-btn layui-btn-warm layui-btn-xs">未发布</span>
+    <span class="layui-btn layui-btn-warm layui-btn-xs">未发布</span>
     {{#  } }}
 </script>
 <!-- 行工具栏模板 -->

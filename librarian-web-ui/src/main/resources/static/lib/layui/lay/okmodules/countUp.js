@@ -47,11 +47,11 @@ layui.define(['jquery'], function (exports) {
             options
         } = argums;// 这里是ES6语法*/
         var target = argums.target,
-           startVal = argums.startVal,
-           endVal = argums.endVal,
-           decimals = argums.decimals,
-           duration = argums.duration,
-           options = argums.options;
+            startVal = argums.startVal,
+            endVal = argums.endVal,
+            decimals = argums.decimals,
+            duration = argums.duration,
+            options = argums.options;
         var self = this;
         self.version = function () {
             return "1.9.2"

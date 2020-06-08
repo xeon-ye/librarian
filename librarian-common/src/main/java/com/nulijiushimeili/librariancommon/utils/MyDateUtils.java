@@ -29,6 +29,7 @@ public class MyDateUtils {
 
     /**
      * 获取当前系统时间
+     *
      * @return yyyy-MM-dd HH:mm:ss
      */
     public static String getCurrentTime() {
@@ -39,7 +40,8 @@ public class MyDateUtils {
 
     /**
      * 获取系统当前时间按照指定格式返回
-     * @param pattern  yyyy/MM/dd hh:mm:a
+     *
+     * @param pattern yyyy/MM/dd hh:mm:a
      * @return
      */
     public static String getCurrentTime(String pattern) {
@@ -50,6 +52,7 @@ public class MyDateUtils {
 
     /**
      * 获取当前日期
+     *
      * @return
      */
     public static String getCurrentDate() {
@@ -60,6 +63,7 @@ public class MyDateUtils {
 
     /**
      * 获取当前日期按照指定格式
+     *
      * @param pattern
      * @return
      */
@@ -71,6 +75,7 @@ public class MyDateUtils {
 
     /**
      * 按照时区转换时间
+     *
      * @param date
      * @param timeZone 时区
      * @param patten
@@ -88,11 +93,12 @@ public class MyDateUtils {
 
     /**
      * 获取指定时间
-     * @param year 年
-     * @param month 月
-     * @param day 天
-     * @param hour 小时
-     * @param minute 分钟
+     *
+     * @param year    年
+     * @param month   月
+     * @param day     天
+     * @param hour    小时
+     * @param minute  分钟
      * @param seconds 秒
      * @return yyyy-MM-dd HH:mm:ss
      */
@@ -103,14 +109,13 @@ public class MyDateUtils {
     }
 
     /**
-     *
-     * @param year 年
-     * @param month 月
-     * @param day 天
-     * @param hour 小时
-     * @param minute 分钟
+     * @param year    年
+     * @param month   月
+     * @param day     天
+     * @param hour    小时
+     * @param minute  分钟
      * @param seconds 秒
-     * @param patten 自定义格式
+     * @param patten  自定义格式
      * @return patten
      */
     public static String getPointTimePattern(Integer year, Integer month, Integer day, Integer hour, Integer minute, Integer seconds, String patten) {
@@ -121,6 +126,7 @@ public class MyDateUtils {
 
     /**
      * 获取指定日期
+     *
      * @param year
      * @param month
      * @param day
@@ -134,6 +140,7 @@ public class MyDateUtils {
 
     /**
      * 获取指定日期 返回指定格式
+     *
      * @param year
      * @param month
      * @param day
@@ -148,6 +155,7 @@ public class MyDateUtils {
 
     /**
      * 获取当前是一周星期几
+     *
      * @return
      */
     public static String getWeek() {
@@ -184,6 +192,7 @@ public class MyDateUtils {
 
     /**
      * 获取指定时间是一周的星期几
+     *
      * @param year
      * @param month
      * @param day
@@ -223,6 +232,7 @@ public class MyDateUtils {
 
     /**
      * 格式化日期
+     *
      * @param date
      * @return yyyy-MM-dd HH:mm:ss
      */
@@ -237,7 +247,8 @@ public class MyDateUtils {
 
     /**
      * 格式化日期字符串
-     * @param date 日期
+     *
+     * @param date    日期
      * @param pattern 日期格式
      * @return
      */
@@ -252,7 +263,8 @@ public class MyDateUtils {
 
     /**
      * 解析日期
-     * @param date 日期字符串
+     *
+     * @param date    日期字符串
      * @param pattern 日期格式
      * @return
      */
@@ -272,6 +284,7 @@ public class MyDateUtils {
 
     /**
      * 解析日期yyyy-MM-dd HH:mm:ss
+     *
      * @param date 日期字符串
      * @return
      */
@@ -290,6 +303,7 @@ public class MyDateUtils {
 
     /**
      * 解析日期 yyyy-MM-dd HH:mm:ss
+     *
      * @param timestamp
      * @return
      */
@@ -311,6 +325,7 @@ public class MyDateUtils {
 
     /**
      * 解析日期 yyyy-MM-dd HH:mm:ss
+     *
      * @param timestamp
      * @return
      */
@@ -331,7 +346,8 @@ public class MyDateUtils {
     }
 
     /**
-     *获取当前时间前几天时间,按指定格式返回
+     * 获取当前时间前几天时间,按指定格式返回
+     *
      * @param days
      * @return
      */
@@ -342,7 +358,8 @@ public class MyDateUtils {
     }
 
     /**
-     *获取当前时间前几天时间
+     * 获取当前时间前几天时间
+     *
      * @param days
      * @return
      */
@@ -354,6 +371,7 @@ public class MyDateUtils {
 
     /**
      * 获取指定时间之后或者之前的某一天00:00:00 默认返回当天
+     *
      * @param days
      * @return
      */
@@ -380,7 +398,8 @@ public class MyDateUtils {
     }
 
     /**
-     *获取指定时间之后或者之前的某一天23:59:59 默认返回当天
+     * 获取指定时间之后或者之前的某一天23:59:59 默认返回当天
+     *
      * @param days 偏移量
      * @return
      */
@@ -408,6 +427,7 @@ public class MyDateUtils {
 
     /**
      * 计算两个时间相差多少天
+     *
      * @param startDate
      * @param endDate
      * @return
@@ -425,6 +445,7 @@ public class MyDateUtils {
 
     /**
      * 获取某月之前,之后某一个月最后一天,24:59:59
+     *
      * @return
      */
     public static Date lastDay(Date date, Integer month) {
@@ -443,7 +464,8 @@ public class MyDateUtils {
     }
 
     /**
-     *获取某月月之前,之后某一个月第一天,00:00:00
+     * 获取某月月之前,之后某一个月第一天,00:00:00
+     *
      * @return
      */
     public static Date firstDay(Date date, Integer month) {
@@ -464,6 +486,7 @@ public class MyDateUtils {
 
     /**
      * 日期加法
+     *
      * @param date
      * @param offset
      * @return
@@ -483,6 +506,7 @@ public class MyDateUtils {
      * 传入日期时间与当前系统日期时间的比较,
      * 若日期相同，则根据时分秒来返回 ,
      * 否则返回具体日期
+     *
      * @return 日期或者 xx小时前||xx分钟前||xx秒前
      */
     @Nullable

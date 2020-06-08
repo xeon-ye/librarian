@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>html展示markdown文件，代码高亮</title>
 
@@ -15,63 +16,73 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
 
-<link id="layuicss-layer" rel="stylesheet" href="http://localhost:8099/lib/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all"></head>
+    <link id="layuicss-layer" rel="stylesheet"
+          href="http://localhost:8099/lib/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all">
+</head>
 <body class="vsc-initialized">
 
 
 <div id="markdownContent" class="layui-panel-window"><h1>spring cloud demo</h1>
-<p></p>
-<h3>summary</h3>
-<p></p>
-<h6>micro-service-api</h6>
-<p></p>
-<ul>
-<li>这是一个公共的api模块。
-</li></ul>
+    <p></p>
+    <h3>summary</h3>
+    <p></p>
+    <h6>micro-service-api</h6>
+    <p></p>
+    <ul>
+        <li>这是一个公共的api模块。
+        </li>
+    </ul>
 
 
-<h6>micro-service-eureka-10001，micro-service-eureka-10002，micro-service-eureka-10003</h6>
-<p></p>
-<ul>
-<li>这三个模块是eureka高可用服务集群。
-</li><li>这是三个相同配置的eureka服务注册中心，只是服务名和端口号不一样，如果想要在浏览器中使用域名访问需要在hosts文件中配置相应的dns映射。
-</li></ul>
+    <h6>micro-service-eureka-10001，micro-service-eureka-10002，micro-service-eureka-10003</h6>
+    <p></p>
+    <ul>
+        <li>这三个模块是eureka高可用服务集群。
+        </li>
+        <li>这是三个相同配置的eureka服务注册中心，只是服务名和端口号不一样，如果想要在浏览器中使用域名访问需要在hosts文件中配置相应的dns映射。
+        </li>
+    </ul>
 
 
-<pre><code>  # spring cloud dns 
+    <pre><code>  # spring cloud dns
   127.0.0.1 micro-service-provider-dept-8001
   
   127.0.0.1 micro-service-eureka-10001
   127.0.0.1 micro-service-eureka-10002
   127.0.0.1 micro-service-eureka-10003</code></pre>
 
-<p></p>
-<ul>
-<li>如果要使用本项目中的其他功能模块，请先启动eureka集群。好像是强制依赖此服务，错误的尝试是没有必要的，因此我并没有对此做过验证，坚持正确的道路总是畅通无阻的。
-</li></ul>
+    <p></p>
+    <ul>
+        <li>如果要使用本项目中的其他功能模块，请先启动eureka集群。好像是强制依赖此服务，错误的尝试是没有必要的，因此我并没有对此做过验证，坚持正确的道路总是畅通无阻的。
+        </li>
+    </ul>
 
 
-<h6>micro-service-provider-dept-8001</h6>
-<p></p>
-<h6>micro-service-provider-dept-8002</h6>
-<p></p>
-<h6>micro-service-provider-dept-8003</h6>
-<p></p>
-<ul>
-<li>这是一个服务提供者集群, 在本demo中，直接查自己的数据库提供接口供外部消费者访问。
-</li><li>使用ribbon对客户端做做负载均衡后，可以轮询访问不同的服务提供者。
-</li></ul>
+    <h6>micro-service-provider-dept-8001</h6>
+    <p></p>
+    <h6>micro-service-provider-dept-8002</h6>
+    <p></p>
+    <h6>micro-service-provider-dept-8003</h6>
+    <p></p>
+    <ul>
+        <li>这是一个服务提供者集群, 在本demo中，直接查自己的数据库提供接口供外部消费者访问。
+        </li>
+        <li>使用ribbon对客户端做做负载均衡后，可以轮询访问不同的服务提供者。
+        </li>
+    </ul>
 
 
-<h6>micro-service-consumer-8880</h6>
-<p></p>
-<ul>
-<li>这是一个消费者， 在本demo中，通过自己的服务类（这里是使用的是controler调用）使用restTemplate引擎查询服务提供者提供的接口，获得数据。
-</li><li>还可以使用发现，找出其他的注册服务，获取其他服务的相关信息。（serviceName,ip,port,uri,...）
-</li></ul>
+    <h6>micro-service-consumer-8880</h6>
+    <p></p>
+    <ul>
+        <li>这是一个消费者， 在本demo中，通过自己的服务类（这里是使用的是controler调用）使用restTemplate引擎查询服务提供者提供的接口，获得数据。
+        </li>
+        <li>还可以使用发现，找出其他的注册服务，获取其他服务的相关信息。（serviceName,ip,port,uri,...）
+        </li>
+    </ul>
 
 
-<pre><code>package com.nu.controller;
+    <pre><code>package com.nu.controller;
 
 
 import com.nu.service.DeptService;
@@ -108,13 +119,14 @@ public class DeptController {
 }
 </code></pre>
 
-<p></p>
-<ul>
-<li>使用Ribbon配置负载均衡
-</li></ul>
+    <p></p>
+    <ul>
+        <li>使用Ribbon配置负载均衡
+        </li>
+    </ul>
 
 
-<pre><code>        &lt;!--Ribbon 负载均衡的配置 start--&gt;
+    <pre><code>        &lt;!--Ribbon 负载均衡的配置 start--&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
             &lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt;
@@ -132,16 +144,16 @@ public class DeptController {
         &lt;/dependency&gt;
         &lt;!--Ribbon 负载均衡的配置 end--&gt;</code></pre>
 
-<p></p>
-<pre><code>eureka:
+    <p></p>
+    <pre><code>eureka:
   client:
     register-with-eureka: false
     service-url:
       defaultZone: http://micro-service-eureka-10001:10001/eureka/,http://micro-service-eureka-10002:10002/eureka/,http://micro-service-eureka-10003:10003/eureka/
 </code></pre>
 
-<p></p>
-<pre><code>package com.nu.config;
+    <p></p>
+    <pre><code>package com.nu.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -164,21 +176,24 @@ public class ConfigBean {           // 等同于spring的 applicationContent.xml
 }
 </code></pre>
 
-<p></p>
-<ul>
-<li>- 主启动类要加@EnableEurekaClient
-</li><li>yml文件的配置，参考<a href="#ribbon_error">ERROR: ribbon配置高可用不起作用</a>
-</li></ul>
+    <p></p>
+    <ul>
+        <li>- 主启动类要加@EnableEurekaClient
+        </li>
+        <li>yml文件的配置，参考<a href="#ribbon_error">ERROR: ribbon配置高可用不起作用</a>
+        </li>
+    </ul>
 
 
-<h3>ERROR</h3>
-<p></p>
-<ol>
-<li>无法加载maven依赖
-</li></ol>
+    <h3>ERROR</h3>
+    <p></p>
+    <ol>
+        <li>无法加载maven依赖
+        </li>
+    </ol>
 
 
-<pre><code>    &lt;parent&gt;
+    <pre><code>    &lt;parent&gt;
         &lt;artifactId&gt;spring_cloud_demo&lt;/artifactId&gt;
         &lt;groupId&gt;com.nu&lt;/groupId&gt;
         &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
@@ -186,36 +201,42 @@ public class ConfigBean {           // 等同于spring的 applicationContent.xml
         &lt;relativePath&gt;../pom.xml&lt;/relativePath&gt;
     &lt;/parent&gt;</code></pre>
 
-<p></p>
-<ol>
-<li>其他子模块无法引入公共api模块的类。
-</li></ol>
+    <p></p>
+    <ol>
+        <li>其他子模块无法引入公共api模块的类。
+        </li>
+    </ol>
 
 
-<pre><code>&lt;!-- 首先确定子项目中引入了自定义api模块， 然后对api模块执行 mvn clean install 命令--&gt;
+    <pre><code>&lt;!-- 首先确定子项目中引入了自定义api模块， 然后对api模块执行 mvn clean install 命令--&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;com.nu&lt;/groupId&gt;
             &lt;artifactId&gt;micro-service-api&lt;/artifactId&gt;
             &lt;version&gt;${micro-service-api.version}&lt;/version&gt;
         &lt;/dependency&gt;</code></pre>
 
-<p></p>
-<ol>
-<li>com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-<ul>
-<li>在eureka配置高可用的时候，启动出现异常，因为eureka配置简单，直接重新复制出了一个节点。解决。
-</li></ul>
+    <p></p>
+    <ol>
+        <li>com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+            <ul>
+                <li>在eureka配置高可用的时候，启动出现异常，因为eureka配置简单，直接重新复制出了一个节点。解决。
+                </li>
+            </ul>
 
-</li><li><span id="ribbon_error">ribbon配置高可用不起作用。</span> 我所犯的错误是实例名配置相同，导致每次重启所有服务，只有一个生产者是可用的。
-<ul>
-<li>spring.application.name 是微服务的名称，如果是相同的服务，服务名必须是相同的
-</li><li>eureka.instance.instance-id 是微服务对eureka暴露的实例名，必须是不同的
-</li></ul>
+        </li>
+        <li><span id="ribbon_error">ribbon配置高可用不起作用。</span> 我所犯的错误是实例名配置相同，导致每次重启所有服务，只有一个生产者是可用的。
+            <ul>
+                <li>spring.application.name 是微服务的名称，如果是相同的服务，服务名必须是相同的
+                </li>
+                <li>eureka.instance.instance-id 是微服务对eureka暴露的实例名，必须是不同的
+                </li>
+            </ul>
 
-</li></ol>
+        </li>
+    </ol>
 
 
-<pre><code>server:
+    <pre><code>server:
   port: 8003
 
 mybatis:
@@ -259,15 +280,15 @@ info:
   build.artifactId: $project.artifactId$
   build.version: $project.version$</code></pre>
 
-<p></p>
-<ul>
-<li>- 下面是正确配置后，eureka中显示的服务。
-</li></ul>
+    <p></p>
+    <ul>
+        <li>- 下面是正确配置后，eureka中显示的服务。
+        </li>
+    </ul>
 
 
-<p><img src="img/1562373041036.png" title="1562373041036" alt="1562373041036"></p>
+    <p><img src="img/1562373041036.png" title="1562373041036" alt="1562373041036"></p>
 </div>
-
 
 
 <script type="text/javascript" src="../../../lib/layui/layui.js"></script>
@@ -297,22 +318,21 @@ info:
         // });
 
 
-
         $.ajax({
-            url:'/markdown/showMarkdownFile',
-            method:'get',
-            data:{"filePath": "none"},
-            success:function (res) {
-                if(res.code === 0) {
+            url: '/markdown/showMarkdownFile',
+            method: 'get',
+            data: {"filePath": "none"},
+            success: function (res) {
+                if (res.code === 0) {
                     $("#markdownContent").html(res.message);
                     hljs.initHighlightingOnLoad();
                     console.info("Markdown 文档内容：" + JSON.stringify(res.message));
 
-                }else{
+                } else {
                     layer.error("获取文档内容失败!");
                 }
             },
-            error:function () {
+            error: function () {
                 layer.error("获取文档内容失败!");
 
             }
@@ -323,15 +343,11 @@ info:
         // hljs.initHighlightingOnLoad();
 
 
-
     });
-
-
-
 
 
 </script>
 
 
-
-</body></html>
+</body>
+</html>

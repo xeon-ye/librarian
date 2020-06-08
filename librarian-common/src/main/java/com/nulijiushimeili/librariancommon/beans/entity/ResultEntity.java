@@ -33,8 +33,6 @@ public class ResultEntity<T> {
     }
 
 
-
-
     public static <V> ResultEntity<V> success(V data) {
         ResultEntity success = success();
         success.setData(data);
@@ -58,7 +56,6 @@ public class ResultEntity<T> {
         success.setMessage(message);
         return success;
     }
-
 
 
 }

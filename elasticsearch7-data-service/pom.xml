@@ -14,6 +14,7 @@
     <artifactId>elasticsearch7-data-service</artifactId>
 
     <properties>
+        <!--必须要有这个配置，如果没有的话，会出现下载 es 6.4.3 的jar包，引发错误-->
         <elasticsearch.version>7.4.0</elasticsearch.version>
     </properties>
 
@@ -33,6 +34,11 @@
             <version>7.4.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.elasticsearch.plugin</groupId>
+            <artifactId>jdbc</artifactId>
+        </dependency>
+
 
         <!-- commons-lang3 -->
         <dependency>
@@ -48,10 +54,9 @@
         </dependency>
 
 
-
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
         <!--</dependency>-->
 
         <dependency>
@@ -63,7 +68,6 @@
         </dependency>
 
 
-
         <!--依赖本系统项目工具包-->
         <dependency>
             <groupId>com.nulijiushimeili</groupId>
@@ -71,24 +75,28 @@
             <version>${librarian-common.version}</version>
         </dependency>
 
+
         <!--        // swagger 接口文档 -->
         <dependency>
             <groupId>com.spring4all</groupId>
             <artifactId>swagger-spring-boot-starter</artifactId>
+            <!--<version>1.9.0.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>swagger-bootstrap-ui</artifactId>
+            <!--<version>1.9.0</version>-->
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
+            <!--<version>2.9.2</version>-->
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-bean-validators</artifactId>
+            <!--<version>2.9.2</version>-->
         </dependency>
-
 
 
     </dependencies>

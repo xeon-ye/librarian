@@ -21,8 +21,9 @@ public class AvroFactory {
 
     /**
      * 对象转avro字节数组
+     *
      * @param schemaStr avro schema
-     * @param data 需要转换的对象
+     * @param data      需要转换的对象
      * @return avro字节数组
      */
     public static byte[] mapToByte(String schemaStr, Map<String, Object> data) {
@@ -49,8 +50,9 @@ public class AvroFactory {
 
     /**
      * avro字节数组转record
+     *
      * @param schemaStr avro schema
-     * @param byteData avro字节数组
+     * @param byteData  avro字节数组
      * @return record
      * @throws IOException decoder.isEnd()
      */
@@ -68,9 +70,10 @@ public class AvroFactory {
 
     /**
      * 将对象值写入record
+     *
      * @param schemaStr avro schema
-     * @param record 需要写入的record
-     * @param data 需要读取的对象
+     * @param record    需要写入的record
+     * @param data      需要读取的对象
      */
     private static void writeDataToRecord(String schemaStr, GenericRecord record, Map<String, Object> data) {
         JSONObject jsonObject = JSONObject.parseObject(schemaStr);

@@ -73,7 +73,7 @@
      */
     $.confirm = $.dialog.confirm = function (msg, ok, cancel, follow, title) {
         if (ok == undefined) {
-            ok = function(){
+            ok = function () {
                 this.close();
                 return true;
             };

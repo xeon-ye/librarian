@@ -37,7 +37,7 @@ import java.util.Map;
  * @Description: TODO
  ******************************/
 
-@Api(value = "es索引操作",tags = {"es索引操作"})
+@Api(value = "es索引操作", tags = {"es索引操作"})
 @Slf4j
 @RestController
 @RequestMapping(value = "/es/index")
@@ -49,8 +49,8 @@ public class EsIndexController {
 
     @ApiOperation(value = "es创建索引(带数据结构)", notes = "es创建索引(带数据结构)")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "indexName", value = "索引名称",   dataType = "String"),
-            @ApiImplicitParam(name = "fieldSchemaList", value = "模式信息",   dataType = "List<EsFieldSchema>"),
+            @ApiImplicitParam(name = "indexName", value = "索引名称", dataType = "String"),
+            @ApiImplicitParam(name = "fieldSchemaList", value = "模式信息", dataType = "List<EsFieldSchema>"),
     })
     @PutMapping(value = "/createIndexWithSchema")
     public ResultEntity createIndexWithSchema(@RequestParam String indexName, @RequestParam List<EsFieldSchema> fieldSchemaList) {
@@ -62,7 +62,7 @@ public class EsIndexController {
 
             for (EsFieldSchema esFieldSchema : fieldSchemaList) {
                 // 日期格式化
-                if("DATE".equals(esFieldSchema.getFieldName().toUpperCase())){
+                if ("DATE".equals(esFieldSchema.getFieldName().toUpperCase())) {
                     builder.field(esFieldSchema.getFieldName()).startObject().field("index", "true").
                             field("type", esFieldSchema.getFieldType())
                             .field("format", "strict_date_optional_time||epoch_millis").endObject();
@@ -70,7 +70,7 @@ public class EsIndexController {
                 builder.field(esFieldSchema.getFieldName()).startObject().field("index", "true").
                         field("type", esFieldSchema.getFieldType()).endObject();
             }
-             builder.endObject()
+            builder.endObject()
                     .endObject();
 
             CreateIndexRequest createIndexRequest = new CreateIndexRequest(indexName);
@@ -80,7 +80,7 @@ public class EsIndexController {
             if (acknowledged) {
                 return ResultEntity.success();
             } else {
-                return ResultEntity.error(500, "创建失败" );
+                return ResultEntity.error(500, "创建失败");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -90,7 +90,7 @@ public class EsIndexController {
 
 
     @ApiOperation(value = "es创建索引", notes = "es创建索引")
-    @PutMapping(value = "/createIndex" )
+    @PutMapping(value = "/createIndex")
     public ResultEntity createIndex(@RequestParam String indexName) {
         try {
 
@@ -180,7 +180,7 @@ public class EsIndexController {
     }
 
     @ApiOperation(value = "es删除索引", notes = "es删除索引")
-    @DeleteMapping(value = "/delete/index" )
+    @DeleteMapping(value = "/delete/index")
     public ResultEntity deleteIndex(@RequestParam String indexName) {
         boolean isDelete = false;
         try {
@@ -195,7 +195,7 @@ public class EsIndexController {
         if (isDelete) {
             return ResultEntity.success();
         } else {
-            return  ResultEntity.error(500, "删除失败");
+            return ResultEntity.error(500, "删除失败");
         }
     }
 
