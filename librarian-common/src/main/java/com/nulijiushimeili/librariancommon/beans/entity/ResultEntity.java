@@ -8,7 +8,6 @@ import lombok.Data;
 public class ResultEntity<T> {
 
 
-
     private int code;
     private String message;
     private String information;
@@ -33,12 +32,7 @@ public class ResultEntity<T> {
         return success;
     }
 
-    public static ResultEntity success(boolean flag) {
-        ResultEntity success = new ResultEntity();
-        success.setCode(0);
-        success.setMessage(SUCCESS_MESSAGE);
-        return success;
-    }
+
 
 
     public static <V> ResultEntity<V> success(V data) {
@@ -52,6 +46,7 @@ public class ResultEntity<T> {
         success.setMessage(message);
         return success;
     }
+
     public static <V> ResultEntity<V> success(String information) {
         ResultEntity success = success();
         success.setInformation(information);
@@ -63,4 +58,7 @@ public class ResultEntity<T> {
         success.setMessage(message);
         return success;
     }
+
+
+
 }
