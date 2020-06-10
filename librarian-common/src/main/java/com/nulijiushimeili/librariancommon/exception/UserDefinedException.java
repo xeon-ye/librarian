@@ -95,9 +95,22 @@ public class UserDefinedException extends RuntimeException {
         UserDefinedException userDefinedException = new UserDefinedException();
         userDefinedException.setCode(code);
         userDefinedException.setInfo(loadErrorsInfo().get(code));
-        log.error(loadErrorsInfo().get(code));
+        log.error("自定义异常：" + loadErrorsInfo().get(code));
         return userDefinedException;
     }
 
+    /**
+     * 自定义异常类型
+     *
+     * @param code
+     * @return
+     */
+    public static UserDefinedException except(int code,String message) {
+        UserDefinedException userDefinedException = new UserDefinedException();
+        userDefinedException.setCode(code);
+        userDefinedException.setInfo(message);
+        log.error("自定义异常：" + message);
+        return userDefinedException;
+    }
 
 }

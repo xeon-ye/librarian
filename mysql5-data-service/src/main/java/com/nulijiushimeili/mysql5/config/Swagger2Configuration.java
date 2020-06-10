@@ -34,8 +34,8 @@ public class Swagger2Configuration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("MySQL5接口服务")
-                .description("MySQL5接口服务")
+                .title("MySQL5数据治理服务")
+                .description("MySQL5数据治理服务")
                 .termsOfServiceUrl("http://localhost:8999/doc.html")
                 .contact(new Contact("努力就是魅力", "", "dewei123@foxmail.com"))
 //                .version(propertiesGetter.getProjectVersion())

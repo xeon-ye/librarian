@@ -21,16 +21,6 @@
     </properties>
 
 
-    <!--<repositories>-->
-    <!--<repository>-->
-    <!--<id>ccs</id>-->
-    <!--<name>ccs</name>-->
-    <!--<url>http://192.168.10.178:8081/repository/ccs/</url>-->
-    <!--<releases>-->
-    <!--<enabled>true</enabled>-->
-    <!--</releases>-->
-    <!--</repository>-->
-    <!--</repositories>-->
 
     <dependencies>
         <dependency>
@@ -138,12 +128,7 @@
             <version>${librarian-common.version}</version>
         </dependency>
 
-        <!--mysql5适配器依赖-->
-        <dependency>
-            <groupId>com.nulijiushimeili</groupId>
-            <artifactId>mysql5-data-service</artifactId>
-            <version>${mysql5-data-service.version}</version>
-        </dependency>
+
 
 
     </dependencies>

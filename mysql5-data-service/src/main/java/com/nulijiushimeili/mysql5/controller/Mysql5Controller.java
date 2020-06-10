@@ -1,5 +1,6 @@
 package com.nulijiushimeili.mysql5.controller;
 
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description: TODO
  ******************************/
 
-
+@Api(tags = "MySQL5数据治理服务")
 @Slf4j
 @RestController
 @RequestMapping(value = "/mysql5")

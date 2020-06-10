@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librarianwebui.config;
+package com.nulijiushimeili.librariancommon.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
