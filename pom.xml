@@ -26,6 +26,7 @@
         <module>phoenix14-data-service</module>
         <module>presto-unified-query</module>
         <module>librarian-common</module>
+        <module>xingongsuo-s3-data-service</module>
         <module>assembly</module>
     </modules>
 

@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/livy-submit-job/pom.xml" />
+        <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

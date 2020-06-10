@@ -15,6 +15,7 @@
         <module name="mysql5-data-service" />
         <module name="phoenix14-data-service" />
         <module name="presto-unified-query" />
+        <module name="xingongsuo-s3-data-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="mysql5-data-service" target="1.8" />
       <module name="phoenix14-data-service" target="1.8" />
       <module name="presto-unified-query" target="1.8" />
+      <module name="xingongsuo-s3-data-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
