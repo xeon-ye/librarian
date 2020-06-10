@@ -7,7 +7,6 @@ import lombok.Data;
 @Data
 public class ResultEntity<T> {
 
-
     private int code;
     private String message;
     private String information;

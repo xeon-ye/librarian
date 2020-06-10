@@ -1,5 +1,7 @@
 package com.nulijiushimeili.mysql5.controller;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /******************************
@@ -12,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description: TODO
  ******************************/
 
+
+@Slf4j
 @RestController
+@RequestMapping(value = "/mysql5")
 public class Mysql5Controller {
+
+
+
 }

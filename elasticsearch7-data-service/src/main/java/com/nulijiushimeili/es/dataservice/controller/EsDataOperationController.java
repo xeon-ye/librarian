@@ -23,11 +23,13 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.core.CountRequest;
 import org.elasticsearch.client.core.CountResponse;
 import org.elasticsearch.common.unit.TimeValue;
+import org.elasticsearch.common.util.CollectionUtils;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.PrefixQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.RangeQueryBuilder;
+import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.aggregations.Aggregation;
@@ -37,17 +39,15 @@ import org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
-import org.elasticsearch.search.sort.FieldSortBuilder;
-import org.elasticsearch.search.sort.SortBuilders;
-import org.elasticsearch.search.sort.SortMode;
+import org.elasticsearch.search.sort.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 /******************************************************
  * @Program: librarian-parent
@@ -230,6 +230,100 @@ public class EsDataOperationController {
             e.printStackTrace();
             return ResultEntity.error(500, "删除异常");
         }
+    }
+
+
+
+    /**
+     *
+     * elasticsearch 通用查询数据demo
+     * @param index
+     * @param from
+     * @param size
+     * @param where
+     * @param sortFieldsToAsc
+     * @param includeFields
+     * @param excludeFields
+     * @param timeOut
+     * @return
+     */
+    public List<Map<String, Object>> searchIndex(String index, int from, int size, Map<String, Object> where,
+                                                 Map<String, Boolean> sortFieldsToAsc,
+                                                 String[] includeFields,
+                                                 String[] excludeFields,
+                                                 int timeOut) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+        try {
+            SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
+            //条件
+            if (where != null && !where.isEmpty()) {
+                BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
+                where.forEach((k, v) -> {
+                    if (v instanceof Map) {
+                        //范围选择map  暂定时间
+                        Map<String, Date> mapV = (Map<String, Date>) v;
+                        if (mapV != null) {
+                            boolQueryBuilder.must(
+                                    QueryBuilders.rangeQuery(k).
+                                            gte(format.format(mapV.get("start"))).
+                                            lt(format.format(mapV.get("end"))));
+                        }
+                    } else {
+                        //普通模糊匹配
+                        boolQueryBuilder.must(QueryBuilders.wildcardQuery(k, v.toString()));
+                    }
+                });
+                sourceBuilder.query(boolQueryBuilder);
+            }
+
+            //分页
+            from = from <= -1 ? 0 : from;
+            size = size >= 1000 ? 1000 : size;
+            size = size <= 0 ? 15 : size;
+            sourceBuilder.from(from);
+            sourceBuilder.size(size);
+
+            //超时
+            sourceBuilder.timeout(new TimeValue(timeOut, TimeUnit.SECONDS));
+
+            //排序
+            if (sortFieldsToAsc != null && !sortFieldsToAsc.isEmpty()) {
+                sortFieldsToAsc.forEach((k, v) -> {
+                    sourceBuilder.sort(new FieldSortBuilder(k).order(v ? SortOrder.ASC : SortOrder.DESC));
+                });
+            } else {
+                sourceBuilder.sort(new ScoreSortBuilder().order(SortOrder.DESC));
+            }
+
+            //返回和排除列
+            if (!CollectionUtils.isEmpty(includeFields) || !CollectionUtils.isEmpty(excludeFields)) {
+                sourceBuilder.fetchSource(includeFields, excludeFields);
+            }
+
+            SearchRequest rq = new SearchRequest();
+            //索引
+            rq.indices(index);
+            //各种组合条件
+            rq.source(sourceBuilder);
+
+            //请求
+            System.out.println(rq.source().toString());
+            SearchResponse rp = restHighLevelClient.search(rq,RequestOptions.DEFAULT);
+
+            //解析返回
+            if (rp.status() != RestStatus.OK || rp.getHits().getTotalHits().value <= 0) {
+                return Collections.emptyList();
+            }
+
+            //获取source
+            return Arrays.stream(rp.getHits().getHits()).map(b -> {
+                return b.getSourceAsMap();
+            }).collect(Collectors.toList());
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return Collections.emptyList();
     }
 
 }
