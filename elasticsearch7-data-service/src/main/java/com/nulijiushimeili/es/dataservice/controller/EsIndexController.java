@@ -112,7 +112,7 @@ public class EsIndexController {
     }
 
 
-    @ApiOperation(value = "查询所有索引", notes = "查询所有索引")
+    @ApiOperation(value = "列出所有索引", notes = "列出所有索引")
     @GetMapping(value = "/listIndex")
     public ResultEntity<List<String>> listIndex() {
 
@@ -140,7 +140,7 @@ public class EsIndexController {
     }
 
 
-    @ApiOperation(value = "查询匹配索引", notes = "查询匹配索引")
+    @ApiOperation(value = "匹配索引", notes = "匹配索引")
     @GetMapping(value = "/listMatchIndex")
     public ResultEntity listIndexMatch(@RequestParam String matchIndexStr) {
 
