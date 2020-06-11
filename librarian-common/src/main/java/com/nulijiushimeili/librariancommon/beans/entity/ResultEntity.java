@@ -3,16 +3,45 @@ package com.nulijiushimeili.librariancommon.beans.entity;
 import com.nulijiushimeili.librariancommon.utils.MyDateUtils;
 import lombok.Data;
 
+/**
+ * 返回的结果生成统一的结果实体
+ * @param <T>
+ */
 
 @Data
 public class ResultEntity<T> {
 
+
+    /**
+     *  请求放回的状态码
+     */
     private int code;
+
+    /**
+     *  请求返回的状态信息
+     */
     private String message;
+
+    /**
+     *  返回的字符串信息
+     */
     private String information;
+
+    /**
+     *  返回的结果如果是 数组， 这是数组的长度
+     */
     private Long count;
+
+
+    /**
+     * 返回的结果数据
+     */
     private T data;
-    private String date = MyDateUtils.getCurrentTime();
+
+    /**
+     *  返回结果的时间
+     */
+    private String date = MyDateUtils.getCurrentTimeStr();
 
     private static final String SUCCESS_MESSAGE = "SUCCESS";
 

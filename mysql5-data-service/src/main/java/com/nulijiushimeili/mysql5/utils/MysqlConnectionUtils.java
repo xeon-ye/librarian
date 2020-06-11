@@ -25,17 +25,6 @@ public class MysqlConnectionUtils {
     }
 
 
-    /**
-     * @param connectionInfo 连接信息
-     * @param tClass         返回结果对象的类型
-     * @param <T>            将查询结果包装成 对象列表
-     * @return
-     */
-    public static <T> List<T> executeQuery(ConnectionInfoSpread connectionInfo, String sql, Class<T> tClass) {
-
-
-        return null;
-    }
 
 
     /**
@@ -106,7 +95,7 @@ public class MysqlConnectionUtils {
         Connection conn = null;
         PreparedStatement ps = null;
 
-        String url = String.format("jdbc:mysql://%s:%s/%s?useUnicode=true&characterEncoding=utf8&useSSL=true&verifyServerCertificate=false",
+        String url = String.format("jdbc:mysql://%s:%s/%s?useUnicode=true&characterEncoding=utf8&useSSL=true",
                 connectionInfo.getIp(),
                 connectionInfo.getPort(),
                 connectionInfo.getDbName());
@@ -131,11 +120,7 @@ public class MysqlConnectionUtils {
     }
 
 
-    public static List<Map<String, Object>> executeQuery(ConnectionInfoSpread connectionInfo, String sql, List<String> fieldNameList) {
 
-
-        return null;
-    }
 
 
 }

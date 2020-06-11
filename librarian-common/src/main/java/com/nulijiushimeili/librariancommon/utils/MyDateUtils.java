@@ -27,12 +27,24 @@ public class MyDateUtils {
     private static final String FORMAT_TIME = "HH:mm:ss";
     private static final String FORMAT_DATE_TIME = "yyyy-MM-dd HH:mm:ss";
 
+
+
     /**
      * 获取当前系统时间
      *
      * @return yyyy-MM-dd HH:mm:ss
      */
-    public static String getCurrentTime() {
+    public static Date getCurrentTime() {
+        DateTime dt = new DateTime();
+        return dt.toDate();
+    }
+
+    /**
+     * 获取当前系统时间
+     *
+     * @return yyyy-MM-dd HH:mm:ss
+     */
+    public static String getCurrentTimeStr() {
         DateTime dt = new DateTime();
         String time = dt.toString(FORMAT_DATE_TIME);
         return time;
