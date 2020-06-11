@@ -84,6 +84,12 @@ public class BaseMetadataEntity {
      */
     private Integer replica;
 
+
+    /**
+     * hive 字段分隔符
+     */
+    private String hiveFieldSeparator;
+
     /**
      * 批量操作id的集合
      */
