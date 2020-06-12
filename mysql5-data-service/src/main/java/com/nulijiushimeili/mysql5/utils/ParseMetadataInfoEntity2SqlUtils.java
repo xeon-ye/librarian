@@ -2,6 +2,8 @@ package com.nulijiushimeili.mysql5.utils;
 
 
 import com.nulijiushimeili.librariancommon.beans.entity.BaseColumnInfo;
+import com.nulijiushimeili.librariancommon.beans.entity.BaseMetadataEntity;
+import com.nulijiushimeili.librariancommon.beans.entity.ConnectionInfo;
 import com.nulijiushimeili.librariancommon.beans.entity.CreateTableEntry;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -11,11 +13,12 @@ import java.util.stream.Collectors;
 
 
 /**
+ * @Author 努力就是魅力
  * 生成创建表结构的 建表SQL语句
  */
 @Slf4j
 @Component
-public class RegistryTableParamParseUtils {
+public class ParseMetadataInfoEntity2SqlUtils {
 
 
     /**
@@ -26,16 +29,17 @@ public class RegistryTableParamParseUtils {
      * address varchar(255)  default null comment 'address' ,
      * ) engine = innodb default charset = utf8
      *
-     * @param createTableEntry
      * @return
      */
-    public String generateCreateTableSQLForMysql(CreateTableEntry createTableEntry) {
-        String tableName = createTableEntry.getBaseMetadataEntity().getMetadataName();
-        List<BaseColumnInfo> baseColumnMetadataEntityList = createTableEntry.getBaseColumnInfoList();
+    public String generateCreateTableSQLForMysql(
+            BaseMetadataEntity baseMetadataEntity,
+            List<BaseColumnInfo> baseColumnInfoList
+    ) {
+        String tableName = baseMetadataEntity.getMetadataName();
         StringBuilder sql = new StringBuilder();
         sql.append(String.format("create table %s ( \n", tableName));
 //        sql.append(String.format(" %s ( ",tableName));
-        for (BaseColumnInfo column : baseColumnMetadataEntityList) {
+        for (BaseColumnInfo column : baseColumnInfoList) {
             sql.append(column.getColumnName()).append(" ")             // 添加列名
                     .append(column.getColumnType()).append(" ");
             if (column.getColumnLength() == 0) {
@@ -72,12 +76,14 @@ public class RegistryTableParamParseUtils {
     /**
      * 生成hive的建表sql
      *
-     * @param createTableEntry
      * @return
      */
-    public String generateCreateTableSQLForHive(CreateTableEntry createTableEntry) {
-        String tableName = createTableEntry.getBaseMetadataEntity().getMetadataName();
-        String separator = createTableEntry.getBaseMetadataEntity().getHiveFieldSeparator();
+    public String generateCreateTableSQLForHive(
+                                                BaseMetadataEntity baseMetadataEntity,
+                                                List<BaseColumnInfo> baseColumnInfoList
+    ) {
+        String tableName = baseMetadataEntity.getMetadataName();
+        String separator =baseMetadataEntity.getHiveFieldSeparator();
 
         switch (separator) {
             case "空格":
@@ -90,11 +96,10 @@ public class RegistryTableParamParseUtils {
                 break;
         }
 
-        List<BaseColumnInfo> baseColumnMetadataEntityList = createTableEntry.getBaseColumnInfoList();
         StringBuilder sql = new StringBuilder();
         sql.append(String.format("create table %s ( \n", tableName));
         StringBuilder partitionFields = new StringBuilder();
-        for (BaseColumnInfo column : baseColumnMetadataEntityList) {
+        for (BaseColumnInfo column : baseColumnInfoList) {
             if (column.getIsPartitionField() == 1) {
                 partitionFields.append(column.getColumnName()).append(" ").append(column.getColumnType()).append(",");
             } else {
@@ -120,16 +125,18 @@ public class RegistryTableParamParseUtils {
     /**
      * 生成Phoenix的建表sql
      *
-     * @param createTableEntry
      * @return
      */
-    public String generateCreateTableSQLForPhoenix(CreateTableEntry createTableEntry) {
-        String tableName = createTableEntry.getBaseMetadataEntity().getMetadataName();
-        List<BaseColumnInfo> baseColumnMetadataEntityList = createTableEntry.getBaseColumnInfoList();
+    public String generateCreateTableSQLForPhoenix(
+            BaseMetadataEntity baseMetadataEntity,
+            List<BaseColumnInfo> baseColumnInfoList
+    ) {
+        String tableName = baseMetadataEntity.getMetadataName();
+
         StringBuilder sql = new StringBuilder();
 //        sql.append(String.format("create table %s ( \n", "\""+tableName+"\""));
         sql.append(String.format("create table %s ( \n", "" + tableName + ""));
-        for (BaseColumnInfo column : baseColumnMetadataEntityList) {
+        for (BaseColumnInfo column : baseColumnInfoList) {
             sql.append(column.getColumnName()).append(" ")             // 添加列名
                     .append(column.getColumnType()).append(" "); //添加类型
             if (column.getIsNullable() == 0) {
@@ -138,7 +145,7 @@ public class RegistryTableParamParseUtils {
                 sql.append(" not null ,");                 // 非空
             }
         }
-        String pk = baseColumnMetadataEntityList.stream().filter(x -> !x.getIndexType().equals("-1")).map(x -> x.getColumnName()).collect(Collectors.joining(","));
+        String pk = baseColumnInfoList.stream().filter(x -> !x.getIndexType().equals("-1")).map(x -> x.getColumnName()).collect(Collectors.joining(","));
         sql.append("\n constraint my_pk PRIMARY KEY (" + pk + "))");
 
         log.info("生成的Phoenix的建表语句是：\n" + sql.toString());
@@ -161,15 +168,17 @@ public class RegistryTableParamParseUtils {
      * add constraint NAME unique (NAME)
      * using index;
      */
-    public String generateCreateTableSQLForOracle(CreateTableEntry createTableEntry) {
-        String tableName = createTableEntry.getBaseMetadataEntity().getDbName() + "." + createTableEntry.getBaseMetadataEntity().getMetadataName();
-        List<BaseColumnInfo> baseColumnMetadataEntityList = createTableEntry.getBaseColumnInfoList();
+    public String generateCreateTableSQLForOracle(
+            BaseMetadataEntity baseMetadataEntity,
+            List<BaseColumnInfo> baseColumnInfoList
+    ) {
+        String tableName = baseMetadataEntity.getDbName() + "." + baseMetadataEntity.getMetadataName();
         StringBuilder sql = new StringBuilder();
         StringBuilder sqlComment = new StringBuilder();
         StringBuilder sqlIndexType = new StringBuilder();
         sql.append(String.format("create table %s ( \n", tableName));
         int i = 1;
-        for (BaseColumnInfo column : baseColumnMetadataEntityList) {
+        for (BaseColumnInfo column : baseColumnInfoList) {
             sql.append(column.getColumnName() + " ");          // 添加列名
             if (column.getColumnLength() == 0) {
                 sql.append(column.getColumnType() + " ");     // 添加列类型
@@ -177,7 +186,7 @@ public class RegistryTableParamParseUtils {
                 sql.append(column.getColumnType() + "(" + column.getColumnLength() + ")");
             }
             if (null != column.getDefaultValue() && !"".equals(column.getDefaultValue())) {
-                if (i == baseColumnMetadataEntityList.size()) {
+                if (i == baseColumnInfoList.size()) {
                     if (column.getIsNullable() == 1) {
                         sql.append(" default \'" + column.getDefaultValue() + "\' not null\n);\n");
                     } else {
@@ -191,7 +200,7 @@ public class RegistryTableParamParseUtils {
                     }
                 }
             } else {
-                if (i == baseColumnMetadataEntityList.size()) {
+                if (i == baseColumnInfoList.size()) {
                     if (column.getIsNullable() == 1) {
                         sql.append(" not null\n);\n");                 // 非空
                     } else {
