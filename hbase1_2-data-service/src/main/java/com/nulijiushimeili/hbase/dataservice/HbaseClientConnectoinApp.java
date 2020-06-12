@@ -21,6 +21,5 @@ public class HbaseClientConnectoinApp {
         SpringApplication.run(HbaseClientConnectoinApp.class, args);
     }
 
-
 }
 

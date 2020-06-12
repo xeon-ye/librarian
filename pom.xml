@@ -21,6 +21,7 @@
         <module>librarian-web-ui</module>
         <module>elasticsearch7-data-service</module>
         <module>mysql5-data-service</module>
+        <module>oracle11g-data-service</module>
         <module>hbase1_2-data-service</module>
         <module>hive1_2-data-service</module>
         <module>phoenix14-data-service</module>

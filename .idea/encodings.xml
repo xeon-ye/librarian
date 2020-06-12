@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/librarian-web-ui" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livy-submit-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mysql5-data-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oracle11g-data-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phoenix14-data-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/presto-unified-query" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xingongsuo-s3-data-service" charset="UTF-8" />

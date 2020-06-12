@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" filepath="$PROJECT_DIR$/librarian-web-ui/librarian-web-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/livy-submit-job/livy-submit-job.iml" filepath="$PROJECT_DIR$/livy-submit-job/livy-submit-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" filepath="$PROJECT_DIR$/mysql5-data-service/mysql5-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oracle11g-data-service/oracle11g-data-service.iml" filepath="$PROJECT_DIR$/oracle11g-data-service/oracle11g-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/phoenix14-data-service/phoenix14-data-service.iml" filepath="$PROJECT_DIR$/phoenix14-data-service/phoenix14-data-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/presto-unified-query/presto-unified-query.iml" filepath="$PROJECT_DIR$/presto-unified-query/presto-unified-query.iml" />
       <module fileurl="file://$PROJECT_DIR$/xingongsuo-s3-data-service/xingongsuo-s3-data-service.iml" filepath="$PROJECT_DIR$/xingongsuo-s3-data-service/xingongsuo-s3-data-service.iml" />

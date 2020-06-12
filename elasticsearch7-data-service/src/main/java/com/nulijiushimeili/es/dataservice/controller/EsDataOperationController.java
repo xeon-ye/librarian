@@ -9,6 +9,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.DocWriteResponse;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.index.IndexRequest;
@@ -325,5 +327,52 @@ public class EsDataOperationController {
         }
         return Collections.emptyList();
     }
+
+
+    /**
+     * 向ES中写入单条数据
+     * @param indexName
+     * @param f
+     */
+    public void writeFraudCdr2Es(String indexName, Object f) {
+        try {
+            IndexRequest request = new IndexRequest("post");
+            request.index(indexName).id(String.valueOf(UUID.randomUUID())).source(JSON.toJSONString(f), XContentType.JSON);
+            IndexResponse response = restHighLevelClient.index(request, RequestOptions.DEFAULT);
+            log.info("elastic 索引新增成功");
+        } catch (Exception e) {
+            log.error("索引数据变更失败:{}", e);
+        }
+
+    }
+
+
+    /**
+     * es 批量插入数据
+     *
+     * @param indexName
+     * @param dataList
+     * @return
+     */
+    public BulkResponse batchWrite2Es(String indexName, List<Object> dataList) {
+        try {
+            BulkRequest bulkRequest = new BulkRequest();
+            IndexRequest request = null;
+            for (Object data : dataList) {
+                request = new IndexRequest("post");
+                request.index(indexName).id(String.valueOf(UUID.randomUUID())).source(JSON.toJSONString(data), XContentType.JSON);
+                bulkRequest.add(request);
+            }
+            log.info("插入数据条数：" + dataList.size());
+            BulkResponse response = restHighLevelClient.bulk(bulkRequest, RequestOptions.DEFAULT);
+
+            return response;
+        } catch (Exception e) {
+            log.error("批量插入索引失败:{}", e);
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
 }

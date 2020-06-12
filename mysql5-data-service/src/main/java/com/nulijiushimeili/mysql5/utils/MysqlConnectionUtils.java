@@ -34,7 +34,7 @@ public class MysqlConnectionUtils {
      * @param fieldSize
      * @return
      */
-    public static List<List<String>> executeQuery(ConnectionInfoSpread connectionInfo, String sql, int fieldSize) {
+    public static List<List<String>> executeQueryForMysql(ConnectionInfoSpread connectionInfo, String sql, int fieldSize) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -91,7 +91,7 @@ public class MysqlConnectionUtils {
      * @return
      * @throws Exception
      */
-    public static boolean execute(ConnectionInfoSpread connectionInfo, String sql) {
+    public static boolean executeForMysql(ConnectionInfoSpread connectionInfo, String sql) {
         Connection conn = null;
         PreparedStatement ps = null;
 

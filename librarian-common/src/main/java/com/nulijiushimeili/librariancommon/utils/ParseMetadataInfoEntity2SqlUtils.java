@@ -1,4 +1,4 @@
-package com.nulijiushimeili.mysql5.utils;
+package com.nulijiushimeili.librariancommon.utils;
 
 
 import com.nulijiushimeili.librariancommon.beans.entity.BaseColumnInfo;

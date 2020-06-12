@@ -13,6 +13,7 @@
         <module name="librarian-web-ui" />
         <module name="livy-submit-job" />
         <module name="mysql5-data-service" />
+        <module name="oracle11g-data-service" />
         <module name="phoenix14-data-service" />
         <module name="presto-unified-query" />
         <module name="xingongsuo-s3-data-service" />
@@ -28,6 +29,7 @@
       <module name="librarian-web-ui" target="1.8" />
       <module name="livy-submit-job" target="1.8" />
       <module name="mysql5-data-service" target="1.8" />
+      <module name="oracle11g-data-service" target="1.8" />
       <module name="phoenix14-data-service" target="1.8" />
       <module name="presto-unified-query" target="1.8" />
       <module name="xingongsuo-s3-data-service" target="1.8" />
