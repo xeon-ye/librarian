@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.nulijiushimeili.es.dataservice.entity.User;
+import com.nulijiushimeili.es.dataservice.utils.EsUtils;
 import com.nulijiushimeili.librariancommon.beans.entity.ResultEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -86,6 +87,14 @@ public class EsDataOperationController {
         return ResultEntity.success(response.getCount());
     }
 
+    @ApiOperation(value = "普通查询", notes = "普通查询")
+    @GetMapping(value = "/normalSearch")
+    public ResultEntity normalSearch(@RequestParam String indexName) {
+        SearchRequest searchRequest = new SearchRequest(indexName);
+        return EsUtils.doSearch(restHighLevelClient, searchRequest);
+    }
+
+
 
     @ApiOperation(value = "es插入数据", notes = "es插入数据")
     @PutMapping(value = "/insertData")
@@ -127,7 +136,7 @@ public class EsDataOperationController {
     }
 
 
-    @ApiOperation(value = "es普通查询", notes = "es普通查询")
+    @ApiOperation(value = "es条件查询", notes = "es条件查询")
 
     @RequestMapping(value = "/queryData", method = RequestMethod.GET)
     public ResultEntity testESFind(@RequestParam String indexName) {
