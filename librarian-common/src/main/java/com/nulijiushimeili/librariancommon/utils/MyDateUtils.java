@@ -307,7 +307,7 @@ public class MyDateUtils {
         }
 
         try {
-            return new SimpleDateFormat(FORMAT_TIME).parse(date);
+            return new SimpleDateFormat(FORMAT_DATE_TIME).parse(date);
         } catch (ParseException e) {
             return null;
         }
