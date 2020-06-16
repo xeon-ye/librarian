@@ -16,4 +16,6 @@ public class EsFieldSchema {
 
     private String fieldName;
     private String fieldType;
+
 }
+

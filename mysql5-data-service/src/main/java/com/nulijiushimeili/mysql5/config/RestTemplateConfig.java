@@ -1,4 +1,4 @@
-package com.nulijiushimeili.librariancommon.config;
+package com.nulijiushimeili.mysql5.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -50,6 +50,7 @@ public class RestTemplateConfig {
         return restTemplate;
     }
 
+    
     @Bean
     @ConditionalOnMissingBean({ClientHttpRequestFactory.class})
     public ClientHttpRequestFactory simpleClientHttpRequestFactory() {

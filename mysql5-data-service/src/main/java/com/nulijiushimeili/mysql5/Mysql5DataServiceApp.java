@@ -3,6 +3,7 @@ package com.nulijiushimeili.mysql5;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /******************************************************
  * @Program: librarian-parent
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Desc: TODO
  ********************************************************/
 
+@EnableScheduling
 @SpringBootApplication
 public class Mysql5DataServiceApp implements CommandLineRunner {
 
