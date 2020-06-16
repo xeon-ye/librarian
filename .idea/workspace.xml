@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dfa7f4e-175b-4378-93df-7c557e9b81b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/ScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyStringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyTelnetUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/entity/EsFieldSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/entity/EsFieldSchema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/IMysqlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/IMysqlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/MysqlServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/MysqlServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarian-common/target/librarian-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/librarian-common/target/librarian-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phoenix14-data-service/src/main/java/com/nulijiushimeili/PhoenixAdapterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/phoenix14-data-service/src/main/java/com/nulijiushimeili/phoenixdataservice/PhoenixAdapterApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/hbase1_2-data-service/target/" />
     <ignored path="$PROJECT_DIR$/librarian-web-ui/target/" />
@@ -54,100 +54,74 @@
           <entry key="class" value="6" />
           <entry key="gz" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="223" />
+          <entry key="java" value="229" />
           <entry key="json" value="4" />
           <entry key="md" value="1" />
           <entry key="pom" value="5" />
-          <entry key="properties" value="22" />
+          <entry key="properties" value="23" />
           <entry key="sql" value="2" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="60" />
+          <entry key="xml" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="223" />
+          <entry key="JAVA" value="229" />
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="22" />
+          <entry key="Properties" value="23" />
           <entry key="SQL" value="2" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="65" />
+          <entry key="XML" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="README" value="1" />
-          <entry key="java" value="6951" />
+          <entry key="java" value="7592" />
           <entry key="json" value="82" />
           <entry key="md" value="47" />
-          <entry key="properties" value="185" />
+          <entry key="properties" value="226" />
           <entry key="sql" value="127" />
-          <entry key="xml" value="1325" />
+          <entry key="xml" value="1326" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6951" />
+          <entry key="JAVA" value="7592" />
           <entry key="JSON" value="82" />
           <entry key="Markdown" value="47" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="185" />
+          <entry key="Properties" value="226" />
           <entry key="SQL" value="127" />
-          <entry key="XML" value="1325" />
+          <entry key="XML" value="1326" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/IMysqlService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/MysqlServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/Mysql5ConstStringConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="337">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#760#790#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyStringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,41 +129,71 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyTelnetUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phoenix14-data-service/src/main/java/com/nulijiushimeili/phoenixdataservice/PhoenixAdapterApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RestTemplateConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/TimeoutCallable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/ScheduleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="465">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/Swagger2Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/utils/MysqlConnectionUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/entity/EsFieldSchema.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -197,8 +201,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/Mysql5DataServiceApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="494">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,12 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/pom.xml" />
-        <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/src/main/java/com/nulijiushimeili/xingongsuos3dataservice/controller/S3Controller.java" />
-        <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mysql5-data-service/pom.xml" />
-        <option value="$PROJECT_DIR$/presto-unified-query/src/main/java/com/nulijiushimeili/prestounifiedquery/config/Swagger2Configuration.java" />
-        <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/src/main/java/com/nulijiushimeili/xingongsuos3dataservice/config/Swagger2Configuration.java" />
         <option value="$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/entity/EsClusterInfo.java" />
         <option value="$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/controller/EsServiceController.java" />
         <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyTools.java" />
@@ -268,12 +266,9 @@
         <option value="$PROJECT_DIR$/hive1_2-data-service/src/main/java/com/nulijiushimeili/hive1_2/dataservice/utils/HiveDMLUtils.java" />
         <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/exception/UserDefinedException.java" />
         <option value="$PROJECT_DIR$/librarian-common/src/main/resources/errors.json" />
-        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/Mysql5DataServiceApp.java" />
         <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/Swagger2Configuration.java" />
         <option value="$PROJECT_DIR$/librarian-web-ui/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/livy-submit-job/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/RestTemplateConfig.java" />
         <option value="$PROJECT_DIR$/librarian-web-ui/pom.xml" />
         <option value="$PROJECT_DIR$/xingongsuo-s3-data-service/src/test/java/com/nulijiushimeili/xingongsuos3dataservice/XingongsuoS3DataServiceApplicationTests.java" />
         <option value="$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/serviceregistry/DataSourceServiceRegistryController.java" />
@@ -303,8 +298,17 @@
         <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/IMysqlService.java" />
         <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/service/MysqlServiceImpl.java" />
         <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/controller/Mysql5Controller.java" />
-        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/Mysql5DataServiceApp.java" />
         <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/ScheduleService.java" />
+        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/RestTemplateConfig.java" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RestTemplateConfig.java" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/phoenix14-data-service/src/main/java/com/nulijiushimeili/phoenixdataservice/PhoenixAdapterApp.java" />
+        <option value="$PROJECT_DIR$/librarian-common/pom.xml" />
+        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyTelnetUtils.java" />
+        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyRegExpStringUtils.java" />
+        <option value="$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyStringUtils.java" />
+        <option value="$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java" />
       </list>
     </option>
   </component>
@@ -408,6 +412,104 @@
               <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="librarian" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="librariancommon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="librarian-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="librariancommon" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="librarian-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql5-data-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -422,7 +524,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592292156791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592298174252" />
     <property name="last_opened_file_path" value="D:/lingdunyun/data-governance-system-cdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -459,7 +561,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LibrarianWebUiApplication">
+  <component name="RunManager" selected="Application.MyRegExpStringUtils">
     <configuration name="ESJdbcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nulijiushimeili.es.dataservice.utils.ESJdbcTest" />
       <module name="elasticsearch7-data-service" />
@@ -473,18 +575,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsTest.t1AddOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="elasticsearch7-data-service" />
+    <configuration name="MyRegExpStringUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nulijiushimeili.librariancommon.utils.MyRegExpStringUtils" />
+      <module name="librarian-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nulijiushimeili.es.dataservice.*" />
+          <option name="PATTERN" value="com.nulijiushimeili.librariancommon.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nulijiushimeili.es.dataservice" />
-      <option name="MAIN_CLASS_NAME" value="com.nulijiushimeili.es.dataservice.EsTest" />
-      <option name="METHOD_NAME" value="t1AddOne" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTelnetUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nulijiushimeili.librariancommon.utils.MyTelnetUtils" />
+      <module name="librarian-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nulijiushimeili.librariancommon.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -541,16 +653,18 @@
       <item itemvalue="Spring Boot.XingongsuoS3DataServiceApplication" />
       <item itemvalue="Spring Boot.Oracle11gDataServiceApplication" />
       <item itemvalue="Spring Boot.LibrarianWebUiApplication" />
-      <item itemvalue="JUnit.EsTest.t1AddOne" />
       <item itemvalue="Spring Boot.ElasticSearchDataServiceApp" />
       <item itemvalue="Application.ESJdbcTest" />
+      <item itemvalue="Application.MyTelnetUtils" />
+      <item itemvalue="Application.MyRegExpStringUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyRegExpStringUtils" />
+        <item itemvalue="Application.MyTelnetUtils" />
         <item itemvalue="Spring Boot.LibrarianWebUiApplication" />
         <item itemvalue="Application.ESJdbcTest" />
         <item itemvalue="Spring Boot.ElasticSearchDataServiceApp" />
-        <item itemvalue="JUnit.EsTest.t1AddOne" />
       </list>
     </recent_temporary>
   </component>
@@ -590,7 +704,7 @@
       <workItem from="1591757445420" duration="1000" />
       <workItem from="1591758810810" duration="25673000" />
       <workItem from="1591941456325" duration="9526000" />
-      <workItem from="1592267834872" duration="4238000" />
+      <workItem from="1592267834872" duration="10371000" />
     </task>
     <servers />
   </component>
@@ -618,13 +732,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124198000" />
+    <option name="totallyTimeSpent" value="130331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -652,7 +766,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.22788204" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.22788204" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -701,53 +815,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/config/RestTemplateConfig.java" />
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/RestTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/controller/EsServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xingongsuo-s3-data-service/src/test/java/com/nulijiushimeili/xingongsuos3dataservice/XingongsuoS3DataServiceApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/utils/MyDateUtils.java" />
-    <entry file="file://$PROJECT_DIR$/elasticsearch7-data-service/src/main/java/com/nulijiushimeili/es/dataservice/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/controller/serviceregistry/DataSourceServiceRegistryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/librarian-web-ui/src/main/java/com/nulijiushimeili/librarianwebui/entity/ZtreePerData.java" />
     <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/beans/entity/ConnectionInfo.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -986,16 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/Mysql5DataServiceApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/utils/MysqlConnectionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-765">
@@ -1041,22 +1098,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java">
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/Mysql5DataServiceApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="494">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/TimeoutCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/config/RestTemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="25" lean-forward="true" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RestTemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/ScheduleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="465">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyStringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phoenix14-data-service/src/main/java/com/nulijiushimeili/phoenixdataservice/PhoenixAdapterApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/librarian-common/src/main/java/com/nulijiushimeili/librariancommon/utils/MyTelnetUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql5-data-service/src/main/java/com/nulijiushimeili/mysql5/config/RegistryMysqlServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#760#790#1" expanded="true" />
           </folding>
         </state>
       </provider>
