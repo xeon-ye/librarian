@@ -63,7 +63,7 @@
         <guava.version>27.1-jre</guava.version>
         <mybatis-boot.version>2.0.1</mybatis-boot.version>
         <lombok.version>1.18.12</lombok.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <easypoi-springboot.version>3.3.0</easypoi-springboot.version>
         <spring-hot-load.version>1.2.0.RELEASE</spring-hot-load.version>
 
